@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navigation/nav";
 import BgLines from "@/components/global/bg-lines";
 import "./globals.scss";
+import BackToTop from "@/components/global/back-to-top";
+import ScrollContextProvider from "@/components/context-providers/scroll-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         <NextUIProvider>
-          <BgLines />
-          <Navbar />
-          <div className="p-24 !z-10">{children}</div>
+          {/* <BgLines /> */}
+          <ScrollContextProvider>
+            <Navbar />
+            <div className="!z-10">{children}</div>
+            <BackToTop />
+          </ScrollContextProvider>
         </NextUIProvider>
       </body>
     </html>

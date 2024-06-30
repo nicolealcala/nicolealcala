@@ -1,5 +1,5 @@
 .active {
-    color: var(--cyan);
+    color: var(--blue);
 }
 
 .learnMore {
@@ -16,15 +16,15 @@
         height: 2px;
         bottom: -6px;
         left: 0;
-        background-color: var(--cyan);
+        background-color: var(--blue);
         transition: box-shadow 0.3s ease-in-out;
     }
 
     &:hover>.chevronIcon {
-        color: var(--cyan);
+        color: var(--blue);
     }
 
-    &:hover::after {
-        box-shadow: 0 0 10px var(--cyan);
-    }
+    // &:hover::after {
+    //     box-shadow: 0 0 10px var(--blue);
+    // }
 }

@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import nav from "./navigation.module.scss";
+import { ScrollContext } from "../context-providers/scroll-context";
 
 const links = [
   { path: "/", title: "Home" },
@@ -13,30 +14,13 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const navbar = document.querySelector(".sticky");
-    const handleScroll = () => {
-      window.scrollY > 0
-        ? (navbar?.classList.remove("bg-transparent"),
-          navbar?.classList.add("bg-black"),
-          setIsScrolled(true))
-        : (navbar?.classList.remove("bg-black"),
-          navbar?.classList.add("bg-transparent"),
-          setIsScrolled(false));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isScrolled = useContext(ScrollContext);
 
   return (
     <nav
-      className="bg-transparent py-5 px-20 flex justify-between sticky top-0 !z-50 transition-colors duration-500 w-full"
+      className={`py-5 px-20 flex justify-between sticky top-0 !z-50 transition-colors duration-500 w-full ${
+        isScrolled ? "bg-black text-white" : "bg-transparent text-foreground"
+      }`}
       id="navbar"
     >
       <div className="flex gap-x-3">
@@ -48,7 +32,9 @@ const Nav = () => {
           <Link
             href={link.path}
             key={index}
-            className={isScrolled ? "text-white" : "text-foreground"}
+            className={`transition-colors duration-500 ${
+              isScrolled ? "text-white" : "text-foreground"
+            }`}
           >
             <span
               className={`font-semibold ${
