@@ -1,12 +1,15 @@
 import React from "react";
 
 import Landing from "@/components/sections/home1-landing";
-import FeaturedProjects from "@/components/sections/home2-featured-project";
+
+import FeaturedProjects from "@/components/sections/home3-featured-project";
+import WhatIDo from "@/components/sections/home2-what-i-do";
 
 const Home = () => {
   return (
-    <main className="flex flex-col gap-y-16">
+    <main className="flex flex-col">
       <Landing />
+      <WhatIDo />
       <FeaturedProjects />
 
       {/* <section className="relative overflow-x-scroll scroll-smooth">
