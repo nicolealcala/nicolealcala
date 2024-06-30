@@ -4,6 +4,64 @@
 
 :root {
     --cyan: #02FDF4;
+    --blue: #05DBF7;
     --pink: #FF6392;
     --yellow: #FFDF66;
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+}
+
+.container {
+    max-width: 1320px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        min-width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        min-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        min-width: 100%;
+    }
+}
+
+.stroked {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.externalLink {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--blue);
+    }
 }
