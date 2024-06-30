@@ -1,12 +1,13 @@
 .icon svg path,
 .icon svg circle {
+    cursor: pointer;
     transition: fill 0.3s, stroke 0.3s;
 }
 
 .icon:hover svg path {
-    fill: var(--cyan);
+    fill: var(--blue);
 }
 
 .icon:hover svg circle {
-    stroke: var(--cyan);
+    stroke: var(--blue);
 }
