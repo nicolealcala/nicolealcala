@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextUIProvider } from "@nextui-org/react";
-import { Inter } from "next/font/google";
+import { Inter, Bai_Jamjuree } from "next/font/google";
 import Navbar from "@/components/navigation/nav";
 import BgLines from "@/components/global/bg-lines";
 import "./globals.scss";
@@ -8,6 +8,7 @@ import BackToTop from "@/components/global/back-to-top";
 import ScrollContextProvider from "@/components/context-providers/scroll-context";
 
 const inter = Inter({ subsets: ["latin"] });
+export const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Nicole Alcala",

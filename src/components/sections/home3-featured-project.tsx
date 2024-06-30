@@ -5,6 +5,7 @@ import Image from "next/image";
 import StaticBall from "@/components/global/static-ball";
 import FluidBall from "@/components/global/fluid-ball";
 import Section from "../ui/section";
+import { baiJamjuree } from "@/app/layout";
 
 const technologies = [
   "Bootstrap CSS",
@@ -36,8 +37,10 @@ const FeaturedProjects = () => {
       />
 
       <div className="container">
-        <p className="text-[56px] font-bold text-center !z-30 text-white">
-          FEATURED PROJECT
+        <p
+          className={`text-[56px] font-bold text-center !z-30 text-white ${baiJamjuree.className}`}
+        >
+          FEATURED <span className="stroked">PROJECT</span>
         </p>
 
         <div className="relative flex justify-between">
