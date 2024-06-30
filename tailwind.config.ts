@@ -25,8 +25,16 @@ const config: Config = {
           DEFAULT: "var(--cyan)",
           foreground: "#FFFFFF",
         },
+        blue: {
+          DEFAULT: "var(--blue)",
+          foreground: "#FFFFFF",
+        },
         yellow: {
           DEFAULT: "var(--yellow)",
+          foreground: "#FFFFFF",
+        },
+        black: {
+          DEFAULT: "#0D0B0C",
           foreground: "#FFFFFF",
         },
       },
