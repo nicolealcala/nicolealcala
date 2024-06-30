@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
               <h2 className="font-semibold text-white">Technologies</h2>
               <ul>
                 {technologies.map((tech, i) => (
-                  <li className="font-light text-white" key={i}>
+                  <li className="text-white" key={i}>
                     {tech}
                   </li>
                 ))}
@@ -60,14 +60,14 @@ const FeaturedProjects = () => {
               <h2 className="font-semibold text-white">Process</h2>
               <ul>
                 {process.map((step, i) => (
-                  <li className="font-light text-white" key={i}>
+                  <li className="text-white" key={i}>
                     {step}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <p className="font-light text-white">
+            <p className="text-white">
               Tutorial:{" "}
               <Link
                 href="https://youtu.be/vCOSTG10Y4o?si=rDJaiTIYPRlsjXdd"
@@ -87,7 +87,7 @@ const FeaturedProjects = () => {
               <h2 className="font-semibold text-white">Features</h2>
               <ul>
                 {features.map((feature, i) => (
-                  <li className="font-light text-white" key={i}>
+                  <li className="text-white" key={i}>
                     {feature}
                   </li>
                 ))}

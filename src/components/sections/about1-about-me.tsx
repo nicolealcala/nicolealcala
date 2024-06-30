@@ -11,7 +11,7 @@ const AboutMe = () => {
           {/* EDUCATION */}
           <div className="flex flex-col gap-y-4 max-w-[360px]">
             <h2 className="font-semibold">EDUCATION</h2>
-            <p className="font-light">
+            <p>
               BS in Information Technology
               <br />
               Polytechnic University of the Philippines
@@ -23,7 +23,7 @@ const AboutMe = () => {
           {/* EXPERIENCE */}
           <div className="flex flex-col gap-y-4 max-w-[360px]">
             <h2 className="font-semibold">EXPERIENCE</h2>
-            <p className="font-light">
+            <p>
               Analyst Programmer |{" "}
               <span className="text-yellow">Full-stack Web Developer</span>
               <br />
@@ -45,7 +45,7 @@ const AboutMe = () => {
           {/* FACTS */}
           <div className="flex flex-col gap-y-4 max-w-[360px]">
             <h2 className="font-semibold">FACTS</h2>
-            <p className="font-light">
+            <p>
               <span className="text-2xl font-bold text-yellow">
                 INTROVERTED
               </span>

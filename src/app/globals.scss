@@ -17,6 +17,14 @@
     h2 {
         @apply text-xl;
     }
+
+    p {
+        @apply font-light;
+    }
+}
+
+.heading {
+    font-size: 70px;
 }
 
 .stroked {
