@@ -1,0 +1,43 @@
+.fluidBall {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    animation: spinBall 3s infinite, moveBall 5s infinite;
+    box-shadow: inset 0 0 180px #fff,
+        inset -6px 0 180px #08fbf5,
+        inset 6px 0 180px #FF6392,
+        inset -6px 0 300px #08fbf5,
+        0 0 18px #fff,
+        inset 6px 0 300px #FF6392,
+        4px 0 180px #08fbf5, -4px 0 180px #FF6392;
+}
+
+@keyframes spinBall {
+    0% {
+        transform: rotate(0);
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(100deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// @keyframes moveBall {
+//     0% {
+//         transform: translate(0, -25px);
+//     }
+
+//     50% {
+//         transform: translate(0, 0);
+//     }
+
+//     100% {
+//         transform: translate(0, -25px);
+//     }
+
+// }

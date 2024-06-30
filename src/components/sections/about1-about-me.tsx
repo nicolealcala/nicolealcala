@@ -1,0 +1,65 @@
+import React from "react";
+import RedirectLink from "@/components/navigation/redirect-link";
+import Barcode from "@/components/global/barcode";
+
+const AboutMe = () => {
+  return (
+    <section className="flex flex-col gap-y-8 h-[85vh]">
+      <p className="text-9xl font-medium w-full text-center">ABOUT ME</p>
+      <div className="flex flex-1 justify-between">
+        <div className="flex flex-col justify-between">
+          {/* EDUCATION */}
+          <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <h2 className="font-semibold">EDUCATION</h2>
+            <p className="font-light">
+              BS in Information Technology
+              <br />
+              Polytechnic University of the Philippines
+              <br />
+              <span className="text-yellow">Magna Cum Laude,</span> 2023
+            </p>
+          </div>
+
+          {/* EXPERIENCE */}
+          <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <h2 className="font-semibold">EXPERIENCE</h2>
+            <p className="font-light">
+              Analyst Programmer |{" "}
+              <span className="text-yellow">Full-stack Web Developer</span>
+              <br />
+              WPH Digital Pte Ltd | Singapore
+              <br />
+              January 2024 - Present
+            </p>
+          </div>
+
+          {/* VIEW MY CV */}
+          <RedirectLink
+            path="https://drive.google.com/file/d/1SIESrpCjLwpHLKTz7xqpOfgynaI8d0cL/view?usp=sharing"
+            text="view my cv"
+            target="_blank"
+          />
+        </div>
+
+        <div className="flex flex-col justify-between text-right">
+          {/* FACTS */}
+          <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <h2 className="font-semibold">FACTS</h2>
+            <p className="font-light">
+              <span className="text-2xl font-bold text-yellow">
+                INTROVERTED
+              </span>
+              <br /> I am a music junkie and animal lover. <br />I love cats,
+              dogs, and otters.
+            </p>
+          </div>
+
+          {/* BARCODE */}
+          <Barcode />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutMe;
