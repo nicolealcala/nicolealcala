@@ -4,9 +4,16 @@
 
 :root {
     --cyan: #02FDF4;
-    --blue: #05DBF7;
+    // --blue: #05DBF7;
+    // --blue: #72A5E8;
+    --blue: #82C8F9;
     --pink: #FF6392;
     --yellow: #FFDF66;
+    --green: #50CEAC;
+    --purple: #BD83E5;
+    --black: #0D0B0C;
+    --light-blue: #D4E1F2;
+    background-color: var(--black);
 }
 
 @layer base {
@@ -19,12 +26,14 @@
     }
 
     p {
-        @apply font-light;
+        @apply font-light text-white;
+
     }
 }
 
 .heading {
     font-size: 70px;
+    font-weight: 600;
 }
 
 .stroked {

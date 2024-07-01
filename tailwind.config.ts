@@ -16,6 +16,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        lg: "0 10px 15px -10px rgb(0, 0, 0, 0.05)",
+      },
       colors: {
         pink: {
           DEFAULT: "var(--pink)",
@@ -33,8 +36,16 @@ const config: Config = {
           DEFAULT: "var(--yellow)",
           foreground: "#FFFFFF",
         },
+        green: {
+          DEFAULT: "var(--green)",
+          foreground: "#FFFFFF",
+        },
+        purple: {
+          DEFAULT: "var(--purple)",
+          foreground: "#FFFFFF",
+        },
         black: {
-          DEFAULT: "#0D0B0C",
+          DEFAULT: "var(--black)",
           foreground: "#FFFFFF",
         },
       },
