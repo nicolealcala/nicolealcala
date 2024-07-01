@@ -1,29 +1,52 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import Socials from "@/components/global/socials";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Details from "@/components/texts/details";
 import { Button } from "@nextui-org/react";
-import Section from "../ui/section";
+import Section from "../ui/section-full";
+import { ThemeContext } from "../context-providers/theme-context-provider";
 
 const Landing = () => {
+  const theme = useContext(ThemeContext);
+
   return (
-    <Section color="white">
+    <Section>
       <div className="container flex justify-between">
         <div className="flex flex-col max-w-xl gap-y-8 justify-center">
-          <p className="text-[56px] leading-none font-bold">
+          <p
+            className={`text-[56px] leading-none font-bold ${
+              theme === "light" && "text-black"
+            }`}
+          >
             HI, I&apos;M <span className="text-pink">NICOLE</span>,
             <br />A WEB <span className="text-blue">DEVELOPER</span> BASED IN
             THE PHILIPPINES.
           </p>
-          <p className="max-w-md font-light">
+          <p className={`max-w-md ${theme === "light" && "text-black"}`}>
             Committed to lifelong learning and development, I am eager to learn
             and motivated to make a positive impact to the world.
           </p>
           <div className="flex">
-            <Button variant="bordered" className="rounded-none">
+            <Button
+              variant="bordered"
+              className={`rounded-none ${
+                theme === "light"
+                  ? "border-black text-black"
+                  : "border-white text-white"
+              }`}
+            >
               View CV
             </Button>
-            <Button className="rounded-none">Let&apos;s talk</Button>
+            <Button
+              className={`rounded-none ${
+                theme === "light"
+                  ? "bg-black text-white"
+                  : "bg-white text-black"
+              }`}
+            >
+              Let&apos;s talk
+            </Button>
           </div>
         </div>
         <div className="flex flex-col max-w-auto gap-y-16 justify-center">
