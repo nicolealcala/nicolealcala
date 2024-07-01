@@ -1,27 +1,28 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { ChevronsRight } from "lucide-react";
 import styles from "./navigation.module.scss";
+import { ThemeContext } from "../context-providers/theme-context-provider";
 
 interface RedirectLinkProps {
   path: string;
   text?: string;
-  color?: string;
   [key: string]: any;
 }
 
 const LearnMore: React.FC<RedirectLinkProps> = ({
   path,
   text = "LEARN MORE",
-  color = "white",
   ...props
 }) => {
+  const theme = useContext(ThemeContext);
   return (
     <div>
       <Link
         href={path}
         className={`flex gap-x-2 w-max font-semibold ${styles.learnMore} ${
-          color === "white" ? "text-white" : "text-black"
+          theme === "dark" && "text-white"
         }`}
         {...props}
       >
