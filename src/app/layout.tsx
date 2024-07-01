@@ -5,7 +5,9 @@ import Navbar from "@/components/navigation/nav";
 import BgLines from "@/components/global/bg-lines";
 import "./globals.scss";
 import BackToTop from "@/components/global/back-to-top";
-import ScrollContextProvider from "@/components/context-providers/scroll-context";
+import ThemeProvider from "@/components/context-providers/theme-context-provider";
+import ScrollProvider from "@/components/context-providers/scroll-context-provider";
+import Footer from "@/components/global/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 export const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: "400" });
@@ -24,12 +26,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <NextUIProvider>
-          {/* <BgLines /> */}
-          <ScrollContextProvider>
-            <Navbar />
-            <div className="!z-10">{children}</div>
-            <BackToTop />
-          </ScrollContextProvider>
+          <ThemeProvider>
+            <BgLines />
+            <ScrollProvider>
+              <Navbar />
+              <div className="!z-10">
+                {children} <Footer />
+              </div>
+              <BackToTop />
+            </ScrollProvider>
+          </ThemeProvider>
         </NextUIProvider>
       </body>
     </html>
