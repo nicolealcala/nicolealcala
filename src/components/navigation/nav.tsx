@@ -1,10 +1,10 @@
 "use client";
-import { useContext } from "react";
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import nav from "./navigation.module.scss";
-import { ScrollContext } from "../context-providers/scroll-context";
+import { useContext } from "react";
+import { ThemeContext } from "../context-providers/theme-context-provider";
 
 const links = [
   { path: "/", title: "Home" },
@@ -14,12 +14,12 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const isScrolled = useContext(ScrollContext);
+  const theme = useContext(ThemeContext);
 
   return (
     <nav
-      className={`py-5 px-20 flex justify-between sticky top-0 !z-50 transition-colors duration-500 w-full ${
-        isScrolled ? "bg-black text-white" : "bg-transparent text-foreground"
+      className={`bg-transparent py-5 px-20 flex justify-between top-0 !z-50 transition-colors duration-500 w-full ${
+        theme === "dark" && "text-white"
       }`}
       id="navbar"
     >
@@ -33,7 +33,7 @@ const Nav = () => {
             href={link.path}
             key={index}
             className={`transition-colors duration-500 ${
-              isScrolled ? "text-white" : "text-foreground"
+              theme === "dark" ? "text-white" : "text-black"
             }`}
           >
             <span
@@ -50,9 +50,7 @@ const Nav = () => {
           href="/contact"
           variant={pathname === "/contact" ? "solid" : "bordered"}
           className={`rounded ${
-            isScrolled
-              ? "text-white border border-white"
-              : "text-foreground border border-black"
+            theme === "dark" ? "text-white" : " border-black text-black"
           }`}
         >
           <span className="font-semibold text-base">Contact Me</span>
