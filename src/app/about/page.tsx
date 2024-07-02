@@ -1,7 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
 import AboutMe from "@/components/sections/about1-about-me";
-import WhatIDo from "@/components/sections/about2-what-i-do";
+import Skills from "@/components/sections/about2-skills";
+import Awards from "@/components/sections/about3-awards";
 
 export const metadata: Metadata = {
   title: "About",
@@ -12,7 +13,8 @@ const About = () => {
   return (
     <main className="flex flex-col">
       <AboutMe />
-      <WhatIDo />
+      <Skills />
+      <Awards />
     </main>
   );
 };
