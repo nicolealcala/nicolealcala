@@ -21,13 +21,13 @@ const socials: SocialLink[] = [
 
 const Socials = () => {
   return (
-    <>
+    <div className="flex gap-x-4">
       {socials.map((social, index) => (
         <Link key={index} href={social.link} target="_blank">
           {social.icon}
         </Link>
       ))}
-    </>
+    </div>
   );
 };
 
