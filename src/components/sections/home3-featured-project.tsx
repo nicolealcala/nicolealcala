@@ -91,7 +91,7 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 !z-10">
-            <BlueStaticBall />
+            {theme === "light" ? <BlueStaticBall /> : <CyanStaticBall />}
           </div>
 
           <div className="flex flex-col justify-between items-end max-w-xs min-h-max text-end pb-20">
