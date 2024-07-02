@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { NextUIProvider } from "@nextui-org/react";
 import { Inter, Bai_Jamjuree } from "next/font/google";
 import Navbar from "@/components/navigation/nav";
-import BgLines from "@/components/global/bg-lines";
+import BgLines from "@/components/ui/bg-lines";
 import "./globals.scss";
-import BackToTop from "@/components/global/back-to-top";
+import BackToTop from "@/components/ui/back-to-top";
 import ThemeProvider from "@/components/context-providers/theme-context-provider";
 import ScrollProvider from "@/components/context-providers/scroll-context-provider";
-import Footer from "@/components/global/footer";
+import Footer from "@/components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 export const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: "400" });
