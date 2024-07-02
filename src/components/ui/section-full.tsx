@@ -5,11 +5,7 @@ interface SectionProps {
   className?: string;
   [key: string]: any;
 }
-const SectionFull: React.FC<SectionProps> = ({
-  children,
-  className,
-  ...props
-}) => {
+const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
   return (
     <section
       className={`px-24 py-16 flex justify-center items-center ${className}`}
@@ -20,4 +16,4 @@ const SectionFull: React.FC<SectionProps> = ({
   );
 };
 
-export default SectionFull;
+export default Section;

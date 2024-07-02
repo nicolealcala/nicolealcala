@@ -5,11 +5,7 @@ interface SectionProps {
   className?: string;
   [key: string]: any;
 }
-const SectionFull: React.FC<SectionProps> = ({
-  children,
-  className,
-  ...props
-}) => {
+const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
   return (
     <section
       className={`mx-8 p-16 max-h-screen flex justify-center items-center rounded-2xl ${className}`}
@@ -20,4 +16,4 @@ const SectionFull: React.FC<SectionProps> = ({
   );
 };
 
-export default SectionFull;
+export default Section;
