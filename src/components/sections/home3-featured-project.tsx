@@ -83,7 +83,11 @@ const FeaturedProjects = () => {
               <Link
                 href="https://youtu.be/vCOSTG10Y4o?si=rDJaiTIYPRlsjXdd"
                 target="_blank"
-                className="underline underline-offset-2 externalLink"
+                className={`underline underline-offset-2 transition-colors duration-300 ${
+                  theme === "light"
+                    ? "text-black hover:text-blue"
+                    : "text-white hover:text-cyan"
+                }`}
               >
                 Next.js Full Course Tutorial
               </Link>

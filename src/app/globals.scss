@@ -40,11 +40,3 @@
     color: transparent;
     -webkit-text-stroke: 0.5px white;
 }
-
-.externalLink {
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-        color: var(--blue);
-    }
-}
