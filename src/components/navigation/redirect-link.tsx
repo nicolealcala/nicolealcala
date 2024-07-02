@@ -21,12 +21,19 @@ const RedirectLink: React.FC<RedirectLinkProps> = ({
     <div>
       <Link
         href={path}
-        className={`flex gap-x-2 w-max font-semibold ${styles.learnMore} ${
-          theme === "dark" && "text-white"
-        }`}
+        className={`flex gap-x-2 w-max font-semibold items-center ${
+          styles.learnMore
+        } ${theme === "dark" && "text-white"}`}
         {...props}
       >
-        {text} <ChevronsRight className={styles.chevronIcon} />
+        <span
+          className={
+            text === "LEARN MORE" ? "text-sm font-normal" : "text-base"
+          }
+        >
+          {text}
+        </span>{" "}
+        <ChevronsRight className={styles.chevronIcon} />
       </Link>
     </div>
   );
