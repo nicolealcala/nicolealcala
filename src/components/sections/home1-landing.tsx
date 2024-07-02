@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import Socials from "@/components/global/socials";
+import Socials from "@/components/ui/socials";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Details from "@/components/texts/details";
 import { Button } from "@nextui-org/react";
@@ -20,8 +20,11 @@ const Landing = () => {
             }`}
           >
             HI, I&apos;M <span className="text-pink">NICOLE</span>,
-            <br />A WEB <span className="text-blue">DEVELOPER</span> BASED IN
-            THE PHILIPPINES.
+            <br />A WEB{" "}
+            <span className={theme === "light" ? "text-blue" : "text-cyan"}>
+              DEVELOPER
+            </span>{" "}
+            BASED IN THE PHILIPPINES.
           </p>
           <p className={`max-w-md ${theme === "light" && "text-black"}`}>
             Committed to lifelong learning and development, I am eager to learn

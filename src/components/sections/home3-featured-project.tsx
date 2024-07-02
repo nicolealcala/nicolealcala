@@ -3,10 +3,7 @@ import React, { useContext } from "react";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  CyanStaticBall,
-  BlueStaticBall,
-} from "@/components/global/static-ball";
+import { CyanStaticBall, BlueStaticBall } from "@/components/ui/static-ball";
 import Section from "../ui/section-full";
 import { ThemeContext } from "../context-providers/theme-context-provider";
 
@@ -122,8 +119,10 @@ const FeaturedProjects = () => {
               <Link
                 href="https://dreamlabs.vercel.app/"
                 target="_blank"
-                className={`underline underline-offset-2 externalLink ${
-                  theme === "light" ? "text-black" : "text-white"
+                className={`underline underline-offset-2 transition-colors duration-300 ${
+                  theme === "light"
+                    ? "text-black hover:text-blue"
+                    : "text-white hover:text-cyan"
                 }`}
               >
                 dreamlabs.vercel.app
