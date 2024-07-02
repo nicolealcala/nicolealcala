@@ -1,6 +1,6 @@
 import React from "react";
 import RedirectLink from "@/components/navigation/redirect-link";
-import Barcode from "@/components/global/barcode";
+import Barcode from "@/components/ui/barcode";
 
 const AboutMe = () => {
   return (
