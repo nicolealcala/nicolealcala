@@ -10,13 +10,27 @@ const WhatIDo = () => {
     <Section className="bg-[#404040]">
       <div className="container flex justify-between gap-x-6">
         <div className="flex flex-col gap-y-8 w-1/2">
-          <p className="text-white heading leading-tight">
+          <p
+            className={`heading leading-tight ${
+              theme === "light" && "text-black"
+            }`}
+          >
             DREAM. <br /> DRESIGN. <br /> DEVELOP.
           </p>
-          <div className="flex flex-col text-white">
-            <Divider className="bg-black max-w-sm mb-8" />
-            <h2 className="font-semibold mb-6">WHAT I DO</h2>
-            <p>
+          <div className="flex flex-col">
+            <Divider
+              className={`max-w-sm mb-8 ${
+                theme === "dark" ? "bg-white" : "bg-black"
+              }`}
+            />
+            <h2
+              className={`font-semibold mb-6 ${
+                theme === "light" && "text-black"
+              }`}
+            >
+              WHAT I DO
+            </h2>
+            <p className={theme === "light" ? "text-black" : ""}>
               Hello! I&apos;m a versatile full stack web developer with strong
               front-end expertise and good back-end skills. I create intuitive
               web designs, manage relational and NoSQL databases efficiently,
