@@ -4,6 +4,7 @@ import Landing from "@/components/sections/home1-landing";
 
 import FeaturedProjects from "@/components/sections/home3-featured-project";
 import WhatIDo from "@/components/sections/home2-what-i-do";
+import Testimonials from "@/components/sections/home4-testimonials";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Landing />
       <WhatIDo />
       <FeaturedProjects />
+      <Testimonials />
 
       {/* <section className="relative overflow-x-scroll scroll-smooth">
         <div className="flex flex-nowrap min-h-screen w-max">
