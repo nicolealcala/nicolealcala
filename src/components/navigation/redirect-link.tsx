@@ -11,7 +11,7 @@ interface RedirectLinkProps {
   [key: string]: any;
 }
 
-const LearnMore: React.FC<RedirectLinkProps> = ({
+const RedirectLink: React.FC<RedirectLinkProps> = ({
   path,
   text = "LEARN MORE",
   ...props
@@ -32,4 +32,4 @@ const LearnMore: React.FC<RedirectLinkProps> = ({
   );
 };
 
-export default LearnMore;
+export default RedirectLink;
