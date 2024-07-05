@@ -1,11 +1,39 @@
-import React from "react";
+// import React from "react";
+// import Slider from "react-slick";
 
-const Carousel = () => {
-  return (
-    <div>
-      <div className="w-sm bg-teal-500 h-10"></div>
-    </div>
-  );
-};
+// const Carousel = () => {
+//   const settings = {
+//     className: "center",
+//     centerMode: true,
+//     infinite: true,
+//     centerPadding: "60px",
+//     slidesToShow: 3,
+//     speed: 500,
+//   };
+//   return (
+//     <div className="slider-container">
+//       <Slider {...settings}>
+//         <div>
+//           <h3>1</h3>
+//         </div>
+//         <div>
+//           <h3>2</h3>
+//         </div>
+//         <div>
+//           <h3>3</h3>
+//         </div>
+//         <div>
+//           <h3>4</h3>
+//         </div>
+//         <div>
+//           <h3>5</h3>
+//         </div>
+//         <div>
+//           <h3>6</h3>
+//         </div>
+//       </Slider>
+//     </div>
+//   );
+// };
 
-export default Carousel;
+// export default Carousel;
