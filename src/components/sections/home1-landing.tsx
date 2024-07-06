@@ -72,7 +72,7 @@ const Landing = () => {
           </Details>
 
           <div className="flex flex-col gap-y-6">
-            <p className="font-semibold text-blue">FOLLOW ME</p>
+            <p className="font-semibold text-cyan">FOLLOW ME</p>
             <div className="flex gap-x-4">
               <Socials />
             </div>
