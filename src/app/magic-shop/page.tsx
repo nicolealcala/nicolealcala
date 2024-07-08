@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import SecretCode from "@/components/magic-shop/secret-code";
+import NoteSkeleton from "@/components/magic-shop/note-skeleton";
 
 interface NoteData {
   _id: string;
@@ -45,30 +46,34 @@ const Secret = () => {
           {code ? (
             <div className="flex flex-col border items-center justify-center border-white max-w-2xl p-4 rounded-lg bg-[#303030] z-50">
               <NoteHoles />
-              <div className="flex flex-col gap-y-4 p-4 mt-4">
-                <p className="flex justify-end text-xs text-yellow">
-                  Written on {data?.writtenOn}
-                </p>
-                <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow">
-                  To {data?.noteFor},
-                </p>
-                <div className="letter">
-                  {data?.note.map((content, index: any) => (
-                    <p key={index} className="indent-8 leading-7 mt-6">
-                      {content}
-                    </p>
-                  ))}
+              {data ? (
+                <div className="flex flex-col gap-y-4 p-4 mt-4">
+                  <p className="flex justify-end text-xs text-yellow">
+                    Written on {data?.writtenOn}
+                  </p>
+                  <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow">
+                    To {data?.noteFor},
+                  </p>
+                  <div className="letter">
+                    {data?.note.map((content, index: any) => (
+                      <p key={index} className="indent-8 leading-7 mt-6">
+                        {content}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="mt-6 font-bold italic text-right">
+                    <span className="font-normal">Always here,</span>
+                    <br />
+                    Nicole
+                  </p>
+                  <p className="text-xs mt-6 text-gray-500">
+                    This note will be removed in 3 days. Scan the QR code for
+                    daily bible verses.
+                  </p>
                 </div>
-                <p className="mt-6 font-bold italic text-right">
-                  <span className="font-normal">Always here,</span>
-                  <br />
-                  Nicole
-                </p>
-                <p className="text-xs mt-6 text-gray-500">
-                  This note will be removed in 3 days. Scan the QR code for
-                  daily bible verses.
-                </p>
-              </div>
+              ) : (
+                <NoteSkeleton />
+              )}
             </div>
           ) : (
             <SecretCode />
