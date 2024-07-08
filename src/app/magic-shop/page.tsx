@@ -25,8 +25,9 @@ const Secret = () => {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        const response = await axios.get(`/api/magic-shop?code=${code}`);
-        setData(response.data);
+        axios
+          .get(`/api/magic-shop?code=${code}`)
+          .then((response) => setData(response.data));
       } catch (error) {
         console.error("Error fetching note: ", error);
       }
