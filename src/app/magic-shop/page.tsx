@@ -26,7 +26,6 @@ const Secret = () => {
     const fetchNote = async () => {
       try {
         const response = await axios.get(`/api/magic-shop?code=${code}`);
-        console.log("Response: ", response.data);
         setData(response.data);
       } catch (error) {
         console.error("Error fetching note: ", error);
