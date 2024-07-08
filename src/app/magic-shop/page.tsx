@@ -24,7 +24,7 @@ const Secret = () => {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        const response = await axios.get(`/api/secret?code=${code}`);
+        const response = await axios.get(`/api/magic-shop?code=${code}`);
         console.log("Response: ", response.data);
         setData(response.data);
       } catch (error) {
