@@ -1,10 +1,10 @@
 "use client";
-import NoteHoles from "@/components/secret/note-holes";
+import NoteHoles from "@/components/magic-shop/note-holes";
 import Section from "@/components/ui/section-full";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
-import SecretCode from "@/components/secret/secret-code";
+import SecretCode from "@/components/magic-shop/secret-code";
 
 interface NoteData {
   _id: string;
@@ -43,7 +43,7 @@ const Secret = () => {
             A sneak peak at my notes app...
           </h1>
           {code ? (
-            <div className="flex flex-col border items-center justify-center border-white max-w-2xl p-4 rounded-lg bg-[#202020] z-50">
+            <div className="flex flex-col border items-center justify-center border-white max-w-2xl p-4 rounded-lg bg-[#303030] z-50">
               <NoteHoles />
               <div className="flex flex-col gap-y-4 p-4 mt-4">
                 <p className="flex justify-end text-xs text-yellow">
@@ -54,7 +54,7 @@ const Secret = () => {
                 </p>
                 <div className="letter">
                   {data?.note.map((content, index: any) => (
-                    <p key={index} className="italic  indent-8 leading-7 mt-6">
+                    <p key={index} className="indent-8 leading-7 mt-6">
                       {content}
                     </p>
                   ))}
