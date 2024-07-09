@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Magic Shop",
   description:
-    "A collection of heartfelt messagees for the important persons in my life.",
+    "A collection of heartfelt messages for the important persons in my life.",
 };
 const Letter = ({ params }: any) => {
   return <Notes params={params} />;
