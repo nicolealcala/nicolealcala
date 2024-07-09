@@ -17,7 +17,7 @@ interface NoteData {
   updatedAt: string;
 }
 
-const Secret = () => {
+const MagicShop = () => {
   const [data, setData] = useState<NoteData | null>(null);
   const searchParams = useSearchParams();
   const code = searchParams.get("code");
@@ -84,4 +84,4 @@ const Secret = () => {
   );
 };
 
-export default Secret;
+export default MagicShop;
