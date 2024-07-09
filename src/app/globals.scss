@@ -18,16 +18,16 @@
 
 @layer base {
     h1 {
-        @apply text-2xl text-white;
+        @apply text-2xl;
     }
 
     h2 {
-        @apply text-xl text-white;
+        @apply text-xl;
     }
 
     p,
     li {
-        @apply font-light text-white;
+        @apply font-light;
     }
 }
 
