@@ -16,14 +16,14 @@ export const GlobalContext = createContext<GlobalContextType>({
 
 const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("");
 
   useEffect(() => {
     const savedtheme = localStorage.getItem("theme");
     if (savedtheme) {
       setTheme(savedtheme);
     } else {
-      localStorage.setItem("theme", theme);
+      localStorage.setItem("theme", "dark");
     }
   }, [theme]);
 
