@@ -5,14 +5,13 @@ import Section from "../ui/section-full";
 
 const AboutMe = () => {
   return (
-    // <section className="flex flex-col gap-y-8 h-[85vh]">
     <Section>
-      <div className="container flex flex-col gap-y-8 min-h-[80vh]">
+      <div className="container flex flex-col gap-y-8 min-h-[85vh]">
         <p className="text-9xl font-medium w-full text-center">ABOUT ME</p>
         <div className="flex flex-1 justify-between">
           <div className="flex flex-col justify-between">
             {/* EDUCATION */}
-            <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">EDUCATION</h2>
               <p>
                 BS in Information Technology
@@ -24,7 +23,7 @@ const AboutMe = () => {
             </div>
 
             {/* EXPERIENCE */}
-            <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">EXPERIENCE</h2>
               <p>
                 Analyst Programmer |{" "}
@@ -46,7 +45,7 @@ const AboutMe = () => {
 
           <div className="flex flex-col justify-between text-right">
             {/* FACTS */}
-            <div className="flex flex-col gap-y-4 max-w-[360px]">
+            <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">FACTS</h2>
               <p>
                 <span className="text-2xl font-bold text-yellow">
