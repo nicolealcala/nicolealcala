@@ -24,7 +24,13 @@ const Nav = () => {
       id="navbar"
     >
       <div className="flex gap-x-3">
-        <Image src="/images/logo.png" alt="Logo" width={38.25} height={32} />
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          width={38.25}
+          height={32}
+          priority
+        />
         <h2 className="font-semibold leading-9">clinoae</h2>
         <Button
           isIconOnly
