@@ -2,10 +2,10 @@
 import React, { useContext } from "react";
 import { Divider } from "@nextui-org/react";
 import Section from "../ui/section-rounded";
-import { ThemeContext } from "../context-providers/theme-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 const WhatIDo = () => {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(GlobalContext);
   return (
     <Section className="bg-[#404040]">
       <div className="container flex justify-between gap-x-6">

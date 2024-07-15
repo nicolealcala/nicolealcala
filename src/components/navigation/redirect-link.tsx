@@ -2,8 +2,7 @@
 import Link from "next/link";
 import React, { useContext } from "react";
 import { ChevronsRight } from "lucide-react";
-import styles from "./navigation.module.scss";
-import { ThemeContext } from "../context-providers/theme-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 interface RedirectLinkProps {
   path: string;
@@ -16,14 +15,12 @@ const RedirectLink: React.FC<RedirectLinkProps> = ({
   text = "LEARN MORE",
   ...props
 }) => {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(GlobalContext);
   return (
     <div>
       <Link
         href={path}
-        className={`flex gap-x-2 w-max font-semibold items-center ${
-          styles.learnMore
-        } ${theme === "dark" && "text-white"}`}
+        className="flex gap-x-2 w-max font-semibold items-center learnMore"
         {...props}
       >
         <span
@@ -33,7 +30,7 @@ const RedirectLink: React.FC<RedirectLinkProps> = ({
         >
           {text}
         </span>{" "}
-        <ChevronsRight className={styles.chevronIcon} />
+        <ChevronsRight className="chevronIcon" />
       </Link>
     </div>
   );

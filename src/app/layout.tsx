@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { NextUIProvider } from "@nextui-org/react";
 import { Inter, Bai_Jamjuree } from "next/font/google";
-import Navbar from "@/components/navigation/nav";
 import BgLines from "@/components/ui/bg-lines";
 import "./globals.scss";
 import BackToTop from "@/components/ui/back-to-top";
-import ThemeProvider from "@/components/context-providers/theme-context-provider";
-import ScrollProvider from "@/components/context-providers/scroll-context-provider";
-import Footer from "@/components/ui/footer";
+import GlobalProvider from "@/components/context-providers/global-context-provider";
+import ClientLayout from "@/components/client-pages/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 export const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: "400" });
@@ -26,16 +24,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <NextUIProvider>
-          <ThemeProvider>
+          <GlobalProvider>
             <BgLines />
-            <ScrollProvider>
-              <Navbar />
-              <div className="!z-10">
-                {children} <Footer />
-              </div>
-              <BackToTop />
-            </ScrollProvider>
-          </ThemeProvider>
+            {/* <ScrollProvider> */}
+            <ClientLayout>{children}</ClientLayout>
+            <BackToTop />
+            {/* </ScrollProvider> */}
+          </GlobalProvider>
         </NextUIProvider>
       </body>
     </html>

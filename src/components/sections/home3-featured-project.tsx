@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CyanStaticBall, BlueStaticBall } from "@/components/ui/static-ball";
 import Section from "../ui/section-full";
-import { ThemeContext } from "../context-providers/theme-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 const technologies = [
   "Bootstrap CSS",
@@ -24,7 +24,7 @@ const process = [
 
 const features = ["User login", "Blogs CRUD", "Comments CRUD", "Email"];
 const FeaturedProjects = () => {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(GlobalContext);
   return (
     <Section className="!relative flex flex-col justify-between min-h-screen">
       <Image
