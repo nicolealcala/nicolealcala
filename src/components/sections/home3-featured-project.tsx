@@ -23,6 +23,7 @@ const process = [
 ];
 
 const features = ["User login", "Blogs CRUD", "Comments CRUD", "Email"];
+
 const FeaturedProjects = () => {
   const { theme } = useContext(GlobalContext);
   return (
@@ -38,56 +39,36 @@ const FeaturedProjects = () => {
       />
 
       <div className="container">
-        <p
-          className={`text-[56px] font-bold text-center !z-30  ${
-            theme === "light" && "text-black"
-          }`}
-        >
+        <p className="text-[56px] font-bold text-center !z-30">
           FEATURED PROJECT
         </p>
 
         <div className="relative flex justify-between z-20">
           <div className="flex flex-col gap-y-24 max-w-xs min-h-max pb-20">
             <div className="flex flex-col gap-y-3">
-              <h2
-                className={`font-semibold ${theme === "light" && "text-black"}`}
-              >
-                Technologies
-              </h2>
+              <h2 className="font-semibold">Technologies</h2>
               <ul>
                 {technologies.map((tech, i) => (
-                  <li className={theme === "light" ? "text-black" : ""} key={i}>
-                    {tech}
-                  </li>
+                  <li key={i}>{tech}</li>
                 ))}
               </ul>
             </div>
 
             <div className="flex flex-col gap-y-3">
-              <h2
-                className={`font-semibold ${theme === "light" && "text-black"}`}
-              >
-                Process
-              </h2>
+              <h2 className="font-semibold">Process</h2>
               <ul>
                 {process.map((step, i) => (
-                  <li className={theme === "light" ? "text-black" : ""} key={i}>
-                    {step}
-                  </li>
+                  <li key={i}>{step}</li>
                 ))}
               </ul>
             </div>
 
-            <p className={theme === "light" ? "text-black" : ""}>
+            <p>
               Tutorial:{" "}
               <Link
                 href="https://youtu.be/vCOSTG10Y4o?si=rDJaiTIYPRlsjXdd"
                 target="_blank"
-                className={`underline underline-offset-2 transition-colors duration-300 ${
-                  theme === "light"
-                    ? "text-black hover:text-blue"
-                    : "text-white hover:text-cyan"
-                }`}
+                className="underline underline-offset-2 transition-colors duration-300"
               >
                 Next.js Full Course Tutorial
               </Link>
@@ -100,34 +81,20 @@ const FeaturedProjects = () => {
 
           <div className="flex flex-col justify-between items-end max-w-xs min-h-max text-end pb-20">
             <div className="flex flex-col gap-y-3">
-              <h2
-                className={`font-semibold ${theme === "light" && "text-black"}`}
-              >
-                Features
-              </h2>
+              <h2 className="font-semibold">Features</h2>
               <ul>
                 {features.map((feature, i) => (
-                  <li className={theme === "light" ? "text-black" : ""} key={i}>
-                    {feature}
-                  </li>
+                  <li key={i}>{feature}</li>
                 ))}
               </ul>
             </div>
 
             <div className={`flex flex-col gap-y-3`}>
-              <h2
-                className={`font-semibold ${theme === "light" && "text-black"}`}
-              >
-                Visit here
-              </h2>
+              <h2 className="font-semibold">Visit here</h2>
               <Link
                 href="https://dreamlabs.vercel.app/"
                 target="_blank"
-                className={`underline underline-offset-2 transition-colors duration-300 ${
-                  theme === "light"
-                    ? "text-black hover:text-blue"
-                    : "text-white hover:text-cyan"
-                }`}
+                className="underline underline-offset-2 transition-colors duration-300"
               >
                 dreamlabs.vercel.app
               </Link>
