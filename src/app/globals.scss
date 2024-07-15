@@ -27,7 +27,7 @@
 
   p,
   li {
-    @apply font-light;
+    @apply font-normal;
   }
 }
 
@@ -45,8 +45,14 @@
 .light {
   color: var(--black);
 
+  //Texts
   .highlighted-text {
     color: var(--blue);
+  }
+
+  //Containers
+  .highlighted-div {
+    background: #c3e3f9;
   }
 
   //Navigation
@@ -86,8 +92,14 @@
 .dark {
   color: white;
 
+  //Texts
   .highlighted-text {
     color: var(--cyan);
+  }
+
+  //Containers
+  .highlighted-div {
+    background: #404040;
   }
 
   //Navigation
