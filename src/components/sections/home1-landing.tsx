@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import Socials from "@/components/ui/socials";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Details from "@/components/texts/details";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import Section from "../ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
 
@@ -24,25 +24,12 @@ const Landing = () => {
             and motivated to make a positive impact to the world.
           </p>
           <div className="flex">
-            <Button
-              variant="bordered"
-              className={`rounded-none ${
-                theme === "light"
-                  ? "border-black text-black"
-                  : "border-white text-white"
-              }`}
-            >
+            <Link as={Button} variant="bordered" id="view-cv">
               View CV
-            </Button>
-            <Button
-              className={`rounded-none ${
-                theme === "light"
-                  ? "bg-black text-white"
-                  : "bg-white text-black"
-              }`}
-            >
+            </Link>
+            <Link as={Button} variant="solid" id="lets-talk">
               Let&apos;s talk
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col max-w-auto gap-y-16 justify-center">
