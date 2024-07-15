@@ -25,7 +25,7 @@ const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     } else {
       localStorage.setItem("theme", theme);
     }
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     //Changing bg-color variable depending on theme
