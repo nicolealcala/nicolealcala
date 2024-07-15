@@ -3,8 +3,8 @@ import Section from "../ui/section-full";
 
 const Testimonials = () => {
   return (
-    <Section>
-      <div className="container flex flex-col items-center">
+    <Section className="bg-black">
+      <div className="container flex flex-col items-center text-[#F5F5F5]">
         <p className="text-3xl font-bold">
           <span className="text-pink">Excellence</span> is a continuous journey.
         </p>
