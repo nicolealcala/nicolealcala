@@ -24,12 +24,18 @@ const Landing = () => {
             and motivated to make a positive impact to the world.
           </p>
           <div className="flex">
-            <Link as={Button} variant="bordered" id="view-cv">
+            <Button
+              href="https://drive.google.com/file/d/1Icik8eFIii4Y_ZlTowkoRoWiQQ4jHmaF/view?usp=sharing"
+              isExternal
+              as={Link}
+              variant="bordered"
+              id="view-cv"
+            >
               View CV
-            </Link>
-            <Link as={Button} variant="solid" id="lets-talk">
+            </Button>
+            <Button as={Link} variant="solid" id="lets-talk">
               Let&apos;s talk
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="flex flex-col max-w-auto gap-y-16 justify-center">
