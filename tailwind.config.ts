@@ -48,6 +48,9 @@ const config: Config = {
           DEFAULT: "var(--black)",
           foreground: "#FFFFFF",
         },
+        white: {
+          DEFAULT: "var(--white)",
+        },
       },
     },
   },
