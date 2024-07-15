@@ -3,112 +3,123 @@
 @tailwind utilities;
 
 :root {
-    --cyan: #02FDF4;
-    // --blue: #05DBF7;
-    // --blue: #72A5E8;
-    --blue: #82C8F9;
-    --pink: #FF6392;
-    --yellow: #FFDF66;
-    --green: #50CEAC;
-    --purple: #BD83E5;
-    --black: #0D0B0C;
-    --light-blue: #D4E1F2;
-    background-color: var(--bg-color);
+  --cyan: #02fdf4;
+  // --blue: #05DBF7;
+  // --blue: #72A5E8;
+  --blue: #82c8f9;
+  --pink: #ff6392;
+  --yellow: #ffdf66;
+  --green: #50ceac;
+  --purple: #bd83e5;
+  --black: #0d0b0c;
+  --light-blue: #d4e1f2;
+  background-color: var(--bg-color);
 }
 
 @layer base {
-    h1 {
-        @apply text-2xl;
-    }
+  h1 {
+    @apply text-2xl;
+  }
 
-    h2 {
-        @apply text-xl;
-    }
+  h2 {
+    @apply text-xl;
+  }
 
-    p,
-    li {
-        @apply font-light;
-    }
+  p,
+  li {
+    @apply font-light;
+  }
 }
 
 .heading {
-    font-size: 70px;
-    font-weight: 600;
+  font-size: 70px;
+  font-weight: 600;
 }
 
 .stroked {
-    color: transparent;
-    -webkit-text-stroke: 0.5px white;
+  color: transparent;
+  -webkit-text-stroke: 0.5px white;
 }
 
+//Theme configs
 .light {
-    color: var(--black);
+  color: var(--black);
 
-    .highlighted-text {
-        color: var(--blue)
+  .highlighted-text {
+    color: var(--blue);
+  }
+
+  //Navigation
+  .active {
+    color: var(--blue);
+  }
+
+  .learnMore {
+    position: relative;
+
+    .chevronIcon {
+      transition: color 0.3s ease-in-out;
     }
 
-    //Navigation
-    .active {
-        color: var(--blue);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -6px;
+      left: 0;
+      background-color: var(--blue);
+      transition: box-shadow 0.3s ease-in-out;
     }
 
-    .learnMore {
-        position: relative;
-
-        .chevronIcon {
-            transition: color 0.3s ease-in-out;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background-color: var(--blue);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        &:hover>.chevronIcon {
-            color: var(--blue);
-        }
+    &:hover > .chevronIcon {
+      color: var(--blue);
     }
+  }
+
+  //Footer
+  .divider {
+    background-color: var(--black);
+  }
 }
 
 .dark {
-    color: white;
+  color: white;
 
-    .highlighted-text {
-        color: var(--cyan)
+  .highlighted-text {
+    color: var(--cyan);
+  }
+
+  //Navigation
+  .active {
+    color: var(--cyan);
+  }
+
+  .learnMore {
+    position: relative;
+
+    .chevronIcon {
+      transition: color 0.3s ease-in-out;
     }
 
-    //Navigation
-    .active {
-        color: var(--cyan);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -6px;
+      left: 0;
+      background-color: var(--cyan);
+      transition: box-shadow 0.3s ease-in-out;
     }
 
-    .learnMore {
-        position: relative;
-
-        .chevronIcon {
-            transition: color 0.3s ease-in-out;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background-color: var(--cyan);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        &:hover>.chevronIcon {
-            color: var(--cyan);
-        }
+    &:hover > .chevronIcon {
+      color: var(--cyan);
     }
+  }
+
+  //Footer
+  .divider {
+    background-color: white;
+  }
 }
