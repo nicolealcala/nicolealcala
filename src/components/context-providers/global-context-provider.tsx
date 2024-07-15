@@ -30,7 +30,7 @@ const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   useEffect(() => {
     //Changing bg-color variable depending on theme
     if (theme === "light") {
-      document.documentElement.style.setProperty("--bg-color", "white");
+      document.documentElement.style.setProperty("--bg-color", "var(--white)");
     } else {
       document.documentElement.style.setProperty("--bg-color", "var(--black)");
     }
