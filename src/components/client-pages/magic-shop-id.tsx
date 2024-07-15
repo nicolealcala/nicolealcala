@@ -6,6 +6,7 @@ import { notFound, useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";
 import { Divider } from "@nextui-org/react";
 import Note from "@/components/magic-shop/note";
+import NotFound from "@/app/not-found";
 
 interface NoteData {
   _id: string;
@@ -33,6 +34,7 @@ const Notes: React.FC<{ params: any }> = ({ params }) => {
           .then((response) => setNotesList(response.data));
       } catch (error) {
         console.error("Error fetching note: ", error);
+        return <NotFound />;
       }
     };
 
@@ -47,11 +49,12 @@ const Notes: React.FC<{ params: any }> = ({ params }) => {
           .then((response) => setNote(response.data));
       } catch (error) {
         console.error("Error fetching note: ", error);
-        notFound();
       }
     };
     fetchNote();
   }, [slug, code]);
+
+  if (note === null) return <NotFound />;
 
   return (
     <main>

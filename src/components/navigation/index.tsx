@@ -2,9 +2,8 @@
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-import nav from "./navigation.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../context-providers/theme-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 const links = [
   { path: "/", title: "Home" },
@@ -14,7 +13,7 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(GlobalContext);
 
   return (
     <nav
@@ -37,9 +36,7 @@ const Nav = () => {
             }`}
           >
             <span
-              className={`font-semibold ${
-                link.path === pathname && nav.active
-              }`}
+              className={`font-semibold ${link.path === pathname && "active"}`}
             >
               {link.title}
             </span>

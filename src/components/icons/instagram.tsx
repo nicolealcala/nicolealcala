@@ -1,10 +1,10 @@
 "use client";
 import React, { useContext } from "react";
 import styles from "./icons.module.scss";
-import { ThemeContext } from "../context-providers/theme-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 const Instagram = () => {
-  const theme = useContext(ThemeContext);
+  const { theme } = useContext(GlobalContext);
 
   return (
     <div className={`cursor-pointer ${styles.icon}`}>

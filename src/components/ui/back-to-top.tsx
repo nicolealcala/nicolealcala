@@ -1,10 +1,10 @@
 "use client";
 import React, { useContext } from "react";
 import { ArrowUp } from "lucide-react";
-import { ScrollContext } from "../context-providers/scroll-context-provider";
+import { GlobalContext } from "../context-providers/global-context-provider";
 
 const BackToTop = () => {
-  const isScrolled = useContext(ScrollContext);
+  const { isScrolled } = useContext(GlobalContext);
 
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
