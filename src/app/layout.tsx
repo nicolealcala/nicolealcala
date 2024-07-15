@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <NextUIProvider>
           <GlobalProvider>
-            <BgLines />
+            {/* <BgLines /> */}
             {/* <ScrollProvider> */}
             <ClientLayout>{children}</ClientLayout>
             <BackToTop />
