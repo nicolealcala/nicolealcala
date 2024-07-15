@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Section from "@/components/ui/section-full";
 import axios from "axios";
-import { useSearchParams } from "next/navigation";
+import { notFound, useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";
 import { Divider } from "@nextui-org/react";
 import Note from "@/components/magic-shop/note";
@@ -47,9 +47,9 @@ const Notes: React.FC<{ params: any }> = ({ params }) => {
           .then((response) => setNote(response.data));
       } catch (error) {
         console.error("Error fetching note: ", error);
+        notFound();
       }
     };
-
     fetchNote();
   }, [slug, code]);
 

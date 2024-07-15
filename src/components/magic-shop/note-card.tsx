@@ -21,7 +21,7 @@ export const NoteCard: React.FC<NoteCard> = ({
           <p className="text-sm text-[#AEAEAE]">Written on {writtenOn}</p>
         </div>
         <Divider className="bg-yellow" />
-        <p className="max-h-24 overflow-hidden line-clamp-4 text-[#EEE]">
+        <p className="max-h-auto overflow-hidden line-clamp-6 text-[#EEE]">
           {content}
         </p>
       </div>
@@ -35,7 +35,7 @@ export const NoteCardSkeleton = () => (
       <div className="h-5 bg-gray-500 rounded w-4/5"></div>
       <div className="h-4 bg-gray-500 rounded w-2/3"></div>
       <div className="mt-4 space-y-2">
-        {Array.from({ length: 4 }, (_, i) => (
+        {Array.from({ length: 6 }, (_, i) => (
           <div key={i} className="h-4 bg-gray-500 rounded"></div>
         ))}
       </div>

@@ -30,9 +30,8 @@ const Note = ({ data }: any) => {
               <br />
               Nicole
             </p>
-            <p className="text-xs mt-6 text-gray-500">
-              This note will be removed in 3 days. Scan the QR code for daily
-              bible verses.
+            <p className="text-xs mt-6 text-[#909090]">
+              Scan the QR code from time to time.
             </p>
           </div>
         ) : (

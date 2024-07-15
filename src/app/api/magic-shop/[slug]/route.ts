@@ -9,7 +9,10 @@ export const GET = async (req: NextRequest, { params }: any) => {
   try {
     await connectToDB();
     if (code && code !== "") {
-      const note = await Note.findOne({ code });
+      const note = await Note.findOne({
+        noteFor: { $regex: new RegExp(slug, "i") },
+        code,
+      });
       return NextResponse.json(note, { status: 200 });
     }
 

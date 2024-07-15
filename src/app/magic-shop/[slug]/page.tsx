@@ -1,5 +1,5 @@
 import React from "react";
-import Notes from "@/components/magic-shop/page-slug";
+import Notes from "@/components/client-pages/magic-shop-id";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
