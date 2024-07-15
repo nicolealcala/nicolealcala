@@ -4,6 +4,7 @@ import { Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
 import { GlobalContext } from "../context-providers/global-context-provider";
+import { Sun1, Moon } from "iconsax-react";
 
 const links = [
   { path: "/", title: "Home" },
@@ -13,7 +14,7 @@ const links = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const { theme } = useContext(GlobalContext);
+  const { theme, setTheme, handleThemeChange } = useContext(GlobalContext);
 
   return (
     <nav
@@ -25,6 +26,28 @@ const Nav = () => {
       <div className="flex gap-x-3">
         <Image src="/images/logo.png" alt="Logo" width={38.25} height={32} />
         <h2 className="font-semibold leading-9">clinoae</h2>
+        <Button
+          isIconOnly
+          className="bg-transparent"
+          disableAnimation
+          onClick={handleThemeChange}
+        >
+          {theme === "light" ? (
+            <Moon
+              size="24"
+              color="var(--yellow)"
+              variant="Bold"
+              className=" hover:opacity-75 transition-all duration-100 ease-in"
+            />
+          ) : (
+            <Sun1
+              size="24"
+              color="var(--yellow)"
+              variant="Bold"
+              className=" hover:opacity-75 transition-all duration-100 ease-in"
+            />
+          )}
+        </Button>
       </div>
       <div className="flex gap-x-10 items-center">
         {links.map((link, index) => (

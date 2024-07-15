@@ -1,11 +1,31 @@
 "use client";
 import React, { ReactNode, useState, createContext, useEffect } from "react";
 
-export const GlobalContext = createContext({ theme: "", isScrolled: false });
+interface GlobalContextType {
+  theme: string;
+  setTheme: (theme: string) => void;
+  isScrolled: boolean;
+  handleThemeChange: () => void;
+}
+export const GlobalContext = createContext<GlobalContextType>({
+  theme: "dark",
+  setTheme: () => {},
+  isScrolled: false,
+  handleThemeChange: () => {},
+});
 
 const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const savedtheme = localStorage.getItem("theme");
+    if (savedtheme) {
+      setTheme(savedtheme);
+    } else {
+      localStorage.setItem("theme", theme);
+    }
+  }, []);
 
   useEffect(() => {
     //Changing bg-color variable depending on theme
@@ -28,8 +48,17 @@ const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleThemeChange = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+
   return (
-    <GlobalContext.Provider value={{ theme, isScrolled }}>
+    <GlobalContext.Provider
+      value={{ theme, setTheme, isScrolled, handleThemeChange }}
+    >
       {children}
     </GlobalContext.Provider>
   );

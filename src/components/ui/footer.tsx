@@ -7,14 +7,13 @@ import Socials from "./socials";
 import RedirectLink from "../navigation/redirect-link";
 
 const Footer = () => {
-  const { theme } = useContext(GlobalContext);
   return (
-    <Section className="bg-black">
+    <Section>
       <div className="container space-y-6">
-        <Divider className="bg-white h-px" />
+        <Divider className="divider h-px" />
         <div className="flex justify-between px-4">
           <div className="flex gap-x-6">
-            <span className="highlighted-text">FOLOW ME:</span>
+            <span className="font-semibold highlighted-text">FOLOW ME:</span>
             <Socials />
           </div>
           <RedirectLink text="let's talk" path="/contact" />
