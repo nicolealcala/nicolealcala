@@ -12,6 +12,7 @@
   --green: #50ceac;
   --purple: #bd83e5;
   --black: #0d0b0c;
+  --white: #fffffb;
   --light-blue: #d4e1f2;
   background-color: var(--bg-color);
 }
@@ -38,7 +39,7 @@
 
 .stroked {
   color: transparent;
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 0.5px var(--white);
 }
 
 #view-cv,
@@ -57,7 +58,8 @@
 
   //Containers
   .highlighted-div {
-    background: #c3e3f9;
+    // background: #c3e3f9;
+    background: #b1cfe4;
   }
 
   //Navigation
@@ -101,7 +103,7 @@
 
   #lets-talk {
     background-color: var(--black);
-    color: white;
+    color: var(--white);
   }
 
   //Footer
@@ -111,7 +113,7 @@
 }
 
 .dark {
-  color: white;
+  color: var(--white);
 
   //Texts
   .highlighted-text {
@@ -158,17 +160,17 @@
 
   //Buttons
   #view-cv {
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--white);
+    color: var(--white);
   }
 
   #lets-talk {
-    background-color: white;
+    background-color: var(--white);
     color: var(--black);
   }
 
   //Footer
   .divider {
-    background-color: white;
+    background-color: var(--white);
   }
 }
