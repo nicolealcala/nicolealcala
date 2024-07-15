@@ -8,15 +8,19 @@ import RedirectLink from "../navigation/redirect-link";
 
 const Footer = () => {
   return (
-    <Section>
+    <Section className="bg-black">
       <div className="container space-y-6">
-        <Divider className="divider h-px" />
+        <Divider className="bg-white h-px" />
         <div className="flex justify-between px-4">
           <div className="flex gap-x-6">
             <span className="font-semibold highlighted-text">FOLOW ME:</span>
             <Socials />
           </div>
-          <RedirectLink text="let's talk" path="/contact" />
+          <RedirectLink
+            text="let's talk"
+            path="/contact"
+            className="text-white"
+          />
         </div>
       </div>
     </Section>
