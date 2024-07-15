@@ -41,9 +41,14 @@
   -webkit-text-stroke: 0.5px white;
 }
 
+#view-cv,
+#lets-talk {
+  border-radius: 0;
+}
+
 //Theme configs
 .light {
-  color: var(--black);
+  color: #131a1e;
 
   //Texts
   .highlighted-text {
@@ -81,6 +86,22 @@
     &:hover > .chevronIcon {
       color: var(--blue);
     }
+  }
+
+  //External link
+  .underline:hover {
+    color: var(--blue);
+  }
+
+  //Buttons
+  #view-cv {
+    border: 1px solid var(--black);
+    color: var(--black);
+  }
+
+  #lets-talk {
+    background-color: var(--black);
+    color: white;
   }
 
   //Footer
@@ -128,6 +149,22 @@
     &:hover > .chevronIcon {
       color: var(--cyan);
     }
+  }
+
+  //External link
+  .underline:hover {
+    color: var(--cyan);
+  }
+
+  //Buttons
+  #view-cv {
+    border: 1px solid white;
+    color: white;
+  }
+
+  #lets-talk {
+    background-color: white;
+    color: var(--black);
   }
 
   //Footer
