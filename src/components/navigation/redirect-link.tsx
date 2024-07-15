@@ -13,6 +13,7 @@ interface RedirectLinkProps {
 const RedirectLink: React.FC<RedirectLinkProps> = ({
   path,
   text = "LEARN MORE",
+  className,
   ...props
 }) => {
   const { theme } = useContext(GlobalContext);
@@ -24,13 +25,13 @@ const RedirectLink: React.FC<RedirectLinkProps> = ({
         {...props}
       >
         <span
-          className={
+          className={`${className} ${
             text === "LEARN MORE" ? "text-sm font-normal" : "text-base"
-          }
+          }`}
         >
           {text}
         </span>{" "}
-        <ChevronsRight className="chevronIcon" />
+        <ChevronsRight className={`chevronIcon ${className}`} />
       </Link>
     </div>
   );
