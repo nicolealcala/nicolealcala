@@ -44,12 +44,14 @@ const FeaturedProjects = () => {
         </p>
 
         <div className="relative flex justify-between z-20">
-          <div className="flex flex-col gap-y-24 max-w-xs min-h-max pb-20">
-            <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col gap-y-16 max-w-xs min-h-max pb-20">
+            <div className="flex flex-col gap-y-3 z-10">
               <h2 className="font-semibold">Technologies</h2>
               <ul>
                 {technologies.map((tech, i) => (
-                  <li key={i}>{tech}</li>
+                  <li key={i} className="text-sm">
+                    {tech}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -58,12 +60,16 @@ const FeaturedProjects = () => {
               <h2 className="font-semibold">Process</h2>
               <ul>
                 {process.map((step, i) => (
-                  <li key={i}>{step}</li>
+                  <li key={i} className="text-sm">
+                    {step}
+                  </li>
                 ))}
               </ul>
             </div>
 
-            <p>
+            <div className="w-16 h-5 bg-yellow-200"></div>
+
+            <p className="text-sm">
               Tutorial:{" "}
               <Link
                 href="https://youtu.be/vCOSTG10Y4o?si=rDJaiTIYPRlsjXdd"
@@ -84,17 +90,21 @@ const FeaturedProjects = () => {
               <h2 className="font-semibold">Features</h2>
               <ul>
                 {features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
+                  <li key={i} className="text-sm">
+                    {feature}
+                  </li>
                 ))}
               </ul>
             </div>
 
-            <div className={`flex flex-col gap-y-3`}>
+            <div className="w-5 h-16 bg-yellow-200"></div>
+
+            <div className="flex flex-col gap-y-3">
               <h2 className="font-semibold">Visit here</h2>
               <Link
                 href="https://dreamlabs.vercel.app/"
                 target="_blank"
-                className="underline underline-offset-2 transition-colors duration-300"
+                className="underline underline-offset-2 transition-colors duration-300 text-sm"
               >
                 dreamlabs.vercel.app
               </Link>
