@@ -38,7 +38,7 @@ const Landing = () => {
             </Button>
           </div>
         </div>
-        <div className="flex flex-col max-w-auto gap-y-16 justify-center">
+        <div className="hidden lg:flex flex-col max-w-auto gap-y-16 justify-center">
           <Details
             subtitle="ABOUT ME"
             description="I graduated Magna Cum Laude with a Bachelor's degree in
