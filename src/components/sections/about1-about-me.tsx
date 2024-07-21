@@ -6,7 +6,7 @@ import Section from "../ui/section-full";
 const AboutMe = () => {
   return (
     <Section>
-      <div className="container flex flex-col gap-y-8 min-h-[85vh]">
+      <div className="container flex flex-col gap-y-8 min-h-[85dvh]">
         <p className="text-9xl font-medium w-full text-center">ABOUT ME</p>
         <div className="flex flex-1 justify-between">
           <div className="flex flex-col justify-between">
