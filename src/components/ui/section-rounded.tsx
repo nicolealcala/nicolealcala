@@ -8,7 +8,7 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
   return (
     <section
-      className={`mx-8 p-16 max-h-screen flex justify-center items-center rounded-2xl ${className}`}
+      className={`mx-6 p-6 lg:mx-8 lg:p-16 h-auto flex justify-center items-center rounded-2xl ${className}`}
       {...props}
     >
       {children}
