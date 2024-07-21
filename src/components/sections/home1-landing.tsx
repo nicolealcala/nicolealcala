@@ -33,7 +33,7 @@ const Landing = () => {
             >
               View CV
             </Button>
-            <Button as={Link} variant="solid" id="lets-talk">
+            <Button as={Link} href="/contact" variant="solid" id="lets-talk">
               Let&apos;s talk
             </Button>
           </div>
