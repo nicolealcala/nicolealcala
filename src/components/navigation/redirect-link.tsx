@@ -26,7 +26,7 @@ const RedirectLink: React.FC<RedirectLinkProps> = ({
       >
         <span
           className={`${className} ${
-            text === "LEARN MORE" ? "text-sm font-normal" : "text-base"
+            text === "LEARN MORE" ? "text-sm" : "text-base"
           }`}
         >
           {text}
