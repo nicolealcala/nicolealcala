@@ -8,7 +8,7 @@ import Section from "../ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
 
 const technologies = [
-  "Bootstrap CSS",
+  "Bootstrap",
   "React.js",
   "Next.js",
   "NextAuth.js",
