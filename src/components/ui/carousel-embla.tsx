@@ -8,15 +8,18 @@ import Image from "next/image";
 import "./carousel.scss";
 
 export function EmblaCarousel({ items }: any) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    AutoScroll({
-      speed: 1,
-      playOnInit: true,
-      startDelay: 100,
-      stopOnInteraction: false,
-      stopOnMouseEnter: true,
-    }),
-  ]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, dragFree: true },
+    [
+      AutoScroll({
+        speed: 1,
+        playOnInit: true,
+        startDelay: 100,
+        stopOnInteraction: false,
+        stopOnMouseEnter: true,
+      }),
+    ]
+  );
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -44,7 +47,7 @@ export function EmblaCarousel({ items }: any) {
                   }`}
                 />
                 <div className="flex flex-col text-sm">
-                  <p className="font-bold">{item.name}&nbsp;</p>
+                  <p className="font-bold text-[#EEE]">{item.name}&nbsp;</p>
                   <p className="text-[#909090]">{item.role}</p>
                 </div>
               </article>
