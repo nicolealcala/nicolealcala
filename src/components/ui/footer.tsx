@@ -1,20 +1,17 @@
 "use client";
 import { Divider } from "@nextui-org/react";
-import React, { useContext } from "react";
-import Section from "./section-full";
-import { GlobalContext } from "../context-providers/global-context-provider";
 import Socials from "./socials";
 import RedirectLink from "../navigation/redirect-link";
 
 const Footer = () => {
   return (
-    <Section className="bg-black">
+    <footer className="px-6 lg:px-24 pb-12 bg-black">
       <div className="container space-y-6">
-        <Divider className="bg-white h-px" />
-        <div className="flex justify-between px-4">
+        <Divider className="bg-white h-0.5" />
+        <div className="flex flex-col items-center gap-y-4 sm:flex-row sm:justify-between px-4">
           <div className="flex gap-x-6">
             <span className="font-semibold highlighted-text">FOLOW ME:</span>
-            <Socials />
+            <Socials placement="footer" />
           </div>
           <RedirectLink
             text="let's talk"
@@ -23,7 +20,7 @@ const Footer = () => {
           />
         </div>
       </div>
-    </Section>
+    </footer>
   );
 };
 

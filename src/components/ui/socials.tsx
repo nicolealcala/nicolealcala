@@ -11,17 +11,29 @@ type SocialLink = {
   icon: React.ReactNode;
 };
 
-const socials: SocialLink[] = [
-  { link: "https://www.facebook.com/nicole.alcala.m/", icon: <Facebook /> },
-  { link: "https://www.instagram.com/nicolealcalq/", icon: <Instagram /> },
-  { link: "https://x.com/clinoae", icon: <X /> },
-  { link: "https://www.linkedin.com/in/nicolealcala", icon: <Linkedin /> },
-  { link: "https://github.com/nicolealcala", icon: <Github /> },
-];
+const Socials = ({ placement }: any) => {
+  const socials: SocialLink[] = [
+    {
+      link: "https://www.facebook.com/nicole.alcala.m/",
+      icon: <Facebook placement={placement} />,
+    },
+    {
+      link: "https://www.instagram.com/nicolealcalq/",
+      icon: <Instagram placement={placement} />,
+    },
+    { link: "https://x.com/clinoae", icon: <X placement={placement} /> },
+    {
+      link: "https://www.linkedin.com/in/nicolealcala",
+      icon: <Linkedin placement={placement} />,
+    },
+    {
+      link: "https://github.com/nicolealcala",
+      icon: <Github placement={placement} />,
+    },
+  ];
 
-const Socials = () => {
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-3">
       {socials.map((social, index) => (
         <Link key={index} href={social.link} target="_blank">
           {social.icon}
