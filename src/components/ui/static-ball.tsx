@@ -27,9 +27,8 @@ export const CyanStaticBall = () => (
 
 export const BlueStaticBall = () => (
   <svg
-    width="600"
-    height="600"
     viewBox="0 0 630 630"
+    className="w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] md:w-[580px] md:h-[580px]"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
