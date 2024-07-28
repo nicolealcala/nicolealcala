@@ -33,8 +33,12 @@
 }
 
 .heading {
-  font-size: 70px;
+  font-size: clamp(45px, 15vw, 70px);
   font-weight: 600;
+}
+
+.subheading {
+  font-size: clamp(32px, 8vw, 56px);
 }
 
 .stroked {
@@ -47,6 +51,14 @@
   border-radius: 0;
 }
 
+#last,
+footer {
+  background-image: url("/images/paper.png");
+  background-position: "center";
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 //Theme configs
 .light {
   color: #131a1e;
