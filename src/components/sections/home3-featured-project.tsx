@@ -37,10 +37,10 @@ const FeaturedProjects = () => {
         height={597.03}
         quality={100}
         priority
-        className="hidden md:flex absolute bottom-0 left-1/2 transform -translate-x-1/2 !z-30"
+        className="hidden lg:flex absolute bottom-0 left-1/2 transform -translate-x-1/2 !z-20"
       />
 
-      <div className="container flex flex-col">
+      <div className="container flex flex-col gap-y-12">
         <p className="subheading font-bold text-center">FEATURED PROJECT</p>
         <Image
           src="/images/projects-featured-mobile.png"
@@ -77,7 +77,7 @@ const FeaturedProjects = () => {
 
           <div className="flex justify-between gap-6">
             <div className="flex flex-col gap-y-3">
-              <h2 className="font-semibold">Process</h2>
+              <h2 className="font-semibold !z-20">Process</h2>
               <ul>
                 {process.map((step, i) => (
                   <li key={i} className="text-sm">
@@ -90,7 +90,7 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="flex justify-between items-end">
-            <div className="w-16 h-5 bg-yellow-200"></div>
+            <div className="w-16 h-5 bg-yellow-200 z-10"></div>
             <div className="flex flex-col gap-y-3 text-right">
               <h2 className="font-semibold">Visit here</h2>
               <Link
