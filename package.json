@@ -11,6 +11,9 @@
   "dependencies": {
     "@nextui-org/react": "^2.4.2",
     "axios": "^1.7.2",
+    "embla-carousel-auto-scroll": "^8.1.7",
+    "embla-carousel-autoplay": "^8.1.7",
+    "embla-carousel-react": "^8.1.7",
     "framer-motion": "^11.2.12",
     "iconsax-react": "^0.0.8",
     "lucide-react": "^0.399.0",
