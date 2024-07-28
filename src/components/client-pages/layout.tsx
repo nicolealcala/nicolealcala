@@ -10,7 +10,8 @@ const ClientLayout: React.FC<any> = ({ children }) => {
     <div className={theme.toString()}>
       <Navbar />
       <div className="!z-10">
-        {children} <Footer />
+        {children}
+        <Footer />
       </div>
     </div>
   );
