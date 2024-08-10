@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container space-y-6">
         <Divider className="bg-white h-0.5" />
         <div className="flex flex-col items-center gap-y-4 sm:flex-row sm:justify-between px-4">
-          <div className="flex gap-x-6">
+          <div className="flex flex-col sm:flex-row items-center gap-2 justify-center gap-x-6">
             <span className="font-semibold highlighted-text">FOLOW ME:</span>
             <Socials placement="footer" />
           </div>
