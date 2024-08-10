@@ -1,5 +1,5 @@
 import React from "react";
-import Notes from "@/components/client-pages/magic-shop-id";
+import NoteList from "@/components/client-pages/magic-shop-id";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description:
     "A collection of heartfelt messages for the important persons in my life.",
 };
-const Letter = ({ params }: any) => {
-  return <Notes params={params} />;
+const Letters = ({ params }: any) => {
+  return <NoteList params={params} />;
 };
 
-export default Letter;
+export default Letters;
