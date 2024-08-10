@@ -19,7 +19,7 @@ interface NoteData {
   updatedAt: string;
 }
 
-const Notes: React.FC<{ params: any }> = ({ params }) => {
+const NoteList: React.FC<{ params: any }> = ({ params }) => {
   const { slug } = params;
   const [notesList, setNotesList] = useState<NoteData[] | null>(null);
   const [note, setNote] = useState<NoteData | null>(null);
@@ -54,43 +54,37 @@ const Notes: React.FC<{ params: any }> = ({ params }) => {
     fetchNote();
   }, [slug, code]);
 
-  if (note === null) return <NotFound />;
-
   return (
     <main>
       <Section>
         <div className="container flex flex-col items-center gap-y-4 min-h-[80vh]">
-          {code ? (
-            <Note data={note} />
-          ) : (
-            <div className="flex flex-col gap-y-4 w-full">
-              <h1 className="font-bold text-white capitalize">To {slug}</h1>
-              <Divider className="bg-yellow h-1" />
-              <div className="flex gap-x-10 mt-6">
-                {notesList ? (
-                  <>
-                    {notesList.map((note, i) => (
-                      <NoteCard
-                        key={i}
-                        title={note.title}
-                        writtenOn={note.writtenOn}
-                        content={note.note[0]}
-                        path={`/magic-shop/${slug}?code=${note.code}`}
-                      />
-                    ))}
-                  </>
-                ) : (
-                  Array.from({ length: 3 }, (_, i) => (
-                    <NoteCardSkeleton key={i} />
-                  ))
-                )}
-              </div>
+          <div className="flex flex-col gap-y-4 w-full">
+            <h1 className="font-bold text-white capitalize">To {slug}</h1>
+            <Divider className="bg-yellow h-1" />
+            <div className="flex gap-x-10 mt-6">
+              {notesList ? (
+                <>
+                  {notesList.map((note, i) => (
+                    <NoteCard
+                      key={i}
+                      title={note.title}
+                      writtenOn={note.writtenOn}
+                      content={note.note[0]}
+                      path={`/magic-shop?code=${note.code}`}
+                    />
+                  ))}
+                </>
+              ) : (
+                Array.from({ length: 3 }, (_, i) => (
+                  <NoteCardSkeleton key={i} />
+                ))
+              )}
             </div>
-          )}
+          </div>
         </div>
       </Section>
     </main>
   );
 };
 
-export default Notes;
+export default NoteList;
