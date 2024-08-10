@@ -8,10 +8,9 @@ const Note = ({ data }: any) => {
       <h1 className="font-bold text-4xl text-center text-yellow-800">
         A sneak peak at my notes app...
       </h1>
-      <div className="flex flex-col border items-center justify-center border-yellow max-w-2xl p-4 rounded-lg bg-yellow-50 z-50 letter">
-        {/* <NoteHoles /> */}
+      <div className="flex flex-col border items-center justify-center border-yellow max-w-2xl p-0 rounded-lg bg-yellow-50 z-50 letter">
         {data ? (
-          <div className="flex flex-col gap-y-4 p-4 mt-4 text-yellow-800">
+          <div className="flex flex-col gap-y-4 p-4 md:p-7 mt-4 text-yellow-800">
             <p className="flex justify-end text-xs text-yellow-500">
               Written on {data?.writtenOn}
             </p>
