@@ -15,7 +15,7 @@ const Note = ({ data }: any) => {
             <p className="flex justify-end text-xs text-yellow">
               Written on {data?.writtenOn}
             </p>
-            <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow">
+            <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow pointer-events-none">
               To {data?.noteFor},
             </p>
             <div className="letter">
