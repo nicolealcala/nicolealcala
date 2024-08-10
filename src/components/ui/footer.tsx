@@ -5,7 +5,7 @@ import RedirectLink from "../navigation/redirect-link";
 
 const Footer = () => {
   return (
-    <footer className="px-6 lg:px-24 pb-12 bg-black">
+    <footer className="flex justify-center px-6 lg:px-24 pb-12 bg-black w-full">
       <div className="container space-y-6">
         <Divider className="bg-white h-0.5" />
         <div className="flex flex-col items-center gap-y-4 sm:flex-row sm:justify-between px-4">
