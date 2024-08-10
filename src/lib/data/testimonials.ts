@@ -25,7 +25,7 @@ const Feedback = [
   },
   {
     name: "Danna Layderos",
-    role: "UI/UX Designer",
+    role: " Graphics & UI/UX Designer",
     feedback:
       "Nicole is an exceptionally talented individual, proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative and solve problems independently, showcasing her cool, self-reliant approach. Moreover, her creativity shines through not only in her technical skills but also in her musical talents, where she exhibits both proficiency in various instruments and a truly captivating voice. Although her artistry may not be as frequent, it is undeniably impressive when she does create.",
     color: "pink",
