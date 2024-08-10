@@ -9,6 +9,7 @@
   --blue: #82c8f9;
   --pink: #ff6392;
   --yellow: #ffdf66;
+  // --yellow: #fbd549;
   --green: #50ceac;
   --purple: #bd83e5;
   --black: #0d0b0c;
@@ -53,7 +54,8 @@
 
 nav,
 section,
-footer {
+footer,
+.letter {
   background-image: url("/images/paper.png");
   background-position: "center";
   background-attachment: fixed;
