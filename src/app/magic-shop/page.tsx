@@ -39,9 +39,6 @@ const MagicShop = () => {
     <main>
       <Section>
         <div className="container flex flex-col items-center min-h-[80vh] gap-y-10">
-          <h1 className="font-bold text-4xl text-center text-white">
-            A sneak peak at my notes app...
-          </h1>
           {code ? <Note data={data} /> : <SecretCode />}
         </div>
       </Section>
