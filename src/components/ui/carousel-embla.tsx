@@ -35,7 +35,7 @@ export function EmblaCarousel({ items }: any) {
                   height={40}
                   src={item.img}
                   alt="User image"
-                  className={`w-12 h-12 rounded-full p-1 border-2 ${
+                  className={`size-12 rounded-full p-1 border-2 ${
                     item.color === "pink" ? "border-pink" : "border-blue"
                   }`}
                 />
