@@ -45,6 +45,7 @@ const awards = [
       "Department of Science & Technology - Science Eduation Institute",
     date: "2019-2023",
     image: "/images/awards/dost-scholarship.png",
+    link: "https://sei.dost.gov.ph/wp-content/uploads/2024/01/2019DOSTSEIQualifiers.pdf",
   },
 ];
 
