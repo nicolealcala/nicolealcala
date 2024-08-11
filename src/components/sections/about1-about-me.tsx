@@ -2,14 +2,17 @@ import React from "react";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Barcode from "@/components/ui/barcode";
 import Section from "../ui/section-full";
+import "./sections.scss";
 
 const AboutMe = () => {
   return (
-    <Section>
-      <div className="container flex flex-col gap-y-8 min-h-[85dvh]">
-        <p className="text-9xl font-medium w-full text-center">ABOUT ME</p>
+    <Section className="bg-black h-dvh">
+      <div className="container flex flex-col gap-y-12 text-white mt-12">
+        <p className="title sm:text-8xl md:text-9xl font-medium w-full text-center">
+          ABOUT ME
+        </p>
         <div className="flex flex-1 justify-between">
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between gap-y-16">
             {/* EDUCATION */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">EDUCATION</h2>
@@ -43,7 +46,7 @@ const AboutMe = () => {
             />
           </div>
 
-          <div className="flex flex-col justify-between text-right">
+          <div className="flex flex-col justify-between text-right gap-y-16">
             {/* FACTS */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">FACTS</h2>
