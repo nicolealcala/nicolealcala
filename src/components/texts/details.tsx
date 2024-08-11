@@ -8,7 +8,7 @@ const Details: React.FC<{
   children?: ReactNode;
 }> = ({ subtitle, description, children }) => {
   return (
-    <div className="flex flex-col gap-y-4 max-w-[360px]">
+    <div className="flex flex-col gap-y-4 max-w-[360px] text-slate-700">
       <p className="font-semibold">{subtitle}</p>
       <p>{description}</p>
       {children}

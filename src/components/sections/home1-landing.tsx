@@ -15,7 +15,7 @@ const Landing = () => {
       <div
         className={`container flex justify-between mt-12 ${theme.toString()}`}
       >
-        <div className="flex flex-col max-w-xl gap-y-8 justify-center">
+        <div className="flex flex-col max-w-xl gap-y-8 justify-center text-slate-800">
           <p className={`landing-text leading-none font-bold`}>
             HI, I&apos;M <span className="text-pink">NICOLE,</span>
             <br />A WEB <span className="highlighted-text">DEVELOPER</span>{" "}
@@ -31,11 +31,18 @@ const Landing = () => {
               isExternal
               as={Link}
               variant="bordered"
+              className="border !border-slate-800 !text-slate-700"
               id="view-cv"
             >
               View CV
             </Button>
-            <Button as={Link} href="/contact" variant="solid" id="lets-talk">
+            <Button
+              as={Link}
+              href="/contact"
+              variant="solid"
+              id="lets-talk"
+              className="!bg-slate-800"
+            >
               Let&apos;s talk
             </Button>
           </div>
