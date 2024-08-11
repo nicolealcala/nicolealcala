@@ -20,8 +20,8 @@ const Nav = () => {
 
   return (
     <nav
-      className={`bg-transparent py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full ${
-        theme === "dark" && "text-white"
+      className={`py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full ${
+        pathname === "/about" ? "bg-black text-white" : "bg-white text-black"
       }`}
       id="navbar"
     >
@@ -77,14 +77,12 @@ const Nav = () => {
             <Link
               href={link.path}
               key={index}
-              className={`transition-colors duration-500 ${
-                theme === "dark" ? "text-white" : "text-black"
-              }`}
+              className={`transition-colors duration-500`}
             >
               <span
                 className={`font-semibold py-2 px-3 text-center ${
                   link.path === pathname && "active"
-                }`}
+                } ${pathname === "/about" ? "text-white" : "text-black"}`}
               >
                 {link.title}
               </span>
