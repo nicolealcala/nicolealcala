@@ -8,7 +8,7 @@ const WhatIDo = () => {
   const { theme } = useContext(GlobalContext);
   return (
     <Section className="bg-black">
-      <div className="container flex flex-col justify-between  lg:flex-row gap-6">
+      <div className="container flex flex-col justify-between lg:flex-row gap-6">
         <div className="flex flex-col gap-y-8 w-full lg:w-1/2">
           <p className="heading leading-tight text-white">
             DREAM. <br /> DESIGN. <br /> DEVELOP.

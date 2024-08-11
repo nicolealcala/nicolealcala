@@ -29,7 +29,7 @@ const features = ["User login", "Blogs CRUD", "Comments CRUD", "Email"];
 const FeaturedProjects = () => {
   const { theme } = useContext(GlobalContext);
   return (
-    <Section className="!relative flex flex-col justify-between pb-0 md:pb-24">
+    <Section className="!relative flex flex-col justify-between pb-24">
       <Image
         src="/images/projects-featured.png"
         alt="Featured Project - Dreamlabs"
@@ -116,7 +116,7 @@ const FeaturedProjects = () => {
             <RedirectLink path="/projects" text="my portfolio" />
           </div>
 
-          <div className="hidden md:flex absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 !z-10">
+          <div className="hidden lg:flex absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 !z-10">
             {theme === "light" ? <BlueStaticBall /> : <CyanStaticBall />}
           </div>
         </div>
