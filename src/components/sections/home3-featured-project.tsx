@@ -40,8 +40,10 @@ const FeaturedProjects = () => {
         className="hidden lg:flex absolute bottom-0 left-1/2 transform -translate-x-1/2 !z-20"
       />
 
-      <div className="container flex flex-col gap-y-12">
-        <p className="subheading font-bold text-center">FEATURED PROJECT</p>
+      <div className="container flex flex-col gap-y-12 text-slate-700">
+        <p className="subheading font-bold text-center text-slate-800">
+          FEATURED PROJECT
+        </p>
         <Image
           src="/images/projects-featured-mobile.png"
           alt="Featured Project - Dreamlabs"
