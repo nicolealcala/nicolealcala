@@ -21,22 +21,15 @@ export function EmblaCarousel({ items }: any) {
     ]
   );
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
   return (
     <div className="relative w-full wrapper">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           {items.map((item: any, i: string) => (
-            <article key={i} className="embla__slide text-[#CDCDCD] ">
+            <article key={i} className="embla__slide text-[#CDCDCD]">
               <p className="text-sm">{`"${item.feedback}"`}</p>
 
-              <article className="flex items-center gap-3 mt-4">
+              <div className="flex items-center gap-3 mt-4">
                 <Image
                   width={40}
                   height={40}
@@ -50,7 +43,7 @@ export function EmblaCarousel({ items }: any) {
                   <p className="font-bold text-[#EEE]">{item.name}&nbsp;</p>
                   <p className="text-[#909090]">{item.role}</p>
                 </div>
-              </article>
+              </div>
             </article>
           ))}
         </div>
