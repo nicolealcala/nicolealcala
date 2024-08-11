@@ -6,13 +6,13 @@ import "./sections.scss";
 
 const AboutMe = () => {
   return (
-    <Section className="bg-black h-dvh">
+    <Section className="bg-black">
       <div className="container flex flex-col gap-y-12 text-white mt-12">
         <p className="title sm:text-8xl md:text-9xl font-medium w-full text-center">
           ABOUT ME
         </p>
         <div className="flex flex-1 justify-between">
-          <div className="flex flex-col justify-between gap-y-16">
+          <div className="flex flex-col gap-y-24">
             {/* EDUCATION */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold">EDUCATION</h2>
