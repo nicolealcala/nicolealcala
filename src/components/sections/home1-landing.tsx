@@ -6,13 +6,15 @@ import Details from "@/components/texts/details";
 import { Button, Link } from "@nextui-org/react";
 import Section from "../ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
-import "./home.scss";
+import "./sections.scss";
 const Landing = () => {
   const { theme } = useContext(GlobalContext);
 
   return (
     <Section>
-      <div className={`container flex justify-between ${theme.toString()}`}>
+      <div
+        className={`container flex justify-between mt-12 ${theme.toString()}`}
+      >
         <div className="flex flex-col max-w-xl gap-y-8 justify-center">
           <p className={`landing-text leading-none font-bold`}>
             HI, I&apos;M <span className="text-pink">NICOLE,</span>
