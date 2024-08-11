@@ -9,9 +9,11 @@ const ClientLayout: React.FC<any> = ({ children }) => {
   const { theme } = useContext(GlobalContext);
   const pathname = usePathname();
   return (
-    <div className={theme.toString()}>
-      <Navbar />
-      <div className="!z-10">
+    <div className={`relative ${theme.toString()}`}>
+      <div className="absolute top-0 left-0 w-full">
+        <Navbar />
+      </div>
+      <div className="mt-0 !z-10">
         {children}
         {pathname === "/magic-shop" ? null : <Footer />}
       </div>
