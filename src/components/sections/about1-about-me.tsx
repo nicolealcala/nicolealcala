@@ -7,7 +7,7 @@ import "./sections.scss";
 const AboutMe = () => {
   return (
     <Section className="bg-black">
-      <div className="container flex flex-col gap-y-12 text-white mt-12">
+      <div className="container flex flex-col gap-y-12 text-white">
         <p className="title sm:text-8xl md:text-9xl font-medium w-full text-center">
           ABOUT ME
         </p>
