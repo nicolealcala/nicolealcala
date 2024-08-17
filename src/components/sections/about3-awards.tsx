@@ -3,6 +3,7 @@ import Section from "../ui/section-full";
 import { ChevronsRight } from "lucide-react";
 import "./sections.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 const awards = [
   {
@@ -74,6 +75,7 @@ const Awards = () => {
                   {award.link && (
                     <Link
                       href={award.link}
+                      target="_blank"
                       className="flex gap-x-1 items-center text-sm italic"
                     >
                       View official list <ChevronsRight />
@@ -81,7 +83,8 @@ const Awards = () => {
                   )}
                 </div>
               </div>
-              <img
+              <Image
+                fill
                 src={award.image}
                 alt={award.title}
                 className="w-full h-full object-cover object-center"
