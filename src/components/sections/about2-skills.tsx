@@ -3,47 +3,106 @@ import Section from "../ui/section-full";
 import { Divider } from "@nextui-org/react";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const frontEnd = [
-  { label: "HTML", icon: <Check /> },
-  { label: "CSS", icon: <Check /> },
-  { label: "JavaScript", icon: <Check /> },
-  { label: "Sass", link: "https://sass-lang.com/", icon: <Check /> },
+  { label: "HTML", icon: "https://www.svgrepo.com/show/349402/html5.svg" },
+  { label: "CSS", icon: "https://www.svgrepo.com/show/349330/css3.svg" },
+  {
+    label: "JavaScript",
+    icon: "https://www.svgrepo.com/show/349419/javascript.svg",
+  },
+  {
+    label: "Sass",
+    link: "https://sass-lang.com/",
+    icon: "https://www.svgrepo.com/show/349502/sass.svg",
+  },
   {
     label: "Bootstrap",
     link: "https://getbootstrap.com/docs/versions/",
-    icon: <Check />,
+    icon: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg",
   },
-  { label: "Tailwind", link: "https://tailwindcss.com/", icon: <Check /> },
-  { label: "jQuery", link: "https://jquery.com/", icon: <Check /> },
-  { label: "React.js", link: "https://react.dev/", icon: <Check /> },
-  { label: "Next.js", link: "https://nextjs.org/", icon: <Check /> },
+  {
+    label: "Tailwind CSS",
+    link: "https://tailwindcss.com/",
+    icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png",
+  },
+  {
+    label: "jQuery",
+    link: "https://jquery.com/",
+    icon: "https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg",
+  },
+  {
+    label: "React.js",
+    link: "https://react.dev/",
+    icon: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+  },
+  {
+    label: "Next.js",
+    link: "https://nextjs.org/",
+    icon: "https://www.svgrepo.com/show/342062/next-js.svg",
+  },
 ];
 
 const backEnd = [
-  { label: "PHP", link: "https://www.php.net/", icon: <Check /> },
-  { label: "Node.js", link: "https://nodejs.org/en", icon: <Check /> },
+  {
+    label: "PHP",
+    link: "https://www.php.net/",
+    icon: "https://www.svgrepo.com/show/349474/php.svg",
+  },
+  {
+    label: "Node.js",
+    link: "https://nodejs.org/en",
+    icon: "https://nodejs.org/static/logos/nodejsStackedDark.svg",
+  },
   {
     label: "Foundational C#",
     link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-    icon: <Check />,
+    icon: "https://www.svgrepo.com/show/353622/c-sharp.svg",
   },
-  { label: "MongoDB", link: "https://www.mongodb.com/", icon: <Check /> },
-  { label: "MySQL", link: "https://www.mysql.com/", icon: <Check /> },
+  {
+    label: "MongoDB",
+    link: "https://www.mongodb.com/",
+    icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+  },
+  {
+    label: "MySQL",
+    link: "https://www.mysql.com/",
+    icon: "https://www.vectorlogo.zone/logos/mysql/mysql-official.svg",
+  },
 ];
 
 const tools = [
-  { label: "Prisma", link: "https://www.prisma.io/", icon: <Check /> },
-  { label: "Mongoose", link: "https://mongoosejs.com/", icon: <Check /> },
-  { label: "phpMyAdmin", link: "https://www.phpmyadmin.net/", icon: <Check /> },
+  {
+    label: "Prisma",
+    link: "https://www.prisma.io/",
+    icon: "https://www.svgrepo.com/show/354210/prisma.svg",
+  },
+  {
+    label: "phpMyAdmin",
+    link: "https://www.phpmyadmin.net/",
+    icon: "https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-ar21.svg",
+  },
   {
     label: "Chrome DevTools",
     link: "https://developer.chrome.com/docs/devtools",
-    icon: <Check />,
+    icon: "https://www.svgrepo.com/show/378786/chrome-devtools.svg",
   },
-  { label: "Github", link: "https://github.com/", icon: <Check /> },
-  { label: "VS Code", link: "https://code.visualstudio.com/", icon: <Check /> },
-  { label: "Figma", link: "https://www.figma.com/", icon: <Check /> },
+  {
+    label: "Github",
+    link: "https://github.com/",
+    icon: "https://www.svgrepo.com/show/512317/github-142.svg",
+  },
+  {
+    label: "VS Code",
+    link: "https://code.visualstudio.com/",
+    icon: "https://www.svgrepo.com/show/452129/vs-code.svg",
+  },
+  {
+    label: "Figma",
+    link: "https://www.figma.com/",
+    icon: "https://www.svgrepo.com/show/448222/figma.svg",
+  },
 ];
 const Skill = ({ skill }: any) => {
   return (
@@ -52,14 +111,30 @@ const Skill = ({ skill }: any) => {
         <Link
           href={skill.link}
           target="_blank"
-          className="flex gap-x-2 rounded-full border border-slate-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-slate-700 transition duration-300 ease-in-out cursor-pointer"
+          className=" flex gap-x-2 rounded-full border border-slate-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-slate-700 transition duration-300 ease-in-out cursor-pointer"
         >
-          {skill.icon}
+          <div
+            className={`relative x-auto ${
+              skill.label === "Bootstrap"
+                ? "w-7"
+                : skill.label === "MongoDB"
+                ? "w-3"
+                : skill.label === "MySQL"
+                ? "w-8"
+                : skill.label === "phpMyAdmin"
+                ? "w-12"
+                : "w-6"
+            } h-6`}
+          >
+            <Image src={skill.icon} fill alt={skill.label} />
+          </div>
           <p>{skill.label}</p>
         </Link>
       ) : (
         <article className="flex gap-x-2 rounded-full border border-slate-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-slate-700 transition duration-300 ease-in-out">
-          {skill.icon}
+          <div className="relative w-6 h-6">
+            <Image src={skill.icon} fill alt={skill.label} />
+          </div>
           <p>{skill.label}</p>
         </article>
       )}
@@ -70,9 +145,9 @@ const Skills = () => {
   return (
     <Section>
       <div className="container text-white flex flex-col">
-        <div className="flex gap-x-16 w-full text-slate-700">
-          <div className="space-y-4 w-1/2">
-            <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
+        <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
+        <div className="flex flex-col md:flex-row gap-16 w-full text-slate-700">
+          <div className="space-y-4 w-full md:w-1/2">
             <p>
               Ever since college, my core interests lie in{" "}
               <span className="text-pink">programming</span> and{" "}
@@ -96,20 +171,21 @@ const Skills = () => {
               <span className="text-pink">Full-stack web developer</span>&nbsp;
               required me to learn React.js and Next.js. This led me to dig deep
               into it and develop some projects &#x28;including this
-              portfolio&#x29; alongside Tailwind CSS. It's really true when they
-              say you'll gain most of your knowledge when you start working in
-              the industry!
+              portfolio&#x29; alongside Tailwind CSS. It&apos;s really true when
+              they say you&apos;ll gain most of your knowledge when you start
+              working in the industry!
             </p>
             <p>
-              Learning is a never-ending journey and I'm just getting started. I
-              am aiming to round out my skills set and eventually explore other
-              technologies. My ultimate goal is to contribute innovative and
-              impactful solutions, powered by my passion and commitment to
-              continuous growth.
+              Learning is a never-ending journey and I&apos;m just getting
+              started. I am aiming to round out my skills set and eventually
+              explore other technologies. My ultimate goal is to contribute
+              innovative and impactful solutions, powered by my passion and
+              commitment to continuous growth.
             </p>
           </div>
-          <div className="flex flex-col justify-center gap-y-8 w-1/2">
-            <div className="flex flex-col gap-y-4">
+
+          <div className="flex flex-col gap-y-8 w-full md:w-1/2">
+            <div className="flex flex-col gap-y-3">
               <p className="font-semibold">Front-end Web Development</p>
               <Divider />
               <div className="flex gap-2 flex-wrap">
@@ -119,7 +195,7 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-y-4">
+            <div className="flex flex-col gap-y-3">
               <p className="font-semibold">Back-end Web Development</p>
               <Divider />
               <div className="flex gap-3 flex-wrap">
@@ -129,7 +205,7 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-y-4">
+            <div className="flex flex-col gap-y-3">
               <p className="font-semibold">Other Tools</p>
               <Divider />
               <div className="flex gap-3 flex-wrap">
