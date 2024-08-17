@@ -20,11 +20,13 @@
 
 @layer base {
   h1 {
+    @apply text-slate-700;
     @apply text-2xl;
   }
 
   h2 {
     @apply text-xl;
+    @apply text-slate-700;
   }
 
   p,
@@ -55,7 +57,6 @@
 
 nav,
 section,
-footer,
 .letter {
   background-image: url("/images/paper.png");
   background-position: "center";
