@@ -20,12 +20,12 @@ const Nav = () => {
 
   return (
     <nav
-      className={`py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full ${
+      className={`relative py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full shadow-sm ${
         pathname === "/about" ? "bg-black text-white" : "bg-white text-black"
       }`}
       id="navbar"
     >
-      <div className="flex justify-between items-center w-full">
+      <div className="flex justify-between items-center w-full sha">
         <div className="flex gap-x-3">
           <Image
             src="/images/logo.png"
@@ -102,10 +102,11 @@ const Nav = () => {
           </Button>
         </div>
       </div>
+
       {/* Collapssed nav items */}
       <div
-        className={`md:hidden flex-col top-0 right-0 w-full transition-height duration-300 ease-linear ${
-          isOpen ? "h-full flex " : "h-0 hidden"
+        className={`md:hidden flex-col absolute mt-px p-2 top-full right-0 bg-white shadow-xl w-full transition-height duration-300 ease-linear rounded-b-lg ${
+          isOpen ? "h-fit flex " : "h-0 hidden"
         }`}
       >
         {links.map((link, index) => (
