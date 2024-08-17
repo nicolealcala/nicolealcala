@@ -33,7 +33,11 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'mongoosejs.com'
-            }
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.pexels.com'
+            },
         ],
     },
 };
