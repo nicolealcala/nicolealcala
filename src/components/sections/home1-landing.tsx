@@ -29,18 +29,11 @@ const Landing = () => {
               isExternal
               as={Link}
               variant="bordered"
-              className="border !border-slate-800 !text-slate-700"
               id="view-cv"
             >
               View CV
             </Button>
-            <Button
-              as={Link}
-              href="/contact"
-              variant="solid"
-              id="lets-talk"
-              className="!bg-slate-800"
-            >
+            <Button as={Link} href="/contact" variant="solid" id="lets-talk">
               Let&apos;s talk
             </Button>
           </div>
