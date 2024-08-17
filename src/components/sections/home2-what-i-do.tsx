@@ -16,7 +16,7 @@ const WhatIDo = () => {
           <div className="flex flex-col text-white">
             <Divider className="max-w-sm mb-8 bg-white" />
             <h2 className="font-semibold mb-6">WHAT I DO</h2>
-            <p>
+            <p className="text-white">
               Hello! I&apos;m a versatile full-stack web developer with strong
               front-end expertise and good back-end skills. I create intuitive
               web designs, manage relational and NoSQL databases efficiently,
