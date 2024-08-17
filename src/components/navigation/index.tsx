@@ -72,6 +72,7 @@ const Nav = () => {
           <span></span>
         </label>
 
+        {/* Expanded links */}
         <div className="hidden md:flex gap-x-3 items-center">
           {links.map((link, index) => (
             <Link
@@ -82,7 +83,7 @@ const Nav = () => {
               <span
                 className={`font-semibold py-2 px-3 text-center ${
                   link.path === pathname && "active"
-                } ${pathname === "/about" ? "text-white" : "text-black"}`}
+                } ${pathname === "/about" ? "text-white" : "text-slate-700"}`}
               >
                 {link.title}
               </span>
@@ -103,7 +104,7 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* Collapssed nav items */}
+      {/* Collapsed nav items */}
       <div
         className={`md:hidden flex-col absolute mt-px p-2 top-full right-0 bg-white shadow-xl w-full transition-height duration-300 ease-linear rounded-b-lg ${
           isOpen ? "h-fit flex " : "h-0 hidden"

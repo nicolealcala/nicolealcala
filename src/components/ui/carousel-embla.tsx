@@ -26,8 +26,8 @@ export function EmblaCarousel({ items }: any) {
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           {items.map((item: any, i: string) => (
-            <article key={i} className="embla__slide text-[#CDCDCD]">
-              <p className="text-sm">{`"${item.feedback}"`}</p>
+            <article key={i} className="embla__slide">
+              <p className="text-sm text-[#CDCDCD]">{`"${item.feedback}"`}</p>
 
               <div className="flex items-center gap-3 mt-4">
                 <Image
