@@ -2,15 +2,30 @@ import Section from "@/components/ui/section-full";
 import { Button, Input, Textarea } from "@nextui-org/react";
 
 import { UserRound, AtSign, NotebookPen, Pencil } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
   return (
-    <main className="flex flex-col">
-      <Section>
-        <div className="container">
-          <div className="flex flex-col md:flex-row gap-12 contaner w-full">
-            <div className="w-full md:w-1/2">
+    <main className="relative flex flex-col">
+      <Section className="min-h-[90dvh]">
+        <div className="absolute top-0 left-0 w-full">
+          <div className="relative w-full h-[400px]">
+            <Image
+              src={
+                "https://images.pexels.com/photos/1419923/pexels-photo-1419923.jpeg"
+              }
+              fill
+              priority
+              alt="Contact Page cover photo"
+              className="object-cover object-top opacity-80"
+            />
+            <div className="absolute inset-0 bg-black opacity-30"></div>
+          </div>
+        </div>
+        <div className="container z-30">
+          <div className="flex flex-col bg-white px-8 py-12 rounded shadow-lg xl:flex-row xl:p-12 gap-12 contaner w-full">
+            <div className="flex flex-col justify-center w-full xl:w-1/2">
               <p className="subheading font-semibold mb-6">Wanna talk?</p>
               <p>
                 Got something on your mind? Whether it&apos;s a quick question,
@@ -21,15 +36,15 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="w-full md:w-1/2 md:px-6">
+            <div className="w-full xl:w-1/2 xl:px-6">
               <form action="" className="space-y-5">
-                <div className="flex gap-x-5">
+                <h2 className="font-semibold">Send me a message</h2>
+                <div className="flex flex-col sm:flex-row gap-5">
                   <Input
                     size="lg"
                     placeholder="Name"
                     labelPlacement="inside"
                     color="warning"
-                    // variant="underlined"
                     startContent={
                       <UserRound className="text-yellow-300 size-5" />
                     }
@@ -43,7 +58,6 @@ const Contact = () => {
                     placeholder="Email"
                     labelPlacement="inside"
                     color="warning"
-                    // variant="underlined"
                     startContent={<AtSign className="text-yellow-300 size-5" />}
                     classNames={{
                       inputWrapper:
@@ -56,7 +70,6 @@ const Contact = () => {
                   placeholder="Subject"
                   labelPlacement="inside"
                   color="warning"
-                  // variant="underlined"
                   startContent={
                     <NotebookPen className="text-yellow-300 size-5" />
                   }
@@ -69,7 +82,6 @@ const Contact = () => {
                   placeholder="Message"
                   labelPlacement="inside"
                   color="warning"
-                  // variant="underlined"
                   minRows={5}
                   maxRows={8}
                   startContent={<Pencil className="text-yellow-300 size-5" />}
