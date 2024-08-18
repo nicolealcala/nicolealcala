@@ -13,7 +13,7 @@ const Landing = () => {
   return (
     <Section>
       <div className={`container flex justify-between ${theme.toString()}`}>
-        <div className="flex flex-col max-w-xl gap-y-8 justify-center">
+        <div className="flex flex-col max-w-xl gap-y-8 justify-center text-slate-700">
           <p className={`landing-text leading-none font-bold`}>
             HI, I&apos;M <span className="text-pink">NICOLE,</span>
             <br />A WEB <span className="highlighted-text">DEVELOPER</span>{" "}
