@@ -27,7 +27,7 @@ export function EmblaCarousel({ items }: any) {
         <div className="embla__container">
           {items.map((item: any, i: string) => (
             <article key={i} className="embla__slide">
-              <p className="text-sm text-[#CDCDCD]">{`"${item.feedback}"`}</p>
+              <p className="text-sm text-[#f1f1f1]">{`"${item.feedback}"`}</p>
 
               <div className="flex items-center gap-3 mt-4">
                 <Image
@@ -36,12 +36,14 @@ export function EmblaCarousel({ items }: any) {
                   src={item.img}
                   alt="User image"
                   className={`size-12 rounded-full p-1 border-2 ${
-                    item.color === "pink" ? "border-pink" : "border-blue"
+                    item.color === "pink"
+                      ? "border-soft-pink-300"
+                      : "border-blue"
                   }`}
                 />
                 <div className="flex flex-col text-sm">
-                  <p className="font-bold text-[#EEE]">{item.name}&nbsp;</p>
-                  <p className="text-[#909090]">{item.role}</p>
+                  <p className="font-bold text-[#f1f1f1]">{item.name}&nbsp;</p>
+                  <p className="text-[#e1e1e1]">{item.role}</p>
                 </div>
               </div>
             </article>
