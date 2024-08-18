@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <nav
       className={`relative py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full shadow-sm ${
-        pathname === "/about" ? "bg-black text-white" : "bg-white text-black"
+        pathname === "/about" ? "bg-teal-400" : "bg-white text-black"
       }`}
       id="navbar"
     >
@@ -100,9 +100,11 @@ const Nav = () => {
             href="/contact"
             variant={pathname === "/contact" ? "solid" : "bordered"}
             className={`rounded border-2 ${
-              pathname === "/contact"
-                ? "bg-white text-black border-black"
-                : "bg-black text-white  border-white"
+              pathname === "/about"
+                ? "bg-yellow text-slate-700 border-yellow"
+                : pathname === "/contact"
+                ? "bg-white text-slate-700 border-slate-700"
+                : "bg-black text-white  border-black"
             }`}
           >
             <span className="font-semibold text-base">Contact Me</span>
