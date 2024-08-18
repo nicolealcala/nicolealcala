@@ -20,11 +20,11 @@ const Contact = () => {
               alt="Contact Page cover photo"
               className="object-cover object-top opacity-80"
             />
-            <div className="absolute inset-0 bg-black opacity-30"></div>
+            <div className="absolute inset-0 bg-teal-700 opacity-10"></div>
           </div>
         </div>
         <div className="container z-30">
-          <div className="flex flex-col bg-white px-8 py-12 rounded shadow-lg xl:flex-row xl:p-12 gap-12 contaner w-full">
+          <div className="flex flex-col bg-white px-8 py-12 rounded shadow-lg xl:flex-row xl:p-12 gap-12 contaner w-full text-slate-700">
             <div className="flex flex-col justify-center w-full xl:w-1/2">
               <p className="subheading font-semibold mb-6">Wanna talk?</p>
               <p>
