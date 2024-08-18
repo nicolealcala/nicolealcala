@@ -25,7 +25,7 @@ const Nav = () => {
       }`}
       id="navbar"
     >
-      <div className="flex justify-between items-center w-full sha">
+      <div className="flex justify-between items-center w-full">
         <div className="flex gap-x-3">
           <Image
             src="/images/logo.png"
@@ -34,7 +34,13 @@ const Nav = () => {
             height={32}
             priority
           />
-          <h2 className="font-semibold leading-9">clinoae</h2>
+          <h2
+            className={`font-semibold leading-9 ${
+              pathname === "/about" && "text-white"
+            }`}
+          >
+            clinoae
+          </h2>
           {/* <Button
           isIconOnly
           className="bg-transparent"
