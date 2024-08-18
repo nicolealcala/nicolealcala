@@ -146,8 +146,8 @@ const Skills = () => {
     <Section>
       <div className="container text-white flex flex-col">
         <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
-        <div className="flex flex-col md:flex-row gap-16 w-full text-slate-700">
-          <div className="space-y-4 w-full md:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-700">
+          <div className="space-y-4 w-full lg:w-1/2">
             <p>
               Ever since college, my core interests lie in{" "}
               <span className="text-pink">programming</span> and{" "}
@@ -184,7 +184,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-y-8 w-full md:w-1/2">
+          <div className="flex flex-col gap-y-8 w-full lg:w-1/2">
             <div className="flex flex-col gap-y-3">
               <p className="font-semibold">Front-end Web Development</p>
               <Divider />
