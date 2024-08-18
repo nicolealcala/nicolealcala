@@ -12,7 +12,7 @@ const BackToTop = () => {
 
   return (
     <div
-      className={`fixed right-10 bottom-10 flex items-center justify-center rounded-full bg-yellow w-[50px] h-[50px] cursor-pointer transition-opacity duration-300 shadow-xl z-80 ${
+      className={`fixed right-5 bottom-5  sm:right-10 sm:bottom-10 flex items-center justify-center rounded-full bg-yellow w-[50px] h-[50px] cursor-pointer transition-opacity duration-300 shadow-xl z-80 ${
         isScrolled
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
