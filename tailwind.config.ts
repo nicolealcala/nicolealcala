@@ -21,7 +21,16 @@ const config: Config = {
       },
       colors: {
         pink: {
-          DEFAULT: "var(--pink)",
+          // DEFAULT: "var(--pink)",
+          50: "#fef1f6",
+          100: "#fee5f0",
+          200: "#ffcbe2",
+          300: "#ffa1c8",
+          400: "#ff78ac",
+          500: "#fa3a7f",
+          600: "#ea1858",
+          700: "#cc0a40",
+          800: "#a80c35",
           foreground: "#FFFFFF",
         },
         cyan: {
@@ -30,6 +39,15 @@ const config: Config = {
         },
         blue: {
           DEFAULT: "var(--blue)",
+          50: "#f3f9fc",
+          100: "#e7f2f7",
+          200: "#c9e4ee",
+          300: "#a7d5e3",
+          400: "#64b5cc",
+          500: "#409db7",
+          600: "#2f809a",
+          700: "#27667d",
+          800: "#245668",
           foreground: "#FFFFFF",
         },
         yellow: {
