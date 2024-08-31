@@ -111,7 +111,7 @@ const Skill = ({ skill }: any) => {
         <Link
           href={skill.link}
           target="_blank"
-          className=" flex gap-x-2 rounded-full border border-slate-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-slate-700 transition duration-300 ease-in-out cursor-pointer"
+          className=" flex gap-x-2 rounded-full border border-teal-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-teal-400 hover:border-teal-400 transition duration-300 ease-in-out cursor-pointer"
         >
           <div
             className={`relative x-auto ${
@@ -131,7 +131,7 @@ const Skill = ({ skill }: any) => {
           <p>{skill.label}</p>
         </Link>
       ) : (
-        <article className="flex gap-x-2 rounded-full border border-slate-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-slate-700 transition duration-300 ease-in-out">
+        <article className="flex gap-x-2 rounded-full border border-teal-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-teal-400 hover:border-teal-400 transition duration-300 ease-in-out">
           <div className="relative w-6 h-6">
             <Image src={skill.icon} fill alt={skill.label} />
           </div>
@@ -145,7 +145,7 @@ const Skills = () => {
   return (
     <Section>
       <div className="container text-white flex flex-col">
-        <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
+        <h1 className="text-teal-400 font-semibold mb-12">Skills & Tools</h1>
         <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-700">
           <div className="space-y-4 w-full lg:w-1/2">
             <p>

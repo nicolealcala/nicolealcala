@@ -15,9 +15,9 @@ const Landing = () => {
       <div className={`container flex justify-between ${theme.toString()}`}>
         <div className="flex flex-col max-w-xl gap-y-8 justify-center text-slate-700">
           <p className={`landing-text leading-none font-bold`}>
-            HI, I&apos;M <span className="text-pink">NICOLE,</span>
-            <br />A WEB <span className="highlighted-text">DEVELOPER</span>{" "}
-            BASED IN THE PHILIPPINES.
+            HI, I&apos;M <span className="text-pink-400">NICOLE,</span>
+            <br />A WEB <span className="text-blue">DEVELOPER</span> BASED IN
+            THE PHILIPPINES.
           </p>
           <p className={`max-w-md`}>
             Committed to lifelong learning and development, I am eager to learn
