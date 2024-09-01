@@ -9,3 +9,25 @@
 .overlay {
   background-color: rgba(79, 181, 255, 0.9);
 }
+
+.project-box {
+  img {
+    transition: 0.7s ease-in-out;
+  }
+
+  .blur-overlay {
+    opacity: 0;
+    background-color: rgba(7, 91, 157, 0.65);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.project-box:hover {
+  img {
+    scale: 1.1;
+  }
+
+  .blur-overlay {
+    opacity: 1;
+  }
+}
