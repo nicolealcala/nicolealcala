@@ -15,7 +15,7 @@ interface ProjectProp {
 }
 const ProjectBox = (project: ProjectProp) => {
   return (
-    <div className="project-box relative rounded overflow-hidden outline outline-white outline-1 outline-offset-2">
+    <div className="project-box relative rounded overflow-hidden outline outline-gray-400 outline-1 outline-offset-2">
       <Image
         src={project.image}
         alt={project.title}
