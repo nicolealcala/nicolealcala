@@ -79,7 +79,7 @@ const projects = [
     image: "/images/projects/unblokc-website/thumbnail.png",
   },
   {
-    title: "Katipunan ng Kabataan Information System (KKIS)",
+    title: "Katipunan ng Kabataan IS (KKIS)",
     details: "Capstone Project",
     period: "August 2022 - February 2023",
     techStack: ["PHP", "Sass", "Bootstrap", "JavaScript/jQuery", "MySQL"],
