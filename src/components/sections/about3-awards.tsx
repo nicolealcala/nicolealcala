@@ -60,7 +60,7 @@ const Awards = () => {
   return (
     <Section className="bg-black">
       <div className="container text-white flex flex-col gap-y-12">
-        <h1 className="text-pink font-semibold">Awards & Recognitions</h1>
+        <h1 className="text-pink-400 font-semibold">Awards & Recognitions</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6 w-full">
           {awards.map((award, i) => (
             <div
@@ -85,6 +85,7 @@ const Awards = () => {
               </div>
               <Image
                 fill
+                sizes="100%"
                 src={award.image}
                 alt={award.title}
                 className="w-full h-full object-cover object-center"

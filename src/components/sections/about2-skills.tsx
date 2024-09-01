@@ -126,14 +126,14 @@ const Skill = ({ skill }: any) => {
                 : "w-6"
             } h-6`}
           >
-            <Image src={skill.icon} fill alt={skill.label} />
+            <Image fill sizes="100%" src={skill.icon} alt={skill.label} />
           </div>
           <p>{skill.label}</p>
         </Link>
       ) : (
         <article className="flex gap-x-2 rounded-full border border-teal-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-teal-400 hover:border-teal-400 transition duration-300 ease-in-out">
           <div className="relative w-6 h-6">
-            <Image src={skill.icon} fill alt={skill.label} />
+            <Image fill sizes="100%" src={skill.icon} alt={skill.label} />
           </div>
           <p>{skill.label}</p>
         </article>
