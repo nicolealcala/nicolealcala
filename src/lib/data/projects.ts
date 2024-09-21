@@ -12,6 +12,20 @@ const projects = [
     image: "/images/projects/dreamlabs/thumbnail.png",
   },
   {
+    title: "PawHub",
+    details: "Demo Web Design",
+    period: "October 2023",
+    techStack: [],
+    links: [
+      {
+        figma:
+          "https://www.figma.com/design/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?node-id=18-2272&node-type=CANVAS&t=UWuuJGTvPIzWm04z-0",
+      },
+    ],
+    category: ["design"],
+    image: "/images/projects/pawhub/thumbnail.png",
+  },
+  {
     title: "Graduation Stationery",
     details: "PUP-STC 28th Commencement Exercises",
     period: "September 2023",
@@ -61,7 +75,7 @@ const projects = [
       },
     ],
     category: ["design"],
-    image: "/images/projects/unblokc-website/thumbnail.png",
+    image: "/images/projects/unblokc-wristband/thumbnail.png",
   },
   {
     title: "UNBLOKC Hackathon",
@@ -108,20 +122,6 @@ const projects = [
     ],
     category: ["development", "design"],
     image: "/images/projects/loungescape/thumbnail.png",
-  },
-  {
-    title: "Strays Worth Saving",
-    details: "Demo Web Design",
-    period: "December 2021",
-    techStack: [],
-    links: [
-      {
-        figma:
-          "https://www.figma.com/design/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?node-id=18-2272&node-type=CANVAS&t=UWuuJGTvPIzWm04z-0",
-      },
-    ],
-    category: ["design"],
-    image: "/images/projects/sws/thumbnail.png",
   },
 ];
 
