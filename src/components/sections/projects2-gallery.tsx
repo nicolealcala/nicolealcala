@@ -3,16 +3,25 @@ import Section from "../ui/section-full";
 import Image from "next/image";
 import projects from "@/lib/data/projects";
 import "./sections.scss";
+import { Eye, Link as LinkIcon, Figma, Github } from "lucide-react";
+import { Button, Link } from "@nextui-org/react";
+
+interface LinksObject {
+  figma?: string;
+  github?: string;
+  hosted?: string;
+}
 
 interface ProjectProp {
   title: string;
   details: string;
   period: string;
   techStack: string[];
-  links: Array<Object>;
+  links: LinksObject;
   category: string[];
   image: string;
 }
+
 const ProjectBox = (project: ProjectProp) => {
   return (
     <div className="project-box relative rounded overflow-hidden outline outline-gray-400 outline-1 outline-offset-2">
@@ -30,12 +39,57 @@ const ProjectBox = (project: ProjectProp) => {
         </p>
         <h1 className="font-bold text-center text-white">{project.title}</h1>
         <p className="text-sm text-center text-white">{project.details}</p>
-        <div className="text-sm text-center space-x-2 mt-2 text-white">
+        <div className="text-xs text-center space-x-2 mt-2 text-white">
           {project.techStack.map((stack, i) => (
             <span key={i}>
               {stack} {i === project.techStack.length - 1 ? null : "|"}
             </span>
           ))}
+        </div>
+        <div className="flex gap-x-6">
+          <Button
+            radius="full"
+            isIconOnly
+            className="bg-transparent text-white hover:bg-soft-pink-300 hover:!opacity-100 hover:!text-white"
+          >
+            <Eye />
+          </Button>
+          {project.links.hasOwnProperty("github") ? (
+            <Button
+              as={Link}
+              href={project.links.github}
+              radius="full"
+              isExternal
+              isIconOnly
+              className="bg-transparent text-white hover:bg-soft-pink-300 hover:!opacity-100 hover:!text-white"
+            >
+              <Github />
+            </Button>
+          ) : null}
+          {project.links.hasOwnProperty("figma") ? (
+            <Button
+              as={Link}
+              href={project.links.figma}
+              radius="full"
+              isExternal
+              isIconOnly
+              className="bg-transparent text-white hover:bg-soft-pink-300 hover:!opacity-100 hover:!text-white"
+            >
+              <Figma />
+            </Button>
+          ) : null}
+          {project.links.hasOwnProperty("hosted") ? (
+            <Button
+              as={Link}
+              href={project.links.hosted}
+              radius="full"
+              isExternal
+              isIconOnly
+              className="bg-transparent text-white hover:bg-soft-pink-300 hover:!opacity-100 hover:!text-white"
+            >
+              <LinkIcon />
+            </Button>
+          ) : null}
         </div>
       </div>
     </div>
