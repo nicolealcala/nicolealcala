@@ -10,7 +10,7 @@ const WhatIDo = () => {
   return (
     <Section className="bg-[#f0eeed]">
       <div className="container flex flex-col justify-between lg:flex-row gap-6">
-        <div className="flex flex-col gap-y-8 w-full lg:w-1/2">
+        <div className="flex flex-col gap-y-8 w-full lg:w-1/2 my-12">
           <p className={`heading leading-tight`}>
             DREAM. <br /> DESIGN. <br /> DEVELOP.
           </p>
@@ -27,7 +27,7 @@ const WhatIDo = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-1/2"></div>
+        <div className="flex flex-col w-1/3 min-h-full border border-black rounded-3xl"></div>
       </div>
     </Section>
   );

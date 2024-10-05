@@ -24,8 +24,6 @@ const process = [
   "Added email functionality.",
 ];
 
-const features = ["User login", "Blogs CRUD", "Comments CRUD", "Email"];
-
 const FeaturedProjects = () => {
   const { theme } = useContext(GlobalContext);
   return (
@@ -40,10 +38,8 @@ const FeaturedProjects = () => {
         className="hidden lg:flex absolute bottom-0 left-1/2 transform -translate-x-1/2 !z-20"
       />
 
-      <div className="container flex flex-col gap-y-12 text-slate-700">
-        <p className="subheading font-bold text-center text-slate-800">
-          FEATURED PROJECT
-        </p>
+      <div className="container flex flex-col gap-y-12">
+        <p className="subheading font-bold text-center">FEATURED PROJECT</p>
         <Image
           src="/images/projects-featured-mobile.png"
           alt="Featured Project - Dreamlabs"
@@ -53,52 +49,53 @@ const FeaturedProjects = () => {
           priority
           className="flex md:hidden"
         />
-        <div className="hidden md:flex flex-col gap-6 md:gap-12 pb-8 relative">
+        <div className="hidden md:flex flex-col gap-6 md:gap-14 pb-8 relative">
           <div className="flex justify-between">
-            <div className="flex flex-col gap-y-3 z-10">
-              <h2 className="font-semibold">Technologies</h2>
-              <ul>
+            <div className="font-bold text-xs max-w-[300px]">
+              Technologies
+              <div className="font-normal mt-2">
+                The technologies involved in this project are:&nbsp;
                 {technologies.map((tech, i) => (
-                  <li key={i} className="text-sm">
+                  <span key={i}>
                     {tech}
-                  </li>
+                    {i === technologies.length - 1 ? "." : ", "}
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
-            <div className="flex flex-col gap-y-3 text-right">
-              <h2 className="font-semibold">Features</h2>
-              <ul>
-                {features.map((feature, i) => (
-                  <li key={i} className="text-sm">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+
+            <div className="text-right font-bold text-xs max-w-[280px]">
+              Features
+              <div className="font-normal mt-2">
+                Original tutorial includes User Login and Blogpost CRUD
+                operations. I enhanced the app with two added features: Comments
+                CRUD operations and Email notifications.
+              </div>
             </div>
           </div>
 
-          <div className="flex justify-between gap-6">
-            <div className="flex flex-col gap-y-3">
-              <h2 className="font-semibold !z-20">Process</h2>
-              <ul>
-                {process.map((step, i) => (
-                  <li key={i} className="text-sm">
-                    {step}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex justify-between items-end gap-6">
+            <div className="w-16 h-5 bg-yellow-200 z-10"></div>
             <div className="w-5 h-16 bg-yellow-200 place-self-end"></div>
           </div>
 
           <div className="flex justify-between items-end">
-            <div className="w-16 h-5 bg-yellow-200 z-10"></div>
-            <div className="flex flex-col gap-y-3 text-right">
-              <h2 className="font-semibold">Visit here</h2>
+            <div className="font-bold text-xs max-w-[300px]">
+              Process
+              <div className="font-normal mt-2">
+                Studied React.js for 2 weeks.&nbsp;
+                {process.map((p, i) => (
+                  <span key={i}>{p} </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-right">
+              <p className="font-bold text-xs">Visit here</p>
               <Link
                 href="https://dreamlabs.vercel.app/"
                 target="_blank"
-                className="underline underline-offset-2 transition-colors duration-300 text-sm"
+                className="underline underline-offset-2 transition-colors duration-300 text-sm mt-2"
               >
                 dreamlabs.vercel.app
               </Link>

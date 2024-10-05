@@ -1,10 +1,10 @@
 .wrapper {
   mask-image: linear-gradient(
     to right,
-    transparent,
+    rgba(0, 0, 0, 0.5),
     black 10%,
     black 90%,
-    transparent
+    rgba(0, 0, 0, 0.5)
   );
 }
 
@@ -16,6 +16,7 @@
 .embla__container {
   display: flex;
 }
+
 .embla__slide {
   display: flex;
   flex-direction: column;
@@ -23,10 +24,16 @@
   min-width: 0;
   max-width: 600px;
   padding: 32px;
-  border: 1px solid #86b3d1;
+  border: 1px solid black;
   border-radius: 8px;
   margin-right: 24px;
-  background-color: rgba(48, 126, 153, 0.3);
+  background-color: #0d0b0c;
+  color: #f1f1f1;
+}
+
+.embla__slide:nth-child(even) {
+  background-color: white;
+  color: black;
 }
 
 .embla__slide:nth-child(1) {
@@ -44,10 +51,10 @@
 
 @media (max-width: 992px) {
   .embla__slide:nth-child(1) {
-    flex: 0 0 95%;
+    flex: 0 0 80%;
   }
   .embla__slide:nth-child(2) {
-    flex: 0 0 95%;
+    flex: 0 0 70%;
   }
   .embla__slide:nth-child(3) {
     flex: 1 0 95%;
