@@ -6,7 +6,7 @@ import "./sections.scss";
 
 const AboutMe = () => {
   return (
-    <Section className="bg-teal-400 min-h-[90dvh]">
+    <Section className="bg-black min-h-[90dvh]">
       <div className="container flex flex-col gap-y-12">
         <p className="title sm:text-8xl md:text-9xl font-medium w-full text-center text-white">
           ABOUT ME
