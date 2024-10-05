@@ -20,8 +20,8 @@ const Nav = () => {
 
   return (
     <nav
-      className={`relative py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full shadow-sm ${
-        pathname === "/about" ? "bg-teal-400" : "bg-white text-black"
+      className={`relative py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full ${
+        pathname === "/about" ? "bg-black" : "bg-white text-black"
       }`}
       id="navbar"
     >
@@ -87,9 +87,13 @@ const Nav = () => {
               className={`transition-colors duration-500`}
             >
               <span
-                className={`font-semibold py-2 px-3 text-center ${
-                  link.path === pathname && "active"
-                } ${pathname === "/about" ? "text-white" : "text-slate-700"}`}
+                className={`py-2 px-3 text-center ${
+                  link.path === pathname
+                    ? pathname === "/about"
+                      ? "!text-white font-semibold"
+                      : "!text-black font-semibold"
+                    : "!text-[#989595]"
+                } ${pathname === "/about" ? "text-white" : ""}`}
               >
                 {link.title}
               </span>
@@ -99,15 +103,15 @@ const Nav = () => {
             as={Link}
             href="/contact"
             variant={pathname === "/contact" ? "solid" : "bordered"}
-            className={`rounded border-2 ${
+            className={`rounded-full border-2 ${
               pathname === "/about"
-                ? "bg-yellow text-slate-700 border-yellow"
+                ? "bg-yellow border-yellow"
                 : pathname === "/contact"
-                ? "bg-white text-slate-700 border-slate-700"
+                ? "bg-white border-black font-semibold"
                 : "bg-black text-white  border-black"
             }`}
           >
-            <span className="font-semibold text-base">Contact Me</span>
+            <span className="text-base">Contact Me</span>
           </Button>
         </div>
       </div>
