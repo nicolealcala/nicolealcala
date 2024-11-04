@@ -4,7 +4,7 @@ const NoteHoles = () => {
   const holes = Array.from({ length: 18 }, (_, index) => (
     <div
       key={index}
-      className="w-5 h-5 rounded-full border border-white bg-black"
+      className="w-5 h-5 rounded-full border border-white bg-tear"
     ></div>
   ));
 
