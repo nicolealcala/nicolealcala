@@ -21,7 +21,7 @@ const config: Config = {
       },
       colors: {
         pink: {
-          // DEFAULT: "var(--pink)",
+          DEFAULT: "var(--pink)",
           50: "#fef1f6",
           100: "#fee5f0",
           200: "#ffcbe2",
@@ -101,6 +101,9 @@ const config: Config = {
         },
         white: {
           DEFAULT: "var(--white)",
+        },
+        tear: {
+          DEFAULT: "var(--tear)",
         },
       },
     },
