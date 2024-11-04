@@ -15,6 +15,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        gradient:
+          "linear-gradient(to top right, #f8c9b7,#f2b4bf,#efa8c8,#cbb8d6, #a4c6e9)",
       },
       boxShadow: {
         lg: "0 10px 15px -10px rgb(0, 0, 0, 0.05)",
@@ -105,6 +107,10 @@ const config: Config = {
         tear: {
           DEFAULT: "var(--tear)",
           blue: "var(--tear-blue)",
+        },
+        her: {
+          pink: "var(--her-pink)",
+          blue: "var(--her-blue)",
         },
       },
     },
