@@ -42,8 +42,8 @@ export function EmblaCarousel({ items }: any) {
                   }`}
                 />
                 <div className="flex flex-col text-sm">
-                  <p className="font-bold text-gray-500">{item.name}&nbsp;</p>
-                  <p className="text-gray-400">{item.role}</p>
+                  <p className="font-bold text-slate-500">{item.name}&nbsp;</p>
+                  <p className="text-slate-400">{item.role}</p>
                 </div>
               </div>
             </article>
