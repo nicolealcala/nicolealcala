@@ -8,7 +8,7 @@ import awards from "@/lib/data/awards";
 
 const Awards = () => {
   return (
-    <Section className="bg-black">
+    <Section className="bg-tear">
       <div className="container text-white flex flex-col gap-y-12 w-full">
         <h1 className="text-pink-400 font-semibold">Awards & Recognitions</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6">

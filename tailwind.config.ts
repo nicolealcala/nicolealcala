@@ -104,6 +104,7 @@ const config: Config = {
         },
         tear: {
           DEFAULT: "var(--tear)",
+          blue: "var(--tear-blue)",
         },
       },
     },

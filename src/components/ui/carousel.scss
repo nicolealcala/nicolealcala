@@ -39,30 +39,6 @@
   margin-right: 24px;
 }
 
-.text-gradient {
-  font-weight: 500;
-  background: linear-gradient(
-    to top right,
-    #f8c9b7,
-    #f2b4bf,
-    #efa8c8,
-    #cbb8d6,
-    #a4c6e9
-  );
-  // background: linear-gradient(
-  //   to top right,
-  //   #ffb7c5,
-  //   #cdb4db,
-  //   #a1c6ea,
-  //   #89abe3,
-  //   #ffecb3
-  // );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .embla__slide:nth-child(1) {
   flex: 0 0 25%;
 }

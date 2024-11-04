@@ -8,10 +8,10 @@ const Feedback = [
     img: "/images/testimonials/cj.jpg",
   },
   {
-    name: "Patricia Abrigo",
-    role: "UI/UX Designer",
+    name: "Danna Layderos",
+    role: " Graphics & UI/UX Designer",
     feedback:
-      "I have worked with Nicole on several projects, and her work ethic is noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us to successful completion of projects. With that, Nicole's reliability will surely make meaningful contributions in her professional endeavors.",
+      "Nicole is an exceptionally talented individual, proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative and solve problems independently, showcasing her cool, self-reliant approach. Moreover, her creativity shines through not only in her technical skills but also in her musical talents, where she exhibits both proficiency in various instruments and a truly captivating voice. Although her artistry may not be as frequent, it is undeniably impressive when she does create.",
     color: "pink",
     img: "/images/testimonials/user.png",
   },
@@ -24,10 +24,10 @@ const Feedback = [
     img: "/images/testimonials/jm.jpg",
   },
   {
-    name: "Danna Layderos",
-    role: " Graphics & UI/UX Designer",
+    name: "Patricia Abrigo",
+    role: "UI/UX Designer",
     feedback:
-      "Nicole is an exceptionally talented individual, proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative and solve problems independently, showcasing her cool, self-reliant approach. Moreover, her creativity shines through not only in her technical skills but also in her musical talents, where she exhibits both proficiency in various instruments and a truly captivating voice. Although her artistry may not be as frequent, it is undeniably impressive when she does create.",
+      "I have worked with Nicole on several projects, and her work ethic is noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us to successful completion of projects. With that, Nicole's reliability will surely make meaningful contributions in her professional endeavors.",
     color: "pink",
     img: "/images/testimonials/user.png",
   },

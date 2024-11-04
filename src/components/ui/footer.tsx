@@ -8,12 +8,12 @@ import Image from "next/image";
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer className="flex flex-col items-center justify-center pb-12 bg-black w-full">
+    <footer className="flex flex-col items-center justify-center pb-5 bg-tear w-full">
       {pathname === "/about" || pathname === "/projects" ? (
         <Divider className="bg-[#AEAEAE] h-px" />
       ) : null}
       <div className="container space-y-6  px-6 lg:px-24 ">
-        <div className="flex flex-col items-start justify-end lg:flex-row lg:justify-between mt-8 gap-y-6">
+        <div className="flex flex-col items-start justify-end lg:flex-row lg:justify-between mt-5 gap-y-6">
           {/* <div className="flex gap-x-3">
             <Image
               src="/images/logo.png"
@@ -26,29 +26,30 @@ const Footer = () => {
           </div> */}
 
           <div className="flex flex-col space-y-3 text-white">
-            <h2 className="font-semibold highlighted-text">Get in Touch</h2>
+            <h2 className="font-semibold text-sm text-tear-blue">
+              Get in Touch
+            </h2>
             <div className="flex flex-wrap gap-x-14 gap-y-6">
-              <div className="flex flex-col">
-                <p className="text-xs text-[#989595] mb-1">Location</p>
-                <p className="text-sm text-[#E1E1E1]">Calamba City, Laguna</p>
-                <p className="text-sm text-[#E1E1E1]">Philippines</p>
+              <div className="flex text-xs flex-col">
+                <p className="text-[#989595] mb-1">Location</p>
+                <p className="text-[#E1E1E1]">Calamba City, Laguna PH</p>
               </div>
 
-              <div className="flex flex-col">
-                <p className="text-xs text-[#989595] mb-1">Email Address</p>
-                <p className="text-sm text-[#E1E1E1]">nclmalcala@gmail.com</p>
+              <div className="flex text-xs flex-col">
+                <p className="text-[#989595] mb-1">Email Address</p>
+                <p className="text-[#E1E1E1]">nclmalcala@gmail.com</p>
               </div>
 
-              <div className="flex flex-col">
-                <p className="text-xs text-[#989595] mb-1">Website</p>
-                <p className="text-sm text-[#E1E1E1]">nicolealcala.github.io</p>
+              <div className="flex text-xs flex-col">
+                <p className="text-[#989595] mb-1">Website</p>
+                <p className="text-[#E1E1E1]">nicolealcala.github.io</p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col items-start justify-center gap-y-2 gap-x-6">
-            <span className="flex font-semibold highlighted-text">
-              FOLOW ME:
+            <span className="flex text-sm font-semibold text-tear-blue">
+              Follow Me:
             </span>
             <Socials placement="footer" />
           </div>

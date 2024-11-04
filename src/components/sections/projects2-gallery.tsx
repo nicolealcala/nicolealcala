@@ -98,7 +98,7 @@ const ProjectBox = (project: ProjectProp) => {
 
 const ProjectsGallery = () => {
   return (
-    <Section className="bg-black">
+    <Section className="bg-tear">
       <div className="contaner flex flex-col gap-y-12 w-full">
         <div className="flex justify-between">
           <h1 className="text-pink-400 font-semibold">Projects Gallery</h1>
