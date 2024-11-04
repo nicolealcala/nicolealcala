@@ -10,7 +10,7 @@
 
 .embla {
   max-width: 100%;
-  padding-block: 20px;
+  padding-block: 15px;
   overflow: hidden;
 }
 
@@ -22,8 +22,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 0;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 650px;
   padding: 32px;
   border-radius: 8px;
   // background: linear-gradient(
@@ -35,18 +35,18 @@
   //   #a4c6e9
   // );
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
-  background-color: #f5f8fd;
+  background-color: #fbfcff;
   margin-right: 24px;
 }
 
 .embla__slide:nth-child(1) {
-  flex: 0 0 25%;
+  flex: 0 0 30%;
 }
 .embla__slide:nth-child(2) {
-  flex: 0 0 35%;
+  flex: 0 0 38%;
 }
 .embla__slide:nth-child(3) {
-  flex: 1 0 50%;
+  flex: 1 0 55%;
 }
 .embla__slide:nth-child(4) {
   flex: 0 0 30%;

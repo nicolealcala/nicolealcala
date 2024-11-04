@@ -29,7 +29,7 @@ export function EmblaCarousel({ items }: any) {
             <article key={i} className="embla__slide">
               <p className="text-sm text-gradient leading-6">{`"${item.feedback}"`}</p>
 
-              <div className="flex items-center gap-3 mt-6">
+              <div className="flex items-center gap-3 mt-5">
                 <Image
                   width={40}
                   height={40}
