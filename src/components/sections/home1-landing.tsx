@@ -3,35 +3,38 @@ import React, { useContext } from "react";
 import "./sections.scss";
 import { Button, Snippet, Link } from "@nextui-org/react";
 import { ArrowCircleRight } from "iconsax-react";
-import { oswald } from "@/lib/fonts";
 import Section from "../ui/section-full";
 
 const Landing = () => {
   return (
-    <Section>
-      <article className="-space-y-24 container py-12">
-        <p className={`landing-text ${oswald.className}`}>NICOLE</p>
+    <Section className="bg-tear min-h-dvh">
+      <article className="container py-12">
+        <p className={`text-tear-blue rounded-full`}>👋 Hello, my name is</p>
+        <p className={`landing-text font-bold text-white`}>Nicole Alcala.</p>
         <div className="flex justify-between">
-          <div className="max-w-lg space-y-10 relative pt-20 ps-3">
-            <p className="text-justify">
-              <span className="font-bold">Full-stack developer</span> based in
-              the Philippines. Committed to lifelong learning and development, I
-              am eager to learn and motivated to make a positive impact to the
-              world.
+          <div className="max-w-xl space-y-10 relative">
+            <p className="text-gray-400 leading-7">
+              A&nbsp;
+              <span className="font-bold text-white">
+                Full-stack web developer
+              </span>{" "}
+              based in the Philippines. Committed to lifelong learning and
+              development, I am eager to learn and motivated to make a positive
+              impact to the world.
             </p>
-            <div className="flex gap-x-3">
+            <div className="flex items-center gap-x-3">
               <Snippet
                 symbol=" "
                 size="lg"
                 variant="bordered"
-                classNames={{ base: "border-black rounded" }}
+                classNames={{ base: "border-gray-400 rounded text-white" }}
               >
                 nclmalcala@gmail.com
               </Snippet>
               <Button
                 as={Link}
                 href="https://drive.google.com/file/d/1Icik8eFIii4Y_ZlTowkoRoWiQQ4jHmaF/view?usp=sharing"
-                className="bg-black text-white rounded font-light me-3"
+                className="text-white rounded bg-gradient"
                 size="lg"
                 isExternal
                 endContent={<ArrowCircleRight size="24" color="#FFF" />}
@@ -40,9 +43,6 @@ const Landing = () => {
               </Button>
             </div>
           </div>
-          <p className={`landing-text ${oswald.className}`}>
-            ALCALA<span className="text-pink-400">.</span>
-          </p>
         </div>
       </article>
     </Section>
