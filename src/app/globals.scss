@@ -17,6 +17,9 @@
   --light-blue: #d4e1f2;
   --tear: #13161e;
   --tear-blue: #b3d5f2;
+  --her-pink: #fd7899;
+  --her-blue: #82c8f9;
+
   background-color: var(--bg-color);
 }
 
@@ -65,7 +68,6 @@ section,
 }
 
 .text-gradient {
-  font-weight: 500;
   background: linear-gradient(
     to top right,
     #f8c9b7,
