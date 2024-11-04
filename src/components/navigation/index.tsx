@@ -82,7 +82,7 @@ const Nav = () => {
                 className={`py-2 px-3 text-center ${
                   link.path === pathname
                     ? "!text-white font-semibold"
-                    : "!text-[#989595]"
+                    : "!text-gray-400"
                 }`}
               >
                 {link.title}

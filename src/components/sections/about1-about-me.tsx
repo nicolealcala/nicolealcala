@@ -16,21 +16,21 @@ const AboutMe = () => {
             {/* EDUCATION */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold text-white">EDUCATION</h2>
-              <p className="text-white">
+              <p className="text-gray-400">
                 BS in Information Technology
                 <br />
                 Polytechnic University of the Philippines
                 <br />
-                <span className="text-yellow">Magna Cum Laude,</span> 2023
+                <span className="text-gradient">Magna Cum Laude,</span> 2023
               </p>
             </div>
 
             {/* EXPERIENCE */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold text-white">EXPERIENCE</h2>
-              <p className="text-white">
+              <p className="text-gray-400">
                 Analyst Programmer |{" "}
-                <span className="text-yellow">Full-stack Web Developer</span>
+                <span className="text-gradient">Full-stack Web Developer</span>
                 <br />
                 WPH Digital Pte Ltd | Singapore
                 <br />
@@ -51,8 +51,8 @@ const AboutMe = () => {
             {/* FACTS */}
             <div className="flex flex-col gap-y-4 max-w-[375px]">
               <h2 className="font-semibold text-white">FACTS</h2>
-              <p className="text-white">
-                <span className="text-2xl font-bold text-yellow">
+              <p className="text-gray-400">
+                <span className="text-2xl font-bold text-gradient">
                   INTROVERTED
                 </span>
                 <br /> I am a music junkie and animal lover. <br />I love cats,

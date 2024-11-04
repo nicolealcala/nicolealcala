@@ -111,7 +111,7 @@ const Skill = ({ skill }: any) => {
         <Link
           href={skill.link}
           target="_blank"
-          className=" flex gap-x-2 rounded-full border border-teal-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-teal-400 hover:border-teal-400 transition duration-300 ease-in-out cursor-pointer"
+          className=" flex gap-x-2 rounded-full border border-purple py-1 px-3 whitespace-nowrap hover:text-white hover:bg-gradient transition duration-0 cursor-pointer"
         >
           <div
             className={`relative x-auto ${
@@ -131,7 +131,7 @@ const Skill = ({ skill }: any) => {
           <p>{skill.label}</p>
         </Link>
       ) : (
-        <article className="flex gap-x-2 rounded-full border border-teal-700 py-1 px-3 whitespace-nowrap hover:text-white hover:bg-teal-400 hover:border-teal-400 transition duration-300 ease-in-out">
+        <article className="flex gap-x-2 rounded-full border border-purple py-1 px-3 whitespace-nowrap hover:text-white hover:bg-gradient transition duration-0">
           <div className="relative w-6 h-6">
             <Image fill sizes="100%" src={skill.icon} alt={skill.label} />
           </div>
@@ -145,14 +145,15 @@ const Skills = () => {
   return (
     <Section>
       <div className="container text-white flex flex-col">
-        <h1 className="text-teal-400 font-semibold mb-12">Skills & Tools</h1>
-        <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-700">
+        <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
+        <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-600">
           <div className="space-y-4 w-full lg:w-1/2">
             <p>
               Ever since college, my core interests lie in{" "}
-              <span className="text-pink">programming</span> and{" "}
-              <span className="text-pink">design.</span> I feel most comfortable
-              in <span className="text-pink">Front-end Web Development</span>,
+              <span className="text-her-pink">programming</span> and{" "}
+              <span className="text-her-pink">design.</span> I feel most
+              comfortable in{" "}
+              <span className="text-her-pink">Front-end Web Development</span>,
               having dedicated nearly two years to refining my foundational
               skills. I have created projects for academic and non-academic
               purposes, utilizing the basic tools: HTML, CSS/Sass, and
@@ -162,15 +163,15 @@ const Skills = () => {
             <p>
               Although I am leaning more towards front-end development, I also
               have an experience on the{" "}
-              <span className="text-pink">back-end</span> side. Our capstone
+              <span className="text-her-pink">back-end</span> side. Our capstone
               project where I took part as the lead developer was developed
               using PHP and MySQL database.
             </p>
             <p>
               My current role as a&nbsp;
-              <span className="text-pink">Full-stack web developer</span>&nbsp;
-              required me to learn React.js and Next.js. This led me to dig deep
-              into it and develop some projects &#x28;including this
+              <span className="text-her-pink">Full-stack web developer</span>
+              &nbsp; required me to learn React.js and Next.js. This led me to
+              dig deep into it and develop some projects &#x28;including this
               portfolio&#x29; alongside Tailwind CSS. It&apos;s really true when
               they say you&apos;ll gain most of your knowledge when you start
               working in the industry!
