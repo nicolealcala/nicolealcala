@@ -27,6 +27,7 @@ const Landing = () => {
                 symbol=" "
                 size="lg"
                 variant="bordered"
+                className="hidden lg:flex"
                 classNames={{ base: "border-gray-400 rounded text-white" }}
               >
                 nclmalcala@gmail.com
