@@ -1,7 +1,7 @@
 import React from "react";
 import RedirectLink from "@/components/navigation/redirect-link";
-import Barcode from "@/components/ui/barcode";
-import Section from "../ui/section-full";
+import Barcode from "@/components/shared-ui/barcode";
+import Section from "../shared-ui/section-full";
 import "./sections.scss";
 
 const AboutMe = () => {
