@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
-import Section from "../ui/section-full";
+import Section from "../shared-ui/section-full";
 import { Divider } from "@nextui-org/react";
-import { Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeInUpProps } from "@/lib/motion/props";
 
 const frontEnd = [
   { label: "HTML", icon: "https://www.svgrepo.com/show/349402/html5.svg" },
@@ -144,80 +146,82 @@ const Skill = ({ skill }: any) => {
 const Skills = () => {
   return (
     <Section>
-      <div className="container text-white flex flex-col">
-        <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
-        <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-600">
-          <div className="space-y-4 w-full lg:w-1/2">
-            <p>
-              Ever since college, my core interests lie in{" "}
-              <span className="text-her-pink">programming</span> and{" "}
-              <span className="text-her-pink">design.</span> I feel most
-              comfortable in{" "}
-              <span className="text-her-pink">Front-end Web Development</span>,
-              having dedicated nearly two years to refining my foundational
-              skills. I have created projects for academic and non-academic
-              purposes, utilizing the basic tools: HTML, CSS/Sass, and
-              JavaScript/jQuery. I was also introduced to Bootstrap during my
-              3rd year and used it for responsive web design.
-            </p>
-            <p>
-              Although I am leaning more towards front-end development, I also
-              have an experience on the{" "}
-              <span className="text-her-pink">back-end</span> side. Our capstone
-              project where I took part as the lead developer was developed
-              using PHP and MySQL database.
-            </p>
-            <p>
-              My current role as a&nbsp;
-              <span className="text-her-pink">Full-stack web developer</span>
-              &nbsp; required me to learn React.js and Next.js. This led me to
-              dig deep into it and develop some projects &#x28;including this
-              portfolio&#x29; alongside Tailwind CSS. It&apos;s really true when
-              they say you&apos;ll gain most of your knowledge when you start
-              working in the industry!
-            </p>
-            <p>
-              Learning is a never-ending journey and I&apos;m just getting
-              started. I am aiming to round out my skills set and eventually
-              explore other technologies. My ultimate goal is to contribute
-              innovative and impactful solutions, powered by my passion and
-              commitment to continuous growth.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-y-8 w-full lg:w-1/2">
-            <div className="flex flex-col gap-y-3">
-              <p className="font-semibold">Front-end Web Development</p>
-              <Divider />
-              <div className="flex gap-2 flex-wrap">
-                {frontEnd.map((skill, i) => (
-                  <Skill key={i} skill={skill} />
-                ))}
-              </div>
+      <motion.div {...fadeInUpProps} className="w-full">
+        <div className="container text-white flex flex-col">
+          <h1 className="text-blue font-semibold mb-12">Skills & Tools</h1>
+          <div className="flex flex-col lg:flex-row gap-16 w-full text-slate-600">
+            <div className="space-y-4 w-full lg:w-1/2">
+              <p>
+                Ever since college, my core interests lie in{" "}
+                <span className="text-her-pink">programming</span> and{" "}
+                <span className="text-her-pink">design.</span> I feel most
+                comfortable in{" "}
+                <span className="text-her-pink">Front-end Web Development</span>
+                , having dedicated nearly two years to refining my foundational
+                skills. I have created projects for academic and non-academic
+                purposes, utilizing the basic tools: HTML, CSS/Sass, and
+                JavaScript/jQuery. I was also introduced to Bootstrap during my
+                3rd year and used it for responsive web design.
+              </p>
+              <p>
+                Although I am leaning more towards front-end development, I also
+                have an experience on the{" "}
+                <span className="text-her-pink">back-end</span> side. Our
+                capstone project where I took part as the lead developer was
+                developed using PHP and MySQL database.
+              </p>
+              <p>
+                My current role as a&nbsp;
+                <span className="text-her-pink">Full-stack web developer</span>
+                &nbsp; required me to learn React.js and Next.js. This led me to
+                dig deep into it and develop some projects &#x28;including this
+                portfolio&#x29; alongside Tailwind CSS. It&apos;s really true
+                when they say you&apos;ll gain most of your knowledge when you
+                start working in the industry!
+              </p>
+              <p>
+                Learning is a never-ending journey and I&apos;m just getting
+                started. I am aiming to round out my skills set and eventually
+                explore other technologies. My ultimate goal is to contribute
+                innovative and impactful solutions, powered by my passion and
+                commitment to continuous growth.
+              </p>
             </div>
 
-            <div className="flex flex-col gap-y-3">
-              <p className="font-semibold">Back-end Web Development</p>
-              <Divider />
-              <div className="flex gap-3 flex-wrap">
-                {backEnd.map((skill, i) => (
-                  <Skill key={i} skill={skill} />
-                ))}
+            <div className="flex flex-col gap-y-8 w-full lg:w-1/2">
+              <div className="flex flex-col gap-y-3">
+                <p className="font-semibold">Front-end Web Development</p>
+                <Divider />
+                <div className="flex gap-2 flex-wrap">
+                  {frontEnd.map((skill, i) => (
+                    <Skill key={i} skill={skill} />
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-col gap-y-3">
-              <p className="font-semibold">Other Tools</p>
-              <Divider />
-              <div className="flex gap-3 flex-wrap">
-                {tools.map((skill, i) => (
-                  <Skill key={i} skill={skill} />
-                ))}
+              <div className="flex flex-col gap-y-3">
+                <p className="font-semibold">Back-end Web Development</p>
+                <Divider />
+                <div className="flex gap-3 flex-wrap">
+                  {backEnd.map((skill, i) => (
+                    <Skill key={i} skill={skill} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-y-3">
+                <p className="font-semibold">Other Tools</p>
+                <Divider />
+                <div className="flex gap-3 flex-wrap">
+                  {tools.map((skill, i) => (
+                    <Skill key={i} skill={skill} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Section>
   );
 };

@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
-import Section from "../ui/section-full";
+import Section from "../shared-ui/section-full";
 import Image from "next/image";
 import projects from "@/lib/data/projects";
 import "./sections.scss";
 import { Eye, Link as LinkIcon, Figma, Github } from "lucide-react";
 import { Button, Link } from "@nextui-org/react";
+import { motion } from "framer-motion";
+import { fadeInUpProps } from "@/lib/motion/props";
 
 interface LinksObject {
   figma?: string;
@@ -99,21 +102,23 @@ const ProjectBox = (project: ProjectProp) => {
 const ProjectsGallery = () => {
   return (
     <Section className="bg-tear">
-      <div className="contaner flex flex-col gap-y-12 w-full">
-        <div className="flex justify-between">
-          <h1 className="text-pink-400 font-semibold">Projects Gallery</h1>
-          <p className="text-white flex gap-x-6 items-center">
-            <span>All</span>
-            <span>Development</span>
-            <span>Design</span>
-          </p>
+      <motion.div {...fadeInUpProps} className="w-full">
+        <div className="contaner flex flex-col gap-y-12 w-full">
+          <div className="flex justify-between">
+            <h1 className="text-pink-400 font-semibold">Projects Gallery</h1>
+            <p className="text-white flex gap-x-6 items-center">
+              <span>All</span>
+              <span>Development</span>
+              <span>Design</span>
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {projects.map((project, i) => (
+              <ProjectBox key={i} {...project} />
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {projects.map((project, i) => (
-            <ProjectBox key={i} {...project} />
-          ))}
-        </div>
-      </div>
+      </motion.div>
     </Section>
   );
 };
