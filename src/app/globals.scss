@@ -68,13 +68,21 @@ section,
 }
 
 .text-gradient {
+  // background: linear-gradient(
+  //   to top right,
+  //   #f8c9b7,
+  //   #f2b4bf,
+  //   #efa8c8,
+  //   #cbb8d6,
+  //   #a4c6e9
+  // );
   background: linear-gradient(
     to top right,
-    #f8c9b7,
-    #f2b4bf,
-    #efa8c8,
-    #cbb8d6,
-    #a4c6e9
+    #f09a79,
+    #e98397,
+    #e680ac,
+    #ad8fbd,
+    #7caade
   );
   -webkit-background-clip: text;
   background-clip: text;
