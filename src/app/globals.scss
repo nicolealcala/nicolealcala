@@ -8,7 +8,7 @@
   // --blue: #72A5E8;
   --blue: #82c8f9;
   --pink: #ff6392;
-  --yellow: #ffdf66;
+  --yellow: #ffdd57;
   // --yellow: #fbd549;
   --green: #50ceac;
   --purple: #bd83e5;
@@ -98,13 +98,21 @@ section,
   //   #cbb8d6,
   //   #a4c6e9
   // );
+  // background: linear-gradient(
+  //   to top right,
+  //   #ffebaf,
+  //   #ffb7c5,
+  //   #cdb4db,
+  //   #a1c6ea,
+  //   #89abe3
+  // );
   background: linear-gradient(
     to top right,
-    #ffebaf,
-    #ffb7c5,
-    #cdb4db,
-    #a1c6ea,
-    #89abe3
+    #f09a79,
+    #e98397,
+    #e680ac,
+    #ad8fbd,
+    #7caade
   );
 }
 //Theme configs
