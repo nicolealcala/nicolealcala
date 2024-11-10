@@ -1,5 +1,5 @@
 "use client";
-import Section from "@/components/ui/section-full";
+import Section from "@/components/shared-ui/section-full";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";

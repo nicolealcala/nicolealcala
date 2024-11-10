@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Section from "@/components/ui/section-full";
+import Section from "@/components/shared-ui/section-full";
 import axios from "axios";
 import { notFound, useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";

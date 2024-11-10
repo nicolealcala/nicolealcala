@@ -3,8 +3,11 @@ import React, { useContext } from "react";
 import RedirectLink from "@/components/navigation/redirect-link";
 import Link from "next/link";
 import Image from "next/image";
-import { CyanStaticBall, BlueStaticBall } from "@/components/ui/static-ball";
-import Section from "../ui/section-full";
+import {
+  CyanStaticBall,
+  BlueStaticBall,
+} from "@/components/shared-ui/static-ball";
+import Section from "../shared-ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
 import { motion } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";
@@ -124,7 +127,20 @@ const FeaturedProjects = () => {
             </div>
 
             <div className="hidden lg:flex absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 !z-10">
-              {theme === "light" ? <BlueStaticBall /> : <CyanStaticBall />}
+              <motion.div
+                animate={{
+                  rotate: 360, // Spinning effect
+                }}
+                transition={{
+                  rotate: {
+                    duration: 10, // Duration of one full rotation
+                    repeat: Infinity, // Infinite loop
+                    ease: "linear", // Constant speed for rotation
+                  },
+                }}
+              >
+                {theme === "light" ? <BlueStaticBall /> : <CyanStaticBall />}
+              </motion.div>
             </div>
           </div>
         </div>

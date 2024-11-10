@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import { Divider } from "@nextui-org/react";
-import Section from "../ui/section-full";
+import Section from "../shared-ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
 import { motion } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";

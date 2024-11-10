@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NextUIProvider } from "@nextui-org/react";
 import { Inter } from "next/font/google";
 import "./globals.scss";
-import BackToTop from "@/components/ui/back-to-top";
+import BackToTop from "@/components/shared-ui/back-to-top";
 import GlobalProvider from "@/components/context-providers/global-context-provider";
 import ClientLayout from "@/components/client-pages/layout";
 

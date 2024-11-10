@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Section from "../ui/section-full";
-import { EmblaCarousel } from "../ui/carousel-embla";
+import Section from "../shared-ui/section-full";
+import { EmblaCarousel } from "../shared-ui/carousel-embla";
 import Feedback from "@/lib/data/testimonials";
 import { motion } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";

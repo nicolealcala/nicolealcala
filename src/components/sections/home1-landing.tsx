@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import "./sections.scss";
 import { Button, Snippet, Link } from "@nextui-org/react";
 import { ArrowCircleRight } from "iconsax-react";
-import Section from "../ui/section-full";
+import Section from "../shared-ui/section-full";
 
 const Landing = () => {
   return (
@@ -38,7 +38,7 @@ const Landing = () => {
                 className="text-white rounded bg-gradient"
                 size="lg"
                 isExternal
-                endContent={<ArrowCircleRight size="24" color="#FFF" />}
+                endContent={<ArrowCircleRight size="24" color="#fff" />}
               >
                 View my CV
               </Button>

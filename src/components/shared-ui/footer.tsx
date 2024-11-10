@@ -4,6 +4,8 @@ import Socials from "./socials";
 import RedirectLink from "../navigation/redirect-link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -41,8 +43,15 @@ const Footer = () => {
               </div>
 
               <div className="flex text-xs flex-col">
-                <p className="text-[#989595] mb-1">Website</p>
-                <p className="text-[#E1E1E1]">nicolealcala.github.io</p>
+                <p className="text-[#989595] mb-1">Website v1.0</p>
+                <Link
+                  href="https://nicolealcala.github.io/"
+                  target="_blank"
+                  className="flex gap-x-1 items-center text-[#E1E1E1]"
+                >
+                  nicolealcala.github.io
+                  <SquareArrowOutUpRight className="size-2.5" />
+                </Link>
               </div>
             </div>
           </div>

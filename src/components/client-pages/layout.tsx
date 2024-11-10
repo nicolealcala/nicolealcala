@@ -1,7 +1,7 @@
 "use client";
 import { useContext } from "react";
 import Navbar from "../navigation";
-import Footer from "../ui/footer";
+import Footer from "../shared-ui/footer";
 import { GlobalContext } from "../context-providers/global-context-provider";
 import { usePathname } from "next/navigation";
 

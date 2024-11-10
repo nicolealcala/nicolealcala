@@ -1,4 +1,4 @@
-import Section from "@/components/ui/section-full";
+import Section from "@/components/shared-ui/section-full";
 import { Button, Input, Textarea } from "@nextui-org/react";
 
 import { UserRound, AtSign, NotebookPen, Pencil } from "lucide-react";
