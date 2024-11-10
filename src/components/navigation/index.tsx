@@ -92,11 +92,11 @@ const Nav = () => {
           <Button
             as={Link}
             href="/contact"
-            variant={pathname === "/contact" ? "solid" : "bordered"}
+            variant={pathname === "/contact" ? "bordered" : "solid"}
             className={`rounded-full ${
               pathname === "/contact"
-                ? "bg-white border-black font-semibold"
-                : "text-white border-white"
+                ? "text-white border-white"
+                : "bg-yellow border-black font-semibold"
             }`}
           >
             <span className="text-base">Contact Me</span>
