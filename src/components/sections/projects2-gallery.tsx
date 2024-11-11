@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../shared-ui/section-full";
 import Image from "next/image";
 import projects from "@/lib/data/projects";
 import "./sections.scss";
 import { Eye, Link as LinkIcon, Figma, Github } from "lucide-react";
 import { Button, Link } from "@nextui-org/react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";
 
 interface LinksObject {
@@ -100,22 +100,63 @@ const ProjectBox = (project: ProjectProp) => {
 };
 
 const ProjectsGallery = () => {
+  const [selectedTab, setSelectedTab] = useState("All");
+  const [grid, setGrid] = useState(projects);
+  const tabs = ["All", "Development", "Design"];
+
+  useEffect(() => {
+    if (selectedTab === "Development") {
+      setGrid(projects.filter((p) => p.category.includes("development")));
+    }
+
+    if (selectedTab === "Design")
+      setGrid(projects.filter((p) => p.category.includes("design")));
+
+    if (selectedTab === "All") setGrid(projects);
+  }, [selectedTab]);
+
   return (
     <Section className="bg-tear">
       <motion.div {...fadeInUpProps} className="w-full">
         <div className="contaner flex flex-col gap-y-12 w-full">
           <div className="flex justify-between">
             <h1 className="text-pink-400 font-semibold">Projects Gallery</h1>
-            <p className="text-white flex gap-x-6 items-center">
-              <span>All</span>
-              <span>Development</span>
-              <span>Design</span>
-            </p>
+            <ul className="flex gap-x-6 text-white">
+              {tabs.map((item, i) => (
+                <li
+                  key={i}
+                  className={`text-center cursor-pointer ${
+                    item === selectedTab
+                      ? "text-white font-medium"
+                      : "text-gray-300"
+                  }`}
+                  onClick={() => setSelectedTab(item)}
+                >
+                  {item}
+                  {item === selectedTab ? (
+                    <motion.div
+                      className="bg-pink h-1 px-4"
+                      layoutId="underline"
+                    />
+                  ) : null}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {projects.map((project, i) => (
-              <ProjectBox key={i} {...project} />
-            ))}
+            <AnimatePresence>
+              {grid.map((project, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ scale: 0.5, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.5, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ProjectBox key={i} {...project} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
       </motion.div>
