@@ -6,6 +6,7 @@ import Image from "next/image";
 import {
   CyanStaticBall,
   BlueStaticBall,
+  AnswerStaticBall,
 } from "@/components/shared-ui/static-ball";
 import Section from "../shared-ui/section-full";
 import { GlobalContext } from "../context-providers/global-context-provider";
@@ -139,7 +140,7 @@ const FeaturedProjects = () => {
                   },
                 }}
               >
-                {theme === "light" ? <BlueStaticBall /> : <CyanStaticBall />}
+                {theme === "light" ? <AnswerStaticBall /> : <CyanStaticBall />}
               </motion.div>
             </div>
           </div>
