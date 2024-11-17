@@ -1,5 +1,11 @@
 const awards = [
   {
+    title: "WPH Leadership Workshop",
+    description: "WPH Digital Pte Ltd",
+    date: "October 2024",
+    image: "/images/awards/wph-leadership.jpg",
+  },
+  {
     title: "WPH Code Bootcamp",
     description: "WPH Digital Pte Ltd",
     date: "December 2023",
