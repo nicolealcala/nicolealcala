@@ -66,11 +66,11 @@ export const AnswerStaticBall = () => (
         y2="612.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#93B6F1" />
-        <stop offset="0.215085" stop-color="#A6CCF1" />
-        <stop offset="0.459537" stop-color="#DBB5F1" />
-        <stop offset="0.68787" stop-color="#FFA6B8" />
-        <stop offset="0.912817" stop-color="#EFDBA0" />
+        <stop stopColor="#93B6F1" />
+        <stop offset="0.215085" stopColor="#A6CCF1" />
+        <stop offset="0.459537" stopColor="#DBB5F1" />
+        <stop offset="0.68787" stopColor="#FFA6B8" />
+        <stop offset="0.912817" stopColor="#EFDBA0" />
       </linearGradient>
     </defs>
   </svg>

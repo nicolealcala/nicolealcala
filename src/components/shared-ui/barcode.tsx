@@ -77,11 +77,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1016_5"
@@ -91,11 +91,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1016_5"
@@ -105,11 +105,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1016_5"
@@ -119,11 +119,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1016_5"
@@ -133,11 +133,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1016_5"
@@ -147,11 +147,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1016_5"
@@ -161,11 +161,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1016_5"
@@ -175,11 +175,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_1016_5"
@@ -189,11 +189,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_1016_5"
@@ -203,11 +203,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_1016_5"
@@ -217,11 +217,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_1016_5"
@@ -231,11 +231,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_1016_5"
@@ -245,11 +245,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_1016_5"
@@ -259,11 +259,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_1016_5"
@@ -273,11 +273,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_1016_5"
@@ -287,11 +287,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_1016_5"
@@ -301,11 +301,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_1016_5"
@@ -315,11 +315,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_1016_5"
@@ -329,11 +329,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_1016_5"
@@ -343,11 +343,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_1016_5"
@@ -357,11 +357,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_1016_5"
@@ -371,11 +371,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint22_linear_1016_5"
@@ -385,11 +385,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint23_linear_1016_5"
@@ -399,11 +399,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint24_linear_1016_5"
@@ -413,11 +413,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint25_linear_1016_5"
@@ -427,11 +427,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint26_linear_1016_5"
@@ -441,11 +441,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint27_linear_1016_5"
@@ -455,11 +455,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_1016_5"
@@ -469,11 +469,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_1016_5"
@@ -483,11 +483,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_1016_5"
@@ -497,11 +497,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_1016_5"
@@ -511,11 +511,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint32_linear_1016_5"
@@ -525,11 +525,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint33_linear_1016_5"
@@ -539,11 +539,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint34_linear_1016_5"
@@ -553,11 +553,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint35_linear_1016_5"
@@ -567,11 +567,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint36_linear_1016_5"
@@ -581,11 +581,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
         <linearGradient
           id="paint37_linear_1016_5"
@@ -595,11 +595,11 @@ const Barcode = () => {
           y2="152.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C9B7" />
-          <stop offset="0.24" stop-color="#F2B4BF" />
-          <stop offset="0.43" stop-color="#EFA8C8" />
-          <stop offset="0.735" stop-color="#CBB8D6" />
-          <stop offset="0.965" stop-color="#A4C6E9" />
+          <stop stopColor="#F8C9B7" />
+          <stop offset="0.24" stopColor="#F2B4BF" />
+          <stop offset="0.43" stopColor="#EFA8C8" />
+          <stop offset="0.735" stopColor="#CBB8D6" />
+          <stop offset="0.965" stopColor="#A4C6E9" />
         </linearGradient>
       </defs>
     </svg>
