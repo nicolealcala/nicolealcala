@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Section from "../shared-ui/section-full";
 import Image from "next/image";
 import projects from "@/lib/data/projects";
@@ -35,6 +35,7 @@ const ProjectBox = (project: ProjectProp) => {
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
+        priority
       />
       <div className="blur-overlay flex flex-col gap-y-1.5 items-center justify-center w-full h-full z-20 absolute inset-0 backdrop-blur-sm p-2">
         <p className="text-xs text-center text-white">
@@ -49,7 +50,7 @@ const ProjectBox = (project: ProjectProp) => {
             </span>
           ))}
         </div>
-        <div className="flex gap-x-6">
+        <div className="flex gap-x-4">
           <Button
             radius="full"
             isIconOnly
@@ -101,19 +102,12 @@ const ProjectBox = (project: ProjectProp) => {
 
 const ProjectsGallery = () => {
   const [selectedTab, setSelectedTab] = useState("All");
-  const [grid, setGrid] = useState(projects);
   const tabs = ["All", "Development", "Design"];
 
-  useEffect(() => {
-    if (selectedTab === "Development") {
-      setGrid(projects.filter((p) => p.category.includes("development")));
-    }
-
-    if (selectedTab === "Design")
-      setGrid(projects.filter((p) => p.category.includes("design")));
-
-    if (selectedTab === "All") setGrid(projects);
-  }, [selectedTab]);
+  const filteredProjects =
+    selectedTab.toLowerCase() === "all"
+      ? projects
+      : projects.filter((p) => p.category.includes(selectedTab.toLowerCase()));
 
   return (
     <Section className="bg-tear">
@@ -126,38 +120,34 @@ const ProjectsGallery = () => {
                 <li
                   key={i}
                   className={`text-center cursor-pointer ${
-                    item === selectedTab
-                      ? "text-white font-medium"
-                      : "text-gray-300"
+                    item === selectedTab ? "text-white" : "text-gray-300"
                   }`}
                   onClick={() => setSelectedTab(item)}
                 >
                   {item}
                   {item === selectedTab ? (
-                    <motion.div
-                      className="bg-pink h-1 px-4"
-                      layoutId="underline"
-                    />
+                    <motion.div className="bg-pink h-1" layoutId="underline" />
                   ) : null}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <motion.ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <AnimatePresence>
-              {grid.map((project, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ scale: 0.5, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.5, opacity: 0 }}
+              {filteredProjects.map((project) => (
+                <motion.li
+                  key={project.image}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.3 }}
+                  layout
                 >
-                  <ProjectBox key={i} {...project} />
-                </motion.div>
+                  <ProjectBox {...project} />
+                </motion.li>
               ))}
             </AnimatePresence>
-          </div>
+          </motion.ul>
         </div>
       </motion.div>
     </Section>
