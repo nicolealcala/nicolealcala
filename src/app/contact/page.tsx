@@ -20,7 +20,7 @@ const Contact = () => {
               alt="Contact Page cover photo"
               className="object-cover object-top opacity-80"
             />
-            <div className="absolute inset-0 bg-teal-700 opacity-10"></div>
+            <div className="absolute inset-0 bg-gradient opacity-10"></div>
           </div>
         </div>
         <div className="container z-30">
@@ -44,9 +44,8 @@ const Contact = () => {
                     size="lg"
                     placeholder="Name"
                     labelPlacement="inside"
-                    color="warning"
                     startContent={
-                      <UserRound className="text-yellow-300 size-5" />
+                      <UserRound className="text-gray-300 size-5" />
                     }
                     classNames={{
                       inputWrapper:
@@ -57,8 +56,7 @@ const Contact = () => {
                     size="lg"
                     placeholder="Email"
                     labelPlacement="inside"
-                    color="warning"
-                    startContent={<AtSign className="text-yellow-300 size-5" />}
+                    startContent={<AtSign className="text-gray-300 size-5" />}
                     classNames={{
                       inputWrapper:
                         "!shadow-none !rounded border border-yellow",
@@ -69,10 +67,7 @@ const Contact = () => {
                   size="lg"
                   placeholder="Subject"
                   labelPlacement="inside"
-                  color="warning"
-                  startContent={
-                    <NotebookPen className="text-yellow-300 size-5" />
-                  }
+                  startContent={<NotebookPen className="text-gray-300" />}
                   classNames={{
                     inputWrapper: "!shadow-none !rounded border border-yellow",
                   }}
@@ -81,10 +76,9 @@ const Contact = () => {
                   size="lg"
                   placeholder="Message"
                   labelPlacement="inside"
-                  color="warning"
                   minRows={5}
                   maxRows={8}
-                  startContent={<Pencil className="text-yellow-300 size-5" />}
+                  startContent={<Pencil className="text-gray-300 size-5" />}
                   classNames={{
                     inputWrapper: "!shadow-none !rounded border border-yellow",
                   }}

@@ -33,31 +33,9 @@ const Nav = () => {
             priority
           />
           <h2 className={`font-semibold leading-9 text-white`}>clinoae</h2>
-          {/* <Button
-          isIconOnly
-          className="bg-transparent"
-          disableAnimation
-          onClick={handleThemeChange}
-        >
-          {theme === "light" ? (
-            <Moon
-              size="24"
-              color="var(--yellow)"
-              variant="Bold"
-              className=" hover:opacity-75 transition-all duration-100 ease-in"
-            />
-          ) : (
-            <Sun1
-              size="24"
-              color="var(--yellow)"
-              variant="Bold"
-              className=" hover:opacity-75 transition-all duration-100 ease-in"
-            />
-          )}
-        </Button> */}
         </div>
 
-        {/* Collapsed nav button*/}
+        {/* SMALL SCREEN nav button*/}
         <label className="burger z-30" htmlFor="burger">
           <input
             type="checkbox"
@@ -104,7 +82,7 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* Collapsed nav items */}
+      {/* Collapsed nav items for SMALL SCREENS */}
       <div
         className={`md:hidden flex-col absolute mt-px p-2 top-full right-0 bg-white shadow-xl w-full transition-height duration-300 ease-linear rounded-b-lg ${
           isOpen ? "h-fit flex " : "h-0 hidden"
