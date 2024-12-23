@@ -10,7 +10,7 @@ const ClientLayout: React.FC<any> = ({ children }) => {
   const pathname = usePathname();
   return (
     <div className={`relative ${theme.toString()}`}>
-      <Navbar />
+      {pathname === "/magic-shop" ? null : <Navbar />}
       <div className="mt-0 !z-10">{children}</div>
       {pathname === "/magic-shop" ? null : <Footer />}
     </div>
