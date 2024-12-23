@@ -2,6 +2,8 @@ import React from "react";
 import NoteList from "@/components/client-pages/magic-shop-id";
 import { Metadata } from "next";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Magic Shop",
   description:

@@ -2,6 +2,8 @@ import connectToDB from "@/config/db";
 import { Note } from "@/lib/models";
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export const GET = async (req: NextRequest, { params }: any) => {
   const { slug } = params;
   const { searchParams } = new URL(req.url);
