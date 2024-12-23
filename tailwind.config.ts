@@ -23,7 +23,7 @@ const config: Config = {
       },
       colors: {
         pink: {
-          DEFAULT: "var(--pink)",
+          DEFAULT: "#ff6392",
           50: "#fef1f6",
           100: "#fee5f0",
           200: "#ffcbe2",
@@ -36,11 +36,11 @@ const config: Config = {
           foreground: "#FFFFFF",
         },
         cyan: {
-          DEFAULT: "var(--cyan)",
+          DEFAULT: "#02fdf4",
           foreground: "#FFFFFF",
         },
         blue: {
-          DEFAULT: "var(--blue)",
+          DEFAULT: "#82c8f9",
           50: "#f3f9fc",
           100: "#e7f2f7",
           200: "#c9e4ee",
@@ -53,15 +53,15 @@ const config: Config = {
           foreground: "#FFFFFF",
         },
         yellow: {
-          DEFAULT: "var(--yellow)",
+          DEFAULT: "#ffdd57",
           foreground: "#FFFFFF",
         },
         green: {
-          DEFAULT: "var(--green)",
+          DEFAULT: "#50ceac",
           foreground: "#FFFFFF",
         },
         purple: {
-          DEFAULT: "var(--purple)",
+          DEFAULT: "#bd83e5",
           foreground: "#FFFFFF",
         },
         teal: {
@@ -98,19 +98,19 @@ const config: Config = {
           800: "#eb175a",
         },
         black: {
-          DEFAULT: "var(--black)",
+          DEFAULT: "#0d0b0c",
           foreground: "#FFFFFF",
         },
         white: {
-          DEFAULT: "var(--white)",
+          DEFAULT: "#fffffb",
         },
         tear: {
-          DEFAULT: "var(--tear)",
-          blue: "var(--tear-blue)",
+          DEFAULT: "#13161e",
+          blue: "#b3d5f2",
         },
         her: {
-          pink: "var(--her-pink)",
-          blue: "var(--her-blue)",
+          pink: "#fd7899",
+          blue: "#82c8f9",
         },
       },
     },
@@ -121,15 +121,15 @@ const config: Config = {
         light: {
           colors: {
             pink: {
-              DEFAULT: "var(--pink)",
+              DEFAULT: "#ff6392",
               foreground: "#FFFFFF",
             },
             cyan: {
-              DEFAULT: "var(--cyan)",
+              DEFAULT: "#02fdf4",
               foreground: "#FFFFFF",
             },
             yellow: {
-              DEFAULT: "var(--yellow)",
+              DEFAULT: "#ffdd57",
               foreground: "#FFFFFF",
             },
           },
