@@ -1,10 +1,13 @@
 "use client";
 import Section from "@/components/shared-ui/section-full";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import SecretCode from "@/components/magic-shop/secret-code";
 import Note from "@/components/magic-shop/note";
+
+// Suspense fallback component
+const SuspenseFallback = () => <div>Loading...</div>;
 
 interface NoteData {
   _id: string;
@@ -16,7 +19,7 @@ interface NoteData {
   updatedAt: string;
 }
 
-const NotePage = () => {
+const Page = () => {
   const [data, setData] = useState<NoteData | null>(null);
   const searchParams = useSearchParams();
   const code = searchParams.get("code");
@@ -46,4 +49,10 @@ const NotePage = () => {
   );
 };
 
-export default NotePage;
+export default function NotePage() {
+  return (
+    <Suspense fallback={<SuspenseFallback />}>
+      <Page />
+    </Suspense>
+  );
+}
