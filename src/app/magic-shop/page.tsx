@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import SecretCode from "@/components/magic-shop/secret-code";
 import Note from "@/components/magic-shop/note";
 
-export const runtime = "edge";
 
 interface NoteData {
   _id: string;

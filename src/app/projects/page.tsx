@@ -2,7 +2,6 @@ import FeaturedProject from "@/components/sections/projects1-featured";
 import ProjectsGallery from "@/components/sections/projects2-gallery";
 import React from "react";
 
-export const runtime = "edge";
 
 const Projects = () => {
   return (
