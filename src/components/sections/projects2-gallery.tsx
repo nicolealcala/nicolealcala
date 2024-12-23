@@ -5,9 +5,10 @@ import Image from "next/image";
 import projects from "@/lib/data/projects";
 import "./sections.scss";
 import { Eye, Link as LinkIcon, Figma, Github } from "lucide-react";
-import { Button, Link } from "@nextui-org/react";
+import { Button, Link, useDisclosure } from "@nextui-org/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";
+import Project from "../panels/bottom-up";
 
 interface LinksObject {
   figma?: string;
@@ -16,6 +17,7 @@ interface LinksObject {
 }
 
 interface ProjectProp {
+  slug: string;
   title: string;
   details: string;
   period: string;
@@ -26,6 +28,8 @@ interface ProjectProp {
 }
 
 const ProjectBox = (project: ProjectProp) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <div className="project-box relative rounded overflow-hidden outline outline-gray-400 outline-1 outline-offset-2">
       <Image
@@ -55,6 +59,7 @@ const ProjectBox = (project: ProjectProp) => {
             radius="full"
             isIconOnly
             className="bg-transparent text-white hover:bg-soft-pink-300 hover:!opacity-100 hover:!text-white"
+            onPress={onOpen}
           >
             <Eye />
           </Button>
@@ -95,6 +100,18 @@ const ProjectBox = (project: ProjectProp) => {
             </Button>
           ) : null}
         </div>
+        <Project
+          title={project.title}
+          details={project.details}
+          period={project.period}
+          techStack={project.techStack}
+          links={project.links}
+          category={project.category}
+          image={project.image}
+          isOpen={isOpen}
+          onOpen={onOpen}
+          onClose={onClose}
+        />
       </div>
     </div>
   );

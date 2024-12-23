@@ -1,5 +1,6 @@
 const projects = [
   {
+    slug: "dreamlabs",
     title: "Dreamlabs",
     details: "Demo Project",
     period: "April - May 2024",
@@ -8,11 +9,11 @@ const projects = [
       github: "https://github.com/nicolealcala/dreamlabs",
       hosted: "https://dreamlabs.vercel.app/",
     },
-
     category: ["development"],
     image: "/images/projects/dreamlabs/thumbnail.png",
   },
   {
+    slug: "paw-hub",
     title: "PawHub",
     details: "Demo Web Design",
     period: "October 2023",
@@ -21,11 +22,11 @@ const projects = [
       figma:
         "https://www.figma.com/design/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?node-id=966-2&node-type=canvas&t=MWSbTMAW6ggkLXaf-0",
     },
-
     category: ["design"],
     image: "/images/projects/pawhub/thumbnail.png",
   },
   {
+    slug: "graduation-stationery",
     title: "Graduation Stationery",
     details: "PUP-STC 28th Commencement Exercises",
     period: "September 2023",
@@ -35,6 +36,7 @@ const projects = [
     image: "/images/projects/graduation-stationery/thumbnail.png",
   },
   {
+    slug: "portfolio-v1",
     title: "Nicole Alcala",
     details: "Portfolio Website",
     period: "August - October 2023",
@@ -48,6 +50,7 @@ const projects = [
     image: "/images/projects/portfolio-v1/thumbnail.png",
   },
   {
+    slug: "medeco",
     title: "Medeco",
     details: "Demo Mobile App Design",
     period: "September 2023",
@@ -56,11 +59,11 @@ const projects = [
       figma:
         "https://www.figma.com/design/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?node-id=0-1&node-type=CANVAS&t=FJEsCrT1GI5BDUJG-0",
     },
-
     category: ["design"],
     image: "/images/projects/medeco/thumbnail.png",
   },
   {
+    slug: "unblokc-hackathon-wristbands",
     title: "UNBLOKC Hackathon Wristbands",
     details: "Internship Project",
     period: "June 2023",
@@ -73,6 +76,7 @@ const projects = [
     image: "/images/projects/unblokc-wristband/thumbnail.png",
   },
   {
+    slug: "unblokc-hackathon",
     title: "UNBLOKC Hackathon",
     details: "Internship Project",
     period: "April - May 2023",
@@ -86,6 +90,7 @@ const projects = [
     image: "/images/projects/unblokc-website/thumbnail.png",
   },
   {
+    slug: "kkis",
     title: "Katipunan ng Kabataan IS (KKIS)",
     details: "Capstone Project",
     period: "August 2022 - February 2023",
@@ -100,6 +105,7 @@ const projects = [
     image: "/images/projects/kkis/thumbnail.png",
   },
   {
+    slug: "loungescape",
     title: "Loungescape",
     details: "School Project",
     period: "February - March 2022",
