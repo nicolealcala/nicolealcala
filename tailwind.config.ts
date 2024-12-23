@@ -128,10 +128,6 @@ const config: Config = {
               DEFAULT: "#02fdf4",
               foreground: "#FFFFFF",
             },
-            yellow: {
-              DEFAULT: "#ffdd57",
-              foreground: "#FFFFFF",
-            },
           },
         },
       },
