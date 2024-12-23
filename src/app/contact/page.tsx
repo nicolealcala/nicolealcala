@@ -5,6 +5,8 @@ import { UserRound, AtSign, NotebookPen, Pencil } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
+export const runtime = "edge";
+
 const Contact = () => {
   return (
     <main className="relative flex flex-col">

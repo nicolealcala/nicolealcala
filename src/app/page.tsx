@@ -4,6 +4,8 @@ import FeaturedProjects from "@/components/sections/home3-featured-project";
 import WhatIDo from "@/components/sections/home2-what-i-do";
 import Testimonials from "@/components/sections/home4-testimonials";
 
+export const runtime = "edge";
+
 const Home = () => {
   return (
     <main className="flex flex-col">
