@@ -29,9 +29,6 @@ const Note = ({ data }: any) => {
               <br />
               Nicole
             </p>
-            <p className="text-xs mt-6 text-[#909090]">
-              Scan the QR code from time to time.
-            </p>
           </div>
         ) : (
           <NoteSkeleton />
