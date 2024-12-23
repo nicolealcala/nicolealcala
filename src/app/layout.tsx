@@ -8,6 +8,8 @@ import ClientLayout from "@/components/client-pages/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Nicole Alcala",
   description: "Portfolio Website v2.0",
