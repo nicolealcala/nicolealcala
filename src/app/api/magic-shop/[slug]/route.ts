@@ -2,8 +2,6 @@ import connectToDB from "@/config/db";
 import { Note } from "@/lib/models";
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "edge";
-
 export const GET = async (req: NextRequest, { params }: any) => {
   const { slug } = params;
   const { searchParams } = new URL(req.url);
@@ -23,6 +21,7 @@ export const GET = async (req: NextRequest, { params }: any) => {
     });
     return NextResponse.json(notes, { status: 200 });
   } catch (error) {
-    console.log(error);
+    console.error(error);
+    return NextResponse.json({ error: error, status: 500 });
   }
 };
