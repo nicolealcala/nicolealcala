@@ -6,6 +6,7 @@ const noteSchema = new mongoose.Schema(
     noteFor: { type: String, required: true },
     code: { type: String, required: true },
     writtenOn: { type: String },
+    updatedAt: { type: Date },
   },
   { timestamps: true }
 );

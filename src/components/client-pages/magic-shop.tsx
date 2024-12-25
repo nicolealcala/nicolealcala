@@ -45,9 +45,9 @@ const Page = () => {
   if (notFound) return <NotFound />;
 
   return (
-    <main>
-      <Section className="!bg-white">
-        <div className="container flex flex-col items-center min-h-[80vh] gap-y-10">
+    <main className="!bg-white">
+      <Section>
+        <div className="container flex flex-col items-center min-h-screen gap-y-10">
           {code ? <Note data={data} /> : <SecretCode />}
         </div>
       </Section>
