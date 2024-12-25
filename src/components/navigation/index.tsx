@@ -77,7 +77,7 @@ const Nav = () => {
                 : "bg-yellow border-black font-semibold"
             }`}
           >
-            <span className="text-base">Contact Me</span>
+            <span className="text-base text-tear">Contact Me</span>
           </Button>
         </div>
       </div>
