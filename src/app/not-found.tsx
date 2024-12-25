@@ -2,7 +2,7 @@ import React from "react";
 import Section from "@/components/shared-ui/section-full";
 const NotFound = () => {
   return (
-    <Section className="bg-tear h-[90dvh]">
+    <Section className="bg-tear h-dvh">
       <svg
         // width="500"
         // height="500"

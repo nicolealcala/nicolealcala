@@ -3,7 +3,7 @@ import React from "react";
 
 const Error503 = () => {
   return (
-    <Section className="flex flex-col gap-y-6 justify-center items-center h-[90dvh] bg-tear">
+    <Section className="flex flex-col gap-y-6 justify-center items-center h-dvh bg-tear">
       <h1 className="text-white font-bold subheading">COMING SOON</h1>
       <p className="text-gray-300 text-sm">
         This page is under construction. Please come back later.

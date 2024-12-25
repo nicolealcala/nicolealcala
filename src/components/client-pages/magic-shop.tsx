@@ -5,6 +5,7 @@ import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import SecretCode from "@/components/magic-shop/secret-code";
 import Note from "@/components/magic-shop/note";
+import NotFound from "@/app/not-found";
 
 // Suspense fallback component
 const SuspenseFallback = () => <div></div>;
@@ -23,13 +24,16 @@ const Page = () => {
   const [data, setData] = useState<NoteData | null>(null);
   const searchParams = useSearchParams();
   const code = searchParams.get("code");
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        axios
-          .get(`/api/magic-shop?code=${code}`)
-          .then((response) => setData(response.data));
+        axios.get(`/api/magic-shop?code=${code}`).then((response) => {
+          if (response.data) {
+            setData(response.data);
+          } else setNotFound(true);
+        });
       } catch (error) {
         console.error("Error fetching note: ", error);
       }
@@ -37,6 +41,8 @@ const Page = () => {
 
     fetchNote();
   }, [code]);
+
+  if (notFound) return <NotFound />;
 
   return (
     <main>
