@@ -7,7 +7,7 @@ import SecretCode from "@/components/magic-shop/secret-code";
 import Note from "@/components/magic-shop/note";
 
 // Suspense fallback component
-const SuspenseFallback = () => <div>Loading...</div>;
+const SuspenseFallback = () => <div></div>;
 
 interface NoteData {
   _id: string;
