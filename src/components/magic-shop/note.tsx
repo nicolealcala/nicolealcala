@@ -10,14 +10,14 @@ const Note = ({ data }: any) => {
       </h1>
       <div className="flex flex-col border items-center justify-center border-yellow max-w-2xl p-0 rounded-lg bg-yellow-50 z-50 letter">
         {data ? (
-          <div className="flex flex-col gap-y-4 p-4 md:p-7 mt-4 text-yellow-800">
+          <div className="flex flex-col gap-y-4 p-4 md:p-7 mt-4 text-yellow-600">
             <p className="flex justify-end text-xs text-yellow-500">
               Written on {data?.writtenOn}
             </p>
             <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow pointer-events-none">
               To {data?.noteFor},
             </p>
-            <div className="text-yellow-600">
+            <div>
               {data?.note.map((content: string, index: any) => (
                 <p key={index} className="indent-8 leading-7 mt-6">
                   {content}

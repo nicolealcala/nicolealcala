@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Section from "@/components/shared-ui/section-full";
 import axios from "axios";
-import { notFound, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";
 import { Divider } from "@nextui-org/react";
 import Note from "@/components/magic-shop/note";

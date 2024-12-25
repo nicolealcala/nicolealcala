@@ -40,7 +40,7 @@ const Page = () => {
 
   return (
     <main>
-      <Section>
+      <Section classname="!bg-white">
         <div className="container flex flex-col items-center min-h-[80vh] gap-y-10">
           {code ? <Note data={data} /> : <SecretCode />}
         </div>
