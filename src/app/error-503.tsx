@@ -5,7 +5,7 @@ const Error503 = () => {
   return (
     <Section className="flex flex-col gap-y-6 justify-center items-center h-dvh bg-tear">
       <h1 className="text-white font-bold subheading">COMING SOON</h1>
-      <p className="text-gray-300 text-sm">
+      <p className="text-gray-300 text-sm text-center">
         This page is under construction. Please come back later.
       </p>
       <svg
