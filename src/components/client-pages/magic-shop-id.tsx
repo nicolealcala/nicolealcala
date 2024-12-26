@@ -60,7 +60,7 @@ const NoteList: React.FC<{ params: any }> = ({ params }) => {
           <div className="flex flex-col gap-y-4 w-full">
             <h1 className="font-bold text-yellow-600 capitalize">To {slug}</h1>
             <Divider className="bg-yellow h-1" />
-            <div className="flex gap-x-10 mt-6">
+            <div className="flex gap-x-10 mt-6 justify-center sm:justify-start">
               {notesList ? (
                 <>
                   {notesList.map((note, i) => (
@@ -74,9 +74,7 @@ const NoteList: React.FC<{ params: any }> = ({ params }) => {
                   ))}
                 </>
               ) : (
-                Array.from({ length: 3 }, (_, i) => (
-                  <NoteCardSkeleton key={i} />
-                ))
+                <NoteCardSkeleton />
               )}
             </div>
           </div>
