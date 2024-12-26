@@ -60,34 +60,36 @@ const Nav = () => {
 
         {/* Expanded links */}
         <div className="hidden md:flex gap-x-3 items-center">
-          {links.map((link, index) => (
-            <Link
-              href={link.path}
-              key={index}
-              className={`transition-colors duration-500`}
-            >
-              <span
-                className={`py-2 px-3 text-center ${
-                  link.path === pathname
-                    ? "!text-white font-semibold"
-                    : "!text-gray-400"
-                }`}
+          {links
+            .filter((l) => l.title.toLowerCase() !== "contact me")
+            .map((link, index) => (
+              <Link
+                href={link.path}
+                key={index}
+                className={`transition-colors duration-500`}
               >
-                {link.title}
-              </span>
-            </Link>
-          ))}
+                <span
+                  className={`py-2 px-3 text-center ${
+                    link.path === pathname
+                      ? "!text-white font-semibold"
+                      : "!text-gray-400"
+                  }`}
+                >
+                  {link.title}
+                </span>
+              </Link>
+            ))}
           <Button
             as={Link}
             href="/contact"
             variant={pathname === "/contact" ? "bordered" : "solid"}
             className={`rounded-full ${
               pathname === "/contact"
-                ? "text-white border-white"
-                : "bg-yellow border-black font-semibold"
+                ? "text-white border-white font-semibold"
+                : "bg-yellow border-tear text-tear font-semibold"
             }`}
           >
-            <span className="text-base text-tear">Contact Me</span>
+            <span className="text-base">Contact Me</span>
           </Button>
         </div>
       </div>
