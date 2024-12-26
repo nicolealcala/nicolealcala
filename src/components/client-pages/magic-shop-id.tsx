@@ -54,8 +54,8 @@ const NoteList: React.FC<{ params: any }> = ({ params }) => {
   }, [slug, code]);
 
   return (
-    <main>
-      <Section className="h-screen">
+    <main className="bg-white">
+      <Section className="h-screen ">
         <div className="container flex flex-col items-center gap-y-4 min-h-[80vh]">
           <div className="flex flex-col gap-y-4 w-full">
             <h1 className="font-bold text-yellow-600 capitalize">To {slug}</h1>
