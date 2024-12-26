@@ -10,9 +10,10 @@ const Footer = () => {
   const pathname = usePathname();
   return (
     <footer className="flex flex-col items-center justify-center pb-5 bg-tear w-full">
-      {pathname === "/about" || pathname === "/projects" ? (
+      {/* {pathname === "/about" || pathname === "/projects" ? (
         <Divider className="bg-[#AEAEAE] h-px" />
-      ) : null}
+      ) : null} */}
+      <Divider className="bg-[#AEAEAE] h-px" />
       <div className="container space-y-6  px-6 lg:px-24 ">
         <div className="flex flex-col items-start justify-end lg:flex-row lg:justify-between mt-5 gap-y-6">
           {/* <div className="flex gap-x-3">
