@@ -16,9 +16,9 @@ export const NoteCard: React.FC<NoteCard> = ({
   return (
     <Link href={path}>
       <div className="flex flex-col gap-y-4 p-4 bg-yellow-50 border border-yellow text-tear rounded-md z-30 max-w-xs cursor-pointer">
-        <div className="text-left">
+        <div className="text-left space-y-2">
           <h2 className="font-bold text-yellow-700">{title}</h2>
-          <p className="text-sm text-yellow-500">Written on {writtenOn}</p>
+          <p className="text-xs text-yellow-500">Written on {writtenOn}</p>
         </div>
         <Divider className="bg-yellow" />
         <p className="max-h-auto overflow-hidden line-clamp-6 text-yellow-600">

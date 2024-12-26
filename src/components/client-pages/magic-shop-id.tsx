@@ -5,8 +5,8 @@ import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";
 import { Divider } from "@nextui-org/react";
-import Note from "@/components/magic-shop/note";
 import NotFound from "@/app/not-found";
+import { formatDate } from "@/lib/util/format-date";
 
 interface NoteData {
   _id: string;
@@ -14,9 +14,8 @@ interface NoteData {
   note: string[];
   noteFor: string;
   code: string;
-  writtenOn: string;
-  createdAt: string;
-  updatedAt: string;
+  writtenOn: Date;
+  updatedAt: Date;
 }
 
 const NoteList: React.FC<{ params: any }> = ({ params }) => {
@@ -56,10 +55,10 @@ const NoteList: React.FC<{ params: any }> = ({ params }) => {
 
   return (
     <main>
-      <Section>
+      <Section className="h-screen">
         <div className="container flex flex-col items-center gap-y-4 min-h-[80vh]">
           <div className="flex flex-col gap-y-4 w-full">
-            <h1 className="font-bold text-white capitalize">To {slug}</h1>
+            <h1 className="font-bold text-yellow-600 capitalize">To {slug}</h1>
             <Divider className="bg-yellow h-1" />
             <div className="flex gap-x-10 mt-6">
               {notesList ? (
@@ -68,7 +67,7 @@ const NoteList: React.FC<{ params: any }> = ({ params }) => {
                     <NoteCard
                       key={i}
                       title={note.title}
-                      writtenOn={note.writtenOn}
+                      writtenOn={formatDate(note.writtenOn)}
                       content={note.note[0]}
                       path={`/magic-shop?code=${note.code}`}
                     />
