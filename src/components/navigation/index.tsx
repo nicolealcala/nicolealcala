@@ -2,22 +2,32 @@
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-import { useContext, useState } from "react";
-import { GlobalContext } from "../context-providers/global-context-provider";
-// import { Sun1, Moon } from "iconsax-react";
+import { useState, useEffect } from "react";
 import "./nav.scss";
 
 const links = [
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
   { path: "/projects", title: "Projects" },
+  { path: "/contact", title: "Contact Me" },
 ];
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const { theme, setTheme, handleThemeChange } = useContext(GlobalContext);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Re-enable scrolling
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
   return (
     <nav
       className={`relative py-5 px-4 md:px-10 flex flex-col gap-3 top-0 !z-50 w-full bg-tear`}
@@ -84,21 +94,20 @@ const Nav = () => {
 
       {/* Collapsed nav items for SMALL SCREENS */}
       <div
-        className={`md:hidden flex-col absolute mt-px p-2 top-full right-0 bg-white shadow-xl w-full transition-height duration-300 ease-linear rounded-b-lg ${
-          isOpen ? "h-fit flex " : "h-0 hidden"
+        className={`small-nav md:hidden flex-col justify-center items-center gap-y-6 absolute mt-px p-2 top-full right-0 bg-tear shadow-xl w-full transition-height duration-300 ease-linear ${
+          isOpen ? "h-screen flex pb-24" : "h-0 hidden"
         }`}
       >
         {links.map((link, index) => (
           <Link
             href={link.path}
             key={index}
-            className={`transition-colors duration-500 max-w-max ${
-              theme === "dark" ? "text-white" : "text-tear"
+            className={`transition-colors duration-500 max-w-max text-gray-400
             }`}
           >
             <span
-              className={`font-semibold py-2 px-3 text-center ${
-                link.path === pathname && "active"
+              className={`font-semibold py-2 px-3 text-4xl text-center ${
+                link.path === pathname && "text-white"
               }`}
             >
               {link.title}
