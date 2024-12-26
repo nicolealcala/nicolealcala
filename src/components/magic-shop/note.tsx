@@ -1,25 +1,9 @@
 import React from "react";
 import NoteHoles from "./note-holes";
 import NoteSkeleton from "./note-skeleton";
+import { formatDate } from "@/lib/util/format-date";
 
 const Note = ({ data }: any) => {
-  const formattedDate = (date: Date) => {
-    const dateObj = typeof date === "string" ? new Date(date) : date;
-
-    if (isNaN(dateObj.getTime())) {
-      throw new Error("Invalid date");
-    }
-
-    return new Intl.DateTimeFormat("en-US", {
-      month: "long",
-      day: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true, // Ensures the time is in 12-hour format
-      timeZone: "UTC", // Adjust timezone as necessary
-    }).format(dateObj);
-  };
   return (
     <div className="flex flex-col gap-y-10">
       <h1 className="font-bold text-4xl text-center text-yellow-800">
@@ -29,10 +13,10 @@ const Note = ({ data }: any) => {
         {data ? (
           <div className="flex flex-col gap-y-4 p-4 md:p-7 mt-4 text-yellow-600">
             <p className="flex justify-end text-xs text-end text-yellow-500">
-              Written on {formattedDate(data?.writtenOn)}
+              Written on {formatDate(data?.writtenOn)}
               <br />
               {data?.updatedAt
-                ? `Updated on ${formattedDate(data?.updatedAt)}`
+                ? `Updated on ${formatDate(data?.updatedAt)}`
                 : ""}
             </p>
             <p className="mt-6 font-bold italic underline underline-offset-[12px] decoration-yellow pointer-events-none">

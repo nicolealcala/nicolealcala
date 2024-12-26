@@ -42,13 +42,13 @@ const Page = () => {
     fetchNote();
   }, [code]);
 
-  if (notFound) return <NotFound />;
+  if (notFound || !code) return <NotFound />;
 
   return (
     <main className="!bg-white">
       <Section>
         <div className="container flex flex-col items-center min-h-screen gap-y-10">
-          {code ? <Note data={data} /> : <SecretCode />}
+          <Note data={data} />
         </div>
       </Section>
     </main>
