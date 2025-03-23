@@ -5,7 +5,7 @@ import Image from "next/image";
 import projects from "@/lib/data/projects";
 import "./sections.scss";
 import { Eye, Link as LinkIcon, Figma, Github } from "lucide-react";
-import { Button, Link, useDisclosure } from "@nextui-org/react";
+import { Button, Link, useDisclosure } from "@heroui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUpProps } from "@/lib/motion/props";
 import Project from "../panels/bottom-up";

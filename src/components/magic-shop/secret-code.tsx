@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input } from "@heroui/react";
 import { useRouter } from "next/navigation";
 const SecretCode = () => {
   const [code, setCode] = useState("");

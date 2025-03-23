@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import "./sections.scss";
-import { Button, Snippet, Link } from "@nextui-org/react";
+import { Button, Snippet, Link } from "@heroui/react";
 import { ArrowCircleRight } from "iconsax-react";
 import Section from "../shared-ui/section-full";
 

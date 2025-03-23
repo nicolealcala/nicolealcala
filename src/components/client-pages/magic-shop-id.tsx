@@ -4,7 +4,7 @@ import Section from "@/components/shared-ui/section-full";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { NoteCard, NoteCardSkeleton } from "@/components/magic-shop/note-card";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@heroui/react";
 import NotFound from "@/app/not-found";
 import { formatDate } from "@/lib/util/format-date";
 

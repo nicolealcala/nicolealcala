@@ -1,5 +1,5 @@
 import Section from "@/components/shared-ui/section-full";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@heroui/react";
 
 import { UserRound, AtSign, NotebookPen, Pencil } from "lucide-react";
 import Image from "next/image";

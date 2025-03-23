@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Link, Button } from "@nextui-org/react";
+import { Link, Button } from "@heroui/react";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import "./nav.scss";

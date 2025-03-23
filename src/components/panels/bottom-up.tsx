@@ -6,7 +6,7 @@ import {
   DrawerHeader,
   DrawerBody,
   useDisclosure,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 interface LinksObject {
   figma?: string;

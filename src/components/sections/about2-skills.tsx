@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Section from "../shared-ui/section-full";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@heroui/react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";

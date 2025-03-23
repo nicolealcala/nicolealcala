@@ -1,5 +1,5 @@
 "use client";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@heroui/react";
 import Socials from "./socials";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

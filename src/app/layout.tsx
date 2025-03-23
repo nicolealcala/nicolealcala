@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import BackToTop from "@/components/shared-ui/back-to-top";
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <NextUIProvider>
+        <HeroUIProvider>
           <GlobalProvider>
             {/* <BgLines /> */}
             {/* <ScrollProvider> */}
@@ -51,7 +51,7 @@ export default function RootLayout({
             <BackToTop />
             {/* </ScrollProvider> */}
           </GlobalProvider>
-        </NextUIProvider>
+        </HeroUIProvider>
       </body>
     </html>
   );
