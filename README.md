@@ -1,5 +1,6 @@
 <h1 align="center">👋 Hi, I'm Nicole</h1>
-<h3 align="center">💻 Full-Stack Web Developer from the Philippines 🇵🇭</h3>
+<h3 align="center">💻 Full-Stack Web Developer from the Philippines 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/2560px-Flag_of_the_Philippines.svg.png" style="width: 24px; height: 16px" /></h3>
 
 ---
 
@@ -43,4 +44,4 @@
 
 ---
 
-<p align="center">⭐️ Always excited to collaborate on meaningful projects and learn new technologies!</p>
+<p align="center">✨ Always excited to collaborate on meaningful projects and learn new technologies! ✨</p>
