@@ -1,6 +1,6 @@
 <h1 align="center">👋 Hi, I'm Nicole</h1>
 <h3 align="center">
-  💻 Full-Stack Web Developer from the Philippines 
+  💻 Frontend-focused Web Developer from the Philippines 
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/philippines-flag-icon.png" width="24" align="absbottom" />
 </h3>
 
