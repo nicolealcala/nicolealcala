@@ -30,7 +30,7 @@
 <h2 align="center">🛠️ What I Do</h2>
 
 <p align="center">
-  ⚡ Build scalable full-stack apps with modern frameworks <br />
+  ⚡ Build scalable web apps with modern frameworks <br />
   🎨 Design responsive UI/UX with TailwindCSS and React <br />
   🌐 Develop and integrate RESTful APIs with robust databases <br />
 </p>
